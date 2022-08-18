@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://engineering.axelerant.com/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Axelerant Engineering Handbook'
 theme = 'ananke'
