@@ -1,4 +1,4 @@
 baseURL = 'https://engineering.axelerant.com/'
 languageCode = 'en-us'
 title = 'Axelerant Engineering Handbook'
-theme = 'ananke'
+theme = 'hugo-book'
