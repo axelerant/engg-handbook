@@ -4,7 +4,7 @@ type: docs
 draft: false
 ---
 
-# Welcome to the Axelerant Engineering Handbook
+# Axelerant Engineering Handbook
 
 This handbook is not a guide nor a tutorial for a specific language or technology we use at Axelerant. This handbook aims to show to an engineer at Axelerant what we value. It says who we are and how we work. It helps you understand what you need to do to succeed at Axelerant.
 
