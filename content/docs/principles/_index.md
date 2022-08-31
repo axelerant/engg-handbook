@@ -82,14 +82,26 @@ All the code you work on must be in version control. We use git almost universal
 
 #### Reading vs Writing code
 
-The code that you write will be read many more times and executed a lot more times.
+The code that you write will be read many more times and executed a lot more times. Optimize your code for reading and execution.
 
 ## Ask for help
 
+At Axelerant, we don't expect you to know everything. We hired you for your strengths and put you in a team where other's strengths complement yours. Use them.
+
 ## Be bold and experiment
+
+Life's too short to wait for permission. Understand decision-making models and use them to make decisions when they are cheap and reversible (most decisions are). Worst case, you learn something new. Best case, you learn something and we all succeed.
 
 ## Test, test, and test again
 
+Being quick with decisions doesn't mean we are quick with that deployment. We test to make sure that our work, _works_. Then we verify our tests and get another opinion to make sure we tested the right thing and tested it well.
+
+Yes, the customer will tell you if what you did doesn't work well but you lose trust. Build trust with your actions.
+
 ## Automate your way to laziness
 
+Life's too short to repeat things (I know I am repeating this but life's too short to find new maxims). Figure out a way to automate things you are doing repeatedly and frequently.
+
 ## Be a part of the massive open-source community
+
+There's a very good chance you are not living in a remote jungle or a lonely mountaintop. That's because you have come to rely on the support (and comfort) provided by clusters of people in cities and towns. Why should our programming world be any different?
