@@ -1,36 +1,14 @@
 ---
-weight: 1
+weight: 3
 ---
 
-# Principles of Software Development at Axelerant
+# Focus on Fundamentals
 
-> "Principles are ways of successfully dealing with reality to get what you want out of life." - Ray Dalio
+There's a saying that goes you can't build your home on an uneven foundation. This is strongly mirrored in many scientific disciplines and while software engineering is a lot more forgiving than those disciplines, it doesn't make it unimportant. It makes it even more important to stress on those fundamentals because one can survive in this industry for a long time without worrying about them. That's not who we are at Axelerant.
 
-A software engineer has to make a lot of decisions throughout their day. Defining and following certain _principles_ make it easier for you to make many of the decisions for challenges that have been solved previously. These are not set in stone but they have stood the test of time and you would rarely ignore a principle and only if there's a very good reason.
+> We balance the value of getting started quickly with a robust understanding of the fundamentals.
 
-## Engineering Focus
-
-Axelerant has traditionally been an Engineering focused company. We begin on strong fundamentals and aim to build a robust and useful solution. The solution needs to be robust so that our customers can trust it and it needs to be useful so that our customers derive value out of it. While we are focused on Engineering, we are still solving problems for people and that means we have to think of what our customers need.
-
-## Build for people
-
-We don't write code in a vacuum. We write code to solve problems for our customer, using systems used by their customers, all of which will be maintained by your teammates. We write code once but it is read many times and executed significantly more times.
-
-### Solve the problem
-
-You could write the most beautiful, most efficient, most poetic code you possibly can, but if it doesn't help your customer, it doesn't help anyone. Write great code and solve the problem.
-
-### Write readable code
-
-Do not try to be clever with your code. There is a saying that debugging is harder than writing code. So if you write the cleverest possible code then, by definition, you are not clever enough to debug it.
-
-Write your code so that it can be read and understood by other people.
-
-## Focus on Fundamentals
-
-We balance the value of getting started quickly with a robust understanding of the fundamentals. [Read More]({{< relref "fundamentals" >}})
-
-### Understand the technology deeply
+## Understand the technology deeply
 
 > "Any sufficiently advanced technology is indistinguishable from magic." - Arthur C. Clarke
 
@@ -40,25 +18,25 @@ The abover should not be read to mean that we obsess over technology. We use sui
 
 > Ours is a learning journey.
 
-#### Understand how computers work
+### Understand how computers work
 
 We write programs to tell computers how to solve any problem. To do that well, you have to understand how computers work. How does the computer interpret your code? How does it work with data? How does memory work? How do networks work? Each of these questions lead to deep rabbitholes and there are a lot more questions like these that we have to deal with.
 
 You can't be productive if all you do is explore these rabbitholes. But you have to know enough of these topics to ask meaningful questions and learn.
 
-#### Understand how Internet works
+### Understand how Internet works
 
 Axelerant focuses mainly on web development and understanding how Internet works is critical. What is Internet? How are the networks built? How do two computers on the opposite sides of the planet talk to each other? How does the web work? What is HTTP? How do browsers work? What are the common things browsers do to speed up a user's experience? The list is endless and you can only learn if you look out to learn.
 
-#### Understand how operating systems works
+### Understand how operating systems works
 
 All computers, that is to say your laptop, or your phone, and the server you may be working with use an operating system. The code you write will run in that context. So you need to know enough about the operating system that affects your code. How does an operating system organize files? How does it deal with processes? How does it run long-running processes (such as servers)? How does it deal with memory management? How does it deal with security?
 
-#### Understand programming languages
+### Understand programming languages
 
 We use a language to talk to the computer and they come in all shapes and sizes. It's important you know what questions to ask to understand a programming language better. What paradigm does it follow? Does it enforce a type system? How does it find an entry-point in your code? How deeply does it let you interact with your machine? How does your code get invoked? What resources are available to your code while it's running?
 
-##### Distinguish types of programming languages
+#### Distinguish types of programming languages
 
 Classifying programming languages according to their traits is a good way to understand what language would be a good choice for a problem. Languages often get classified based on their flow model and how they organize memory (functional, procedural, object-oriented). There are other ways to classify languages and it is useful to understand a variety of their types. Some of these are listed below:
 
@@ -68,38 +46,16 @@ Classifying programming languages according to their traits is a good way to und
 - Server-side or client-side
 - General or specialized
 
-### Understand why we use anything
+## Understand why we use anything
 
 It is easy to get lost in the world of technology and solve problems that don't exist. It is important to be reminded that all we do is to help our customers, either directly or indirectly.
 
 > Understand the fundamentals and make a sound decision on what to use and how.
 
-### Working with source code
+## Working with source code
 
 All the code you work on must be in version control. We use git almost universally and you need to understand how it works and how to perform common actions using it (such as committing files, switching branches, merging branches, etc.) When leading teams, you also need to understand some of the more advanced actions such as resolving conflicts, rebasing, cherry-picking, and more. Fortunately, there are hundreds of resources to help you learn git and you can't go wrong in starting with the official book.
 
-#### Reading vs Writing code
+### Reading vs Writing code
 
 The code that you write will be read many more times and executed a lot more times. Optimize your code for reading and execution.
-
-## Ask for help
-
-At Axelerant, we don't expect you to know everything. We hired you for your strengths and put you in a team where other's strengths complement yours. Use them.
-
-## Be bold and experiment
-
-Life's too short to wait for permission. Understand decision-making models and use them to make decisions when they are cheap and reversible (most decisions are). Worst case, you learn something new. Best case, you learn something and we all succeed.
-
-## Test, test, and test again
-
-Being quick with decisions doesn't mean we are quick with that deployment. We test to make sure that our work, _works_. Then we verify our tests and get another opinion to make sure we tested the right thing and tested it well.
-
-Yes, the customer will tell you if what you did doesn't work well but you lose trust. Build trust with your actions.
-
-## Automate your way to laziness
-
-Life's too short to repeat things (I know I am repeating this but life's too short to find new maxims). Figure out a way to automate things you are doing repeatedly and frequently.
-
-## Be a part of the massive open-source community
-
-There's a very good chance you are not living in a remote jungle or a lonely mountaintop. That's because you have come to rely on the support (and comfort) provided by clusters of people in cities and towns. Why should our programming world be any different?
