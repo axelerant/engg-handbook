@@ -10,21 +10,19 @@ A software engineer has to make a lot of decisions throughout their day. Definin
 
 ## Engineering Focus
 
-Axelerant has traditionally been an Engineering focused company. We begin on strong fundamentals and aim to build a robust and useful solution. The solution needs to be robust so that our customers can trust it and it needs to be useful so that our customers derive value out of it. While we are focused on Engineering, we are still solving problems for people and that means we have to think of what our customers need.
+At Axelerant, an Engineering focused company, we begin on strong fundamentals and aim to build a robust and useful solution. [Read More]({{< relref "engineering-focus" >}})
 
 ## Build for people
 
-We don't write code in a vacuum. We write code to solve problems for our customer, using systems used by their customers, all of which will be maintained by your teammates. We write code once but it is read many times and executed significantly more times.
+We write code to solve problems for our people. [Read More]({{< relref "build-for-people" >}})
 
 ### Solve the problem
 
-You could write the most beautiful, most efficient, most poetic code you possibly can, but if it doesn't help your customer, it doesn't help anyone. Write great code and solve the problem.
+You could write the most beautiful, most efficient, most poetic code you possibly can, but if it doesn't help your customer, it doesn't help anyone. Write great code and solve the problem. [Read More]({{< relref "build-for-people#solve" >}})
 
 ### Write readable code
 
-Do not try to be clever with your code. There is a saying that debugging is harder than writing code. So if you write the cleverest possible code then, by definition, you are not clever enough to debug it.
-
-Write your code so that it can be read and understood by other people.
+Write your code so that it can be read and understood by other people. [Read More]({{< relref "build-for-people#readable" >}})
 
 ## Focus on Fundamentals
 
@@ -68,7 +66,7 @@ The code that you write will be read many more times and executed a lot more tim
 
 ## Ask for help
 
-At Axelerant, we don't expect you to know everything. We hired you for your strengths and put you in a team where other's strengths complement yours. Use them.
+At Axelerant, we don't expect you to know everything. We hired you for your strengths and put you in a team where other's strengths complement yours. Use them. [Read More]({{< relref "ask-for-help" >}})
 
 ## Be bold and experiment
 
