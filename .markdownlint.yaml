@@ -1,0 +1,10 @@
+line-length: false
+no-duplicate-heading:
+  siblings_only: true
+single-title:
+  # Disable front matter title checks
+  front_matter_title: ""
+proper-names:
+  code_blocks: false
+  names:
+  - Axelerant
