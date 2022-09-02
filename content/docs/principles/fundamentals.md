@@ -46,6 +46,10 @@ Classifying programming languages according to their traits is a good way to und
 - Server-side or client-side
 - General or specialized
 
+## Understand design patterns and SOLID principles
+
+Change is the only constant. Making changes in software will become havoc if it is not well-designed. Some of the best software engineers came up with design patterns and SOLID principles after they kept repeating the same mistake. Understanding them will help you to write software that is more adaptable to change.
+
 ## Understand why we use anything {#anything}
 
 It is easy to get lost in the world of technology and solve problems that don't exist. It is important to be reminded that all we do is to help our customers, either directly or indirectly.
@@ -59,5 +63,3 @@ All the code you work on must be in version control. We use git almost universal
 ### Reading vs Writing code {#reading-code}
 
 The code that you write will be read many more times and executed a lot more times. Optimize your code for reading and execution.
-
-## design patterns, SOLID principle
