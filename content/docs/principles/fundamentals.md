@@ -46,7 +46,7 @@ Classifying programming languages according to their traits is a good way to und
 - Server-side or client-side
 - General or specialized
 
-## Understand design patterns and SOLID principles {#design-principle}
+### Understand design patterns and SOLID principles {#design-principle}
 
 Change is the only constant. Making changes in software will become havoc if it is not well-designed. Some of the best software engineers came up with design patterns and SOLID principles after they kept repeating the same mistake. Understanding them will help you to write software that is more adaptable to change.
 
