@@ -24,7 +24,7 @@ We write programs to tell computers how to solve a problem. To do that well, you
 
 You can't be productive if all you do is explore these rabbitholes. But you have to know enough of these topics to ask meaningful questions and learn.
 
-#### Understand time and space complexity
+#### Understand time and space complexity {#complexities}
 
 The computer takes a certain number of CPU cycles when it executes an instruction you wrote in the code. Every variable that you create consumes a certain amount of memory. So, assess the solution you wrote to solve a problem. It should be fair on the computer whether the number of data is less or more.
 
