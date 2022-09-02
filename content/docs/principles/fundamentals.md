@@ -24,6 +24,10 @@ We write programs to tell computers how to solve a problem. To do that well, you
 
 You can't be productive if all you do is explore these rabbitholes. But you have to know enough of these topics to ask meaningful questions and learn.
 
+#### Understand time and space complexity {#complexities}
+
+The computer takes a certain number of CPU cycles when it executes an instruction you wrote in the code. Every variable that you create consumes a certain amount of memory. So, assess the solution you wrote to solve a problem. It should be fair on the computer whether the number of data is less or more.
+
 ### Understand how Internet works {#internet}
 
 Axelerant focuses mainly on web development and understanding how Internet works is critical. What is Internet? How are the networks built? How do two computers on the opposite sides of the planet talk to each other? How does the web work? What is HTTP? How do browsers work? What are the common things browsers do to speed up a user's experience? The list is endless and you can only learn if you look out to learn.
@@ -45,6 +49,12 @@ Classifying programming languages according to their traits is a good way to und
 - High-level or low-level
 - Server-side or client-side
 - General or specialized
+
+### Understand design patterns and SOLID principles {#design-principle}
+
+> Change is the only constant.
+
+Making changes in software will become havoc if it is not well-designed. Some of the best software engineers came up with design patterns and SOLID principles after they kept repeating the same mistake. Understanding them will help you to write software that is more adaptable to change.
 
 ## Understand why we use anything {#anything}
 
