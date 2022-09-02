@@ -59,3 +59,5 @@ All the code you work on must be in version control. We use git almost universal
 ### Reading vs Writing code {#reading-code}
 
 The code that you write will be read many more times and executed a lot more times. Optimize your code for reading and execution.
+
+## design patterns, SOLID principle
