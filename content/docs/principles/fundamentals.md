@@ -24,6 +24,10 @@ We write programs to tell computers how to solve a problem. To do that well, you
 
 You can't be productive if all you do is explore these rabbitholes. But you have to know enough of these topics to ask meaningful questions and learn.
 
+#### Understand time and space complexity
+
+The computer takes a certain number of CPU cycles when it executes an instruction you wrote in the code. Every variable that you create consumes a certain amount of memory. So, assess the solution you wrote to solve a problem. It should be fair on the computer whether the number of data is less or more.
+
 ### Understand how Internet works {#internet}
 
 Axelerant focuses mainly on web development and understanding how Internet works is critical. What is Internet? How are the networks built? How do two computers on the opposite sides of the planet talk to each other? How does the web work? What is HTTP? How do browsers work? What are the common things browsers do to speed up a user's experience? The list is endless and you can only learn if you look out to learn.
