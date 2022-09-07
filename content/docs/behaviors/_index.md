@@ -1,8 +1,12 @@
 ---
+title: Behaviors we expect from each other
 weight: 2
 ---
 
-1. accountabilty/ownership
-1. leadership
-1. proactive
-1. kindness
+# Behaviors we expect from each other
+
+## We own everything in our world
+
+## We step up and speak up
+
+## We demonstrate kindness
