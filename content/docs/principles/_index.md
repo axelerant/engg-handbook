@@ -1,5 +1,6 @@
 ---
 weight: 1
+bookCollapseSection: true
 ---
 
 # Principles of Software Development at Axelerant

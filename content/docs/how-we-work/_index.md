@@ -1,5 +1,6 @@
 ---
 weight: 2
+bookCollapseSection: true
 ---
 
 # How we work at Axelerant
