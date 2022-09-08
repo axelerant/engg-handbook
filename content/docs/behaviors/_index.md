@@ -31,8 +31,8 @@ Shake off those feelings and share them right away. At Axelerant, we highly valu
 
 You are working on a task. You are stuck with a weird error. You are not sure what is causing it. You have spent hours on it, but you have not made progress.
 
-Spending hours is not an efficient way. It might impact the deadline. You have given your best - that's it. Now it is time to [reach out to your peers]({{< ref "/principles/ask-for-help.md" >}}) for help.
+Spending hours is not an efficient way. It might impact the deadline. You have given your best - that's it. Now it is time to [reach out to your peers]({{< ref "../principles/ask-for-help.md" >}}) for help.
 
 ## We demonstrate kindness
 
-## Don't be a perfectionist
+Your peer has accidentally deleted the content on production. Instead of being hard on the person, ask for their support to resolve the problem. You have empowered that person with your act of kindness.
