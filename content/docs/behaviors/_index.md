@@ -5,7 +5,7 @@ weight: 2
 
 # Behaviors we expect from each other
 
-At Axelerant, we highly value the quality of the code delivered by the engineer. But it is equally important to note that we are not writing the code in a vacuum. You will collaborate with your peers, closely work with your manager and give demonstrations to the customer. That means behavioral traits become as important as your technical capabilities.
+At Axelerant, we highly value the quality of the code delivered by the engineer. But it is equally important to note that you are not writing the code in a vacuum. You will collaborate with your peers, closely work with your manager and give demonstrations to the customer. That means behavioral traits become as important as your technical capabilities.
 
 ## We own everything in our world
 
@@ -17,15 +17,15 @@ Manager asked you to implement a feature.
 
 In a nutshell, you own the feature. You are most welcome to share suggestions on how to improve it.
 
-You have some personal work during the day of deployment. Asking the team for help shows you have a high sense of ownership.
+You have some personal work during the day of deployment. You will be away. Asking the team for help shows you have a high sense of ownership.
 
 ## We step up and speak up
 
 You are in the midst of a client meeting. There is a decision taken that is going to impact a specific area of the application. But, nobody has raised the concern.
 
-There is a feeling of uncomfortableness when during a discussion, and you are trying to find out the pause. Or, you might think the issue is obvious, and the client will realize it later. And eventually, you will not bring up the concern in the meeting.
+There is a feeling of uncomfortableness during a discussion where you are finding a pause to speak. Or, you might think the issue is obvious, and the client will realize it later. These feelings will stop you from bringing up the concern in the meeting.
 
-Shake off those feelings and share them right away. At Axelerant, we highly value it when you do something outside your comfort zone.
+Shake off those feelings. Share your observations right away. At Axelerant, we highly value it when you do something outside your comfort zone.
 
 ## Being proactive
 
