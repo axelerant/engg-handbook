@@ -21,7 +21,7 @@ We welcome improvements to these processes and methods provided there is enough 
 
 Again, if you find anything lacking in any of these pages, feel free to raise a pull request.
 
-## Git repository setup
+## [Git repository setup]({{< relref "git.md" >}})
 
 Version control is a staple part of the development cycle and it is important we (the entire team) understand it properly.
 
