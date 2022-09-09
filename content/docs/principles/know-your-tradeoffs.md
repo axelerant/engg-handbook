@@ -2,9 +2,11 @@
 weight: 10
 ---
 
+# Know your tradeoffs
+
 There will always be a moment when there are two or more choices, and you pick one. The situation happens more often in software development. At Axelerant, we value your decision. But it should have a reasoning behind it.
 
-1. Is the solution adaptable to [change]({{< ref "fundamentals.md#design-principle" >}})? 
+1. Is the solution adaptable to [change]({{< ref "fundamentals.md#design-principle" >}})?
 1. Can it be delivered to the customer within the deadline?
 1. Can it be picked up by anyone from your team in case you are away?
 

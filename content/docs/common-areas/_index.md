@@ -27,8 +27,11 @@ This guide covers common areas of concern with web projects and our approach to 
 ## Scaling a Drupal site
 
 ### Horizontally scaling the web-server
+
 ### Replicating the database
 
 ## Dealing with performance
+
 ### Frontend vs Backend performance
+
 ### Debug performance issues
