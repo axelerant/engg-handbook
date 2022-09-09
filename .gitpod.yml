@@ -8,3 +8,9 @@ tasks:
 ports:
   - port: 1313
     onOpen: open-preview
+
+vscode:
+  extensions:
+    - DavidAnson.vscode-markdownlint
+    - streetsidesoftware.code-spell-checker
+    - znck.grammarly
