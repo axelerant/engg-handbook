@@ -1,5 +1,7 @@
 ---
+title: Be Curious
 weight: 6
+description: Curiosity may have killed the cat but it made human beings what they are today.
 ---
 
 # How it works?

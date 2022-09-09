@@ -1,5 +1,6 @@
 ---
-weight: 10
+weight: 8
+description: Engineering is the science of picking tradeoffs.
 ---
 
 # Know your tradeoffs

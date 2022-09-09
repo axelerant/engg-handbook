@@ -1,5 +1,6 @@
 ---
 weight: 2
+description: We don't write code in a vacuum. We write code to solve problems for our customer, using systems used by their customers, all of which will be maintained by your teammates.
 ---
 
 # Build for People
