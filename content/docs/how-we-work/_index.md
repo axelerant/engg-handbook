@@ -65,6 +65,6 @@ Gitflow is still popular for software where teams have to maintain multiple vers
 
 We always benefit from another pair of eyes looking over our work. Pull requests and reviewing code provide a mechanism to do that. Let's talk about how to do it well.
 
-## Knowledge Sharing
+## Knowledge sharing
 
-[Write]
+As an engineer, we solve problems daily. It can be technical or non-technical. The solution can be from a reference or something you figured out. By sharing how you have solved the problem, you will be helping others who have the same problem. It can be in the form of a session or a blog.
