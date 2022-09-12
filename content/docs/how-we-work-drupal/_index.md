@@ -10,14 +10,6 @@ We are Drupal experts, but we can belong from different backgrounds. At Axeleran
 
 {{<section>}}
 
-## Information Architecture
-
-### Picking the right content model
-
-### Selecting the field types
-
-### Handling media
-
 ## How to deal with marketing-style content
 
 ### Paragraphs vs Layout Builder
