@@ -8,7 +8,7 @@ bookCollapseSection: true
 
 We are Drupal experts, but we can belong from different backgrounds. At Axelerant, we follow some set of tools and approaches. They might not be perfect. Your opinions are valued here.
 
-{{<section>}}
+{{< section >}}
 
 ## How to deal with marketing-style content
 
