@@ -64,3 +64,7 @@ Gitflow is still popular for software where teams have to maintain multiple vers
 ## Pull Requests and Reviewing code
 
 We always benefit from another pair of eyes looking over our work. Pull requests and reviewing code provide a mechanism to do that. Let's talk about how to do it well.
+
+## Knowledge Sharing
+
+[Write]
