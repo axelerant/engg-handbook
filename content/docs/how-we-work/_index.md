@@ -29,6 +29,12 @@ Version control is a staple part of the development cycle and it is important we
 
 Continuous Integration (and its cousin, Continuous Deployment) are essential parts of a developer's cycle today. We use it everyday without realizing it and we ignore it at our own peril.
 
+## Security
+
+An application relies on database credentials to connect to the database. There can be API keys using which the application communicates with the third-party service. They must not be kept in the repository. There should not even be a Git commit referring to those credentials. They can be misused if a malicious user gets hold of them.
+
+Use the environment variables or vaults for storing and retrieving them.
+
 ## Automated Testing
 
 Nobody likes repetitive tasks. Human beings are usually bad at reliably performing repetitive tasks. If you want to build, deploy, and generally jump to more exciting tasks soon, write automated tests.
@@ -36,6 +42,10 @@ Nobody likes repetitive tasks. Human beings are usually bad at reliably performi
 ## Documentation
 
 Documentation is highly underrated. It is probably the most underutilized, yet the most important factor of success. Think about any product or technology. The only thing that dictated its success long-term was its ease-of-use, and documentation is highly critical to achieve that.
+
+## Knowledge sharing
+
+As an engineer, we solve problems daily. It can be technical or non-technical. The solution can be from a reference or something you figured out. By sharing how you have solved the problem, you will be helping others who have the same problem. It can be in the form of a session or a blog.
 
 ## Local tools
 

@@ -6,19 +6,9 @@ bookCollapseSection: true
 
 # How we work with Drupal at Axelerant
 
-## Set up
+We are Drupal experts, but we can belong from different backgrounds. At Axelerant, we follow some set of tools and approaches. They might not be perfect. Your opinions are valued here.
 
-### Setting up a new site
-
-### Setting up an existing site
-
-## Information Architecture
-
-### Picking the right content model
-
-### Selecting the field types
-
-### Handling media
+{{<section>}}
 
 ## How to deal with marketing-style content
 
