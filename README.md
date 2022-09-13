@@ -19,6 +19,7 @@ If the above doesn't work for you or you'd rather you do this locally, you need 
 Clone this repository and run [Hugo as a server](https://gohugo.io/getting-started/quick-start/#step-5-start-the-hugo-server) inside the repository directory.
 
 ```bash
+git clone --recursive git@github.com:axelerant/engg-handbook.git
 hugo server -D
 ```
 
