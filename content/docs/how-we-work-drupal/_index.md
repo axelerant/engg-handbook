@@ -10,10 +10,6 @@ We are Drupal experts, but we can belong from different backgrounds. At Axeleran
 
 {{< section >}}
 
-## How to deal with marketing-style content
-
-### Paragraphs vs Layout Builder
-
 ## Configuration Management
 
 ### Configuration Split
