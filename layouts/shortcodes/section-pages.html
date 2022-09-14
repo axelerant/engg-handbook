@@ -1,0 +1,13 @@
+<dl>
+{{ range .Page.Pages }}
+  <h3>
+    <a href="{{ .RelPermalink }}">{{ partial "docs/title" . }}</a>
+  </h3>
+  {{ default .Summary .Description }}
+  {{/*
+    .TableOfContents uses relative anchors and won't work in this page.
+    The syntax below is from https://github.com/gohugoio/hugo/issues/4735#issuecomment-1010894295
+  */}}
+  {{ .TableOfContents | replaceRE `href="#(.*)"` (printf `href="%s#%s"` .RelPermalink "$1") | safeHTML }}
+{{ end }}
+</dl>
