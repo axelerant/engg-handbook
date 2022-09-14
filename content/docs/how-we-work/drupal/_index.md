@@ -10,4 +10,11 @@ We are Drupal experts, but we can belong from different backgrounds. At Axeleran
 
 {{< section >}}
 
+## Making customizations
+
+1. Module setting vs. hook
+1. Reusability
+1. Contrib first
+1. No heavy lifting in template files
+
 ## Debugging Drupal issues
