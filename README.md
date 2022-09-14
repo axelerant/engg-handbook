@@ -20,7 +20,7 @@ Clone this repository and run [Hugo as a server](https://gohugo.io/getting-start
 
 ```bash
 git clone --recursive git@github.com:axelerant/engg-handbook.git
-hugo server -w
+hugo server -D
 ```
 
 The above command, if it works correctly, will give you a link to view the generated site (typically [http://localhost:1313/](http://localhost:1313/)). You can now edit your files and see the changes immediately reflected in the browser. Once you're done, commit and push. Once it is merged into the main branch, your changes will be live.
