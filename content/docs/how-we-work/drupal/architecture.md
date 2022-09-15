@@ -5,7 +5,7 @@ weight: 2
 
 # Information Architecture
 
-Choosing the right architecture will help you in the long run. While an incorrect architecture will become costly. [Consult with your peers]({{< ref "../principles/ask-for-help.md" >}}) while deciding the architecture.
+Choosing the right architecture will help you in the long run. While an incorrect architecture will become costly. [Consult with your peers]({{< relref "docs/behaviors/ask-for-help.md" >}}) while deciding the architecture.
 
 ## Selecting the field types
 
