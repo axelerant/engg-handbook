@@ -1,6 +1,6 @@
 ---
 title: Be Curious
-weight: 6
+weight: 7
 description: Curiosity may have killed the cat but it made human beings what they are today.
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Be Bold and Experiment
-weight: 5
+weight: 6
 description: Life's too short to wait for permission. Understand decision-making models and use them to make decisions when they are cheap and reversible (most decisions are). Worst case, you learn something new. Best case, you learn something and we all succeed.
 ---
 

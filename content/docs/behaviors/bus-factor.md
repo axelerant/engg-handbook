@@ -1,6 +1,6 @@
 ---
 title: The bus factor
-weight: 13
+weight: 9
 ---
 
 > The "bus factor" is the minimum number of team members that have to suddenly disappear from a project before the project stalls due to the lack of knowledgeable or competent personnel.
