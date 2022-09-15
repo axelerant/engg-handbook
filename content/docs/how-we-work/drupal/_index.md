@@ -1,6 +1,6 @@
 ---
 title: Drupal
-weight: 2
+weight: 8
 bookCollapseSection: true
 ---
 

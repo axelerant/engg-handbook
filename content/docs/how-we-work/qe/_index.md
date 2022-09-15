@@ -1,6 +1,6 @@
 ---
 title: Quality Engineering
-weight: 4
+weight: 10
 bookCollapseSection: true
 ---
 

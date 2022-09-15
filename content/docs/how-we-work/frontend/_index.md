@@ -1,6 +1,6 @@
 ---
 title: Frontend
-weight: 3
+weight: 9
 bookCollapseSection: true
 ---
 
