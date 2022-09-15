@@ -1,6 +1,6 @@
 ---
 title: Debugging
-weight: 5
+weight: 6
 ---
 
 # Finding out the culprit
