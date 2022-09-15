@@ -1,5 +1,6 @@
 ---
 title: Behaviors we expect from each other
+bookCollapseSection: true
 weight: 2
 ---
 
