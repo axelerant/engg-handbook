@@ -18,7 +18,6 @@ As an engineer, we pick up a task and see it to completion. Completion doesn't m
 
 In a nutshell, you own the feature. You are obligated to share suggestions on how to improve it.
 
-
 ## You're not alone
 
 Taking ownership doesn't mean you're alone. You realize when it is time to research options yourself and when it is time to ask your team for help, and you do it. It doesn't mean you know everything. It means you know what you know and you know what you don't. And you ask for help. It also means that you speak up when you see something that affects your system or your team. We're in this together; all of us, and remaining quiet is doing a disservice.
