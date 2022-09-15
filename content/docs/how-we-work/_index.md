@@ -1,4 +1,5 @@
 ---
+title: The Axelerant Way
 weight: 3
 bookCollapseSection: true
 ---

@@ -1,4 +1,5 @@
 ---
+title: Focus on Engineering
 weight: 1
 description: At Axelerant, an Engineering focused company, we begin on strong fundamentals and aim to build a robust and useful solution for our customers. While we are focused on engineering, we are still solving problems for people.
 ---

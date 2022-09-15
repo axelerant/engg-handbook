@@ -1,4 +1,5 @@
 ---
+title: Focus on Fundamentals
 weight: 3
 description: We balance the value of getting started quickly with a robust understanding of the fundamentals.
 ---

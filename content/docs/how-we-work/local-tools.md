@@ -1,6 +1,7 @@
 ---
 title: Local tools
 weight: 7
+description: Your choice of tools you use to write code or work with issues will determine how happy and productive, or frustrated and inefficient you are. This is why we build configuration for local tools within the project repository so that the entire team is working with the same tools and in the same environment.
 ---
 
 ## Local tools

@@ -1,6 +1,7 @@
 ---
+title: Know your tradeoffs
 weight: 8
-description: Engineering is the science of picking tradeoffs.
+description: Engineering is the science of picking tradeoffs. Be mindful of what tradeoffs you are making in your decisions.
 ---
 
 # Know your tradeoffs

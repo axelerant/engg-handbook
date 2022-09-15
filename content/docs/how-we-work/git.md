@@ -1,6 +1,7 @@
 ---
 title: "Git Repository Setup"
 weight: 1
+description: Version control is a staple part of the development cycle and it is important we (the entire team) understand it properly. It is not an exaggeration to say that this is one of most fundamental skills of any programmer.
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false
@@ -11,7 +12,7 @@ weight: 1
 
 # Git Repository Setup
 
-Version control is a staple part of the development cycle and it is important we (the entire team) understand it properly.
+Version control is a staple part of the development cycle and it is important we (the entire team) understand it properly. It is not an exaggeration to say that this is one of most fundamental skills of any programmer.
 
 ## Feature-branching and multiple environments
 
