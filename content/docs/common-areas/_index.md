@@ -24,6 +24,22 @@ This guide covers common areas of concern with web projects and our approach to 
 
 ### Sentry
 
+## Backups
+
+## CDN
+
+### Compressed CSS/JS
+
+## Reverse proxy
+
+### Varnish
+
+## CPU intensive tasks in background
+
+### Queue
+
+### Cron jobs
+
 ## Scaling a Drupal site
 
 ### Horizontally scaling the web-server
