@@ -21,19 +21,21 @@ weight: 2
 
 - Separate words in class names by hyphens or underscores. Do not concatenate words and abbreviations in selectors by any characters other than hyphens or underscores, in order to improve understanding and scannability.
 - Use transform animations instead of width, height, top, and left to optimize rendering.
-- Avoid qualifying class names with type selectors. Unless necessary (for example with helper classes), do not use element names in conjunction with classes. 
+- Avoid qualifying class names with type selectors. Unless necessary (for example with helper classes), do not use element names in conjunction with classes.
 - As CSS supports variables, it must declare root variables where it is required.
 - For complex DOM placements to show the difference between desktop and mobile prefer CSS Grid instead of Javascript.
 - Try to avoid !important.
-- Avoid id attributes. Prefer class attributes for styling and data attributes for scripting. 
+- Avoid id attributes. Prefer class attributes for styling and data attributes for scripting.
 - Avoid unnecessary ancestor selectors as it affects the rendering performance.
 - Use shorthand properties where possible as it helps with code efficiency and readability.
 - Do not use units after 0 values unless they are required.
 
 ### Declaration order
+
 If declarations are to be consistently ordered, they should be simple to understand among the team. CSS properties order is enforced through a [stylint rule](https://github.com/hudochenkov/stylelint-order/blob/master/rules/properties-order/README.md) package.
 
 ### Nesting
+
 - Limit the nesting to 2 levels deep.
 - Always place @extend statements on the first lines of a declaration block.
 - Where possible, group @include statements at the top of a declaration block, after any @extend statements.
@@ -56,7 +58,7 @@ If declarations are to be consistently ordered, they should be simple to underst
 
 ## Drupal
 
-- Drupal has a specific set of coding standards that must be followed for the best practices. So these should be found at https://www.drupal.org/docs/develop/standards/coding-standards
+- Drupal has a specific set of coding standards that must be followed for the best practices. So these should be found at <https://www.drupal.org/docs/develop/standards/coding-standards>
 - Installing the Coder module will help to check through all Drupal coding standards. If we integrate with while git commit developer should be able to notice any missed things as it provides suggestions.
 - Look for unrelated code reversions in merge requests. That is, if you see code changes that aren't related to what the developer is trying to do, there's something wrong. In most cases, this means the developer's branch is out-of-date with the main development branch. He or she should fetch and merge that branch from the origin repository, fix any conflicts, and then add it to the merge request.
 - Look for debugging code that wasn't removed such as dd(), drupal_debug(), dsm(), kpr(), and other output functions.

@@ -24,3 +24,10 @@ hugo server -D
 ```
 
 The above command, if it works correctly, will give you a link to view the generated site (typically [http://localhost:1313/](http://localhost:1313/)). You can now edit your files and see the changes immediately reflected in the browser. Once you're done, commit and push. Once it is merged into the main branch, your changes will be live.
+
+### Linting docs
+
+We use MarkdownLint to lint the markdown files. This runs as a test on GitHub actions everytime you raise a pull request. You can also run this on your local environment either by using the [VSCode extension](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) or installing the [Node package](https://github.com/DavidAnson/markdownlint) globally.
+
+- `npm install -g markdownlint-cli`
+- `markdownlint content/**/*.md --fix --ignore node_modules`
