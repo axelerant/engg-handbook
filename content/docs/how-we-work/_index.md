@@ -8,7 +8,9 @@ bookCollapseSection: true
 
 While many development principles are universal, each individual develops their own style of programming and that might be somewhat different from another persons. We work in a team and sometimes these styles conflict with one another. To avoid losing precious energy and time in discussing this for each team we build, we are documenting some of the ways of working here.
 
-There's another perspective. Everyone has a different experience and they may not be aware of all the pitfalls of a specific practice; things that might be obvious to more seasoned developers. Since we forget to talk about things that are obvious to us, this guide is meant to document out method so that it is clear to all.
+Similarly, everyone has a different experience and they may not be aware of all the pitfalls of a specific practice; things that might be obvious to more seasoned developers. Since we forget to talk about things that are obvious to us, this guide is meant to document out method so that it is clear to all.
+
+This guide aims to illustrate how to engineer the Axelerant Way: to provide strong guidance, not an authoritative direction.
 
 ## Are these perfect?
 
