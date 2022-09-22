@@ -14,4 +14,4 @@ For example, your peer has accidentally deleted the content on production. Inste
 
 ## Kindness, not niceness
 
-If you're not speaking up because you don't want to _look_ like a bad person, you're probably being nice, not kind. You're witholding something that affects everyone else and that is not kindness. At Axelerant, kindness is required. It needs to be delivered in the most appropriate language and the most appropriate environment, but chosing not to say anything is not acceptable.
+If you're not speaking up because you don't want to _look_ like a bad person, you're probably being nice, not kind. You're withholding something that affects everyone else and that is not kindness. At Axelerant, kindness is required. It needs to be delivered in the most appropriate language and the most appropriate environment, but choosing not to say anything is not acceptable.
