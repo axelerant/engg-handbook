@@ -1,5 +1,5 @@
 ---
-title: We don't wait to be told
+title: Don't wait to be told
 weight: 3
 description: As an engineer, we take pride in the maturity and quality of our work. After all, our work is our expression of our creativity. It is not _just_ a product of someone else's direction. We are intelligent, decisive, and mature human beings, and we understand the business and the technology. We don't wait to be told how to do our work. We jump in enthusiastically and take it to completion.
 ---

@@ -1,5 +1,5 @@
 ---
-title: We demonstrate kindness
+title: Demonstrate kindness
 weight: 4
 description: We write code and set up systems to solve people problems. To do that, we work with people and our work affects many more. Unlike machines, people don't use protocols to talk to each other and rely on each other. That happens with trust and kindness is the primary means to build that trust.
 ---

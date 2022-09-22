@@ -1,5 +1,5 @@
 ---
-title: We own everything in our world
+title: Own everything in our world
 weight: 1
 description: As an engineer, our work doesn't end once we have written the code. We are responsible for the working of our code and everything that it touches.
 ---

@@ -1,5 +1,5 @@
 ---
-title: We step up and speak up
+title: Step up and speak up
 weight: 2
 description: When we take ownership of a system, we choose to do our best with it. Remaining quiet when we see a problem is not something we do. We actively seek the hardest problems that are worth solving and we speak up when we see something that affects our system.
 ---
