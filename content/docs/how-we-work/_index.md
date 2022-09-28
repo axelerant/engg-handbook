@@ -1,6 +1,6 @@
 ---
-title: The Axelerant Way
-weight: 3
+title: How We Work
+weight: 4
 bookCollapseSection: true
 ---
 
