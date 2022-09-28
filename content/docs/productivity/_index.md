@@ -2,6 +2,7 @@
 title: Being Productive
 weight: 3
 description: In a world filled with distractions, importance of productivity cannot be overstated. It is even more important for us, as a 100% distributed company, to worry about our daily productivity.
+bookCollapseSection: true
 ---
 
 # Being Productive at Axelerant
