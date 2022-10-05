@@ -2,6 +2,7 @@ baseURL = 'https://engineering.axelerant.com/'
 languageCode = 'en-us'
 title = 'Axelerant Engineering Handbook'
 theme = 'hugo-book'
+enableGitInfo = true
 
 [params]
     BookRepo = 'https://github.com/axelerant/engg-handbook'
