@@ -3,6 +3,8 @@ title: Coding
 weight: 5
 ---
 
+# Coding
+
 At Axelerant, we prefer using community modules. But sadly, that doesn't always meet the requirements.
 
 ## Double check

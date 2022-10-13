@@ -2,6 +2,7 @@
 title: Frontend
 weight: 9
 bookCollapseSection: true
+description: When building Frontend interfaces for Drupal or JavaScript applications, we like to use the right tools and practices. These help reduce cycles in development and assist us in delivering the consistent solutions.
 ---
 
 # Frontend development at Axelerant
