@@ -1,0 +1,255 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./fonts/Gilroy-Bold.woff2') format('woff2'),
+        url('Gilroy-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./fonts/Gilroy-Light.woff2') format('woff2'),
+        url('Gilroy-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Gilroy';
+}
+
+
+
+
+.footer {
+    position: relative;
+    z-index: 10;
+    background-color: $black;
+    color: $white;
+
+    a {
+        color: white;
+
+        &:hover {
+            color: $orange;
+        }
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .footer-wrapper {
+        max-width: 80rem;
+        margin: 0 auto;
+    }
+
+    .footer-navigation {
+        padding-top: 75px;
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width:$mobile-breakpoint) {
+            flex-direction: column;
+            padding: 50px 30px 0px 17px;
+
+        }
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 37px;
+        margin: 0;
+        margin-bottom: 40px;
+        display: block;
+
+        @media screen and (max-width:$mobile-breakpoint) {
+            margin-bottom: 30px;
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: 900;
+        }
+    }
+
+    .footer-secondary {
+        padding-top: 51px;
+        padding-bottom: 45px;
+        border-top: solid 1px $gray;
+        font-weight: 500;
+        line-height: 19px;
+
+        @media screen and (max-width:$mobile-breakpoint) {
+            padding-top: 19px;
+            padding-bottom: 3px;
+            flex-direction: column;
+            align-items: center;
+
+            p,
+            ul {
+                font-size: 10px;
+                line-height: 12px;
+                margin-bottom: 10px !important;
+                padding: 0;
+            }
+        }
+
+        p,
+        ul {
+            margin: 0;
+        }
+    }
+
+    .menu-items {
+        padding-left: 0;
+
+        @media screen and (max-width:$mobile-breakpoint) {
+            display: none;
+        }
+
+        &:nth-child(2) {
+            max-width: 224px;
+        }
+
+        .menu-item {
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 0;
+
+                @media screen and (max-width:$mobile-breakpoint) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    .menu-item,
+    .contact-block {
+        a {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+
+            @media screen and (max-width:$mobile-breakpoint) {
+                font-size: 16px;
+                line-height: 19px;
+                font-weight: 400;
+            }
+
+        }
+    }
+
+    .footer-menu {
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .menu-wrapper {
+        flex: 1;
+
+        .menu-icons-wrapper {
+            @media screen and (max-width:$mobile-breakpoint) {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            svg {
+                display: none;
+
+                @media screen and (max-width:$mobile-breakpoint) {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .plus {
+        display: block;
+    }
+
+    .minus {
+        display: none;
+    }
+
+    .active-menu {
+        @media screen and (max-width:$mobile-breakpoint) {
+            h2 {
+                margin-bottom: 9px;
+            }
+    
+            .menu-items {
+                display: block;
+            }
+    
+            .menu-item {
+                margin-bottom: 20px;
+            }
+    
+            .plus {
+                display: none;
+            }
+    
+            .minus {
+                display: block;
+            }
+        }
+    }
+
+    .social-block {
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 49px;
+            margin-bottom: 51px;
+
+            @media screen and (max-width:$mobile-breakpoint) {
+                justify-content: center;
+                margin-bottom: 10px;
+                margin-top: 0;
+                padding: 0;
+            }
+
+            li:first-child {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .join-us {
+        h2 {
+            margin-top: 85px;
+
+            @media screen and (max-width:$mobile-breakpoint) {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .contact-mail,
+    .jobs-mail {        
+        @media screen and (max-width:$mobile-breakpoint) {
+            display: none;
+        }
+    }
+
+    .active {
+        @media screen and (max-width:$mobile-breakpoint) {
+            .plus {
+                display: none;
+            }
+    
+            .minus {
+                display: block;
+            }
+    
+            .contact-mail,
+            .jobs-mail {   
+                display: block;
+                margin-bottom: 30px;
+            } 
+        }
+    }
+}
