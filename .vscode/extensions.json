@@ -2,6 +2,8 @@
   "recommendations": [
       "tombonnike.vscode-status-bar-format-toggle",
       "esbenp.prettier-vscode",
-      "davidanson.vscode-markdownlint"
+      "davidanson.vscode-markdownlint",
+      "streetsidesoftware.code-spell-checker",
+      "znck.grammarly"
   ]
 }
