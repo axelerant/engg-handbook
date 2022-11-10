@@ -29,8 +29,7 @@ jobs:
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          submodules: recursive
       - name: Build with Hugo
         run: |
+          hugo mod get -u
           hugo --debug
