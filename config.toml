@@ -1,4 +1,3 @@
-baseURL = 'https://axelerant.github.io/engg-handbook/'
 languageCode = 'en-us'
 title = 'Axelerant Engineering Handbook'
 theme = 'github.com/alex-shpak/hugo-book'
