@@ -27,6 +27,8 @@
 
 body {
   font-family: 'Gilroy';
+  text-rendering: unset;
+  -webkit-font-smoothing: unset;
 }
 
 // Footer theming
