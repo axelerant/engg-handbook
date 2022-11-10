@@ -1,0 +1,17 @@
+{
+  "name": "engg-handbook",
+  "version": "1.0.0",
+  "repository": "https://github.com/axelerant/engg-handbook.git",
+  "scripts": {
+    "format": "prettier --write {layouts,content,archetypes}/**/*",
+    "lint:md": "markdownlint {content,archetypes}/**/*.md --fix --ignore node_modules",
+    "lint:prettier": "yarn format --check",
+    "lint": "concurrently npm:lint:*"
+  },
+  "devDependencies": {
+    "concurrently": "^7.5.0",
+    "markdownlint-cli": "^0.32.2",
+    "prettier": "^2.7.1",
+    "prettier-plugin-go-template": "^0.0.13"
+  }
+}
