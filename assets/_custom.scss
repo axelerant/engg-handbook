@@ -9,9 +9,18 @@
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('./fonts/Gilroy-Light.woff2') format('woff2'),
-        url('Gilroy-Light.woff') format('woff');
-    font-weight: 300;
+    src: url('./fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('Gilroy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./fonts/Gilroy-Medium.woff2') format('woff2'),
+        url('Gilroy-Medium.woff') format('woff');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
@@ -57,7 +66,7 @@ body {
         padding-left: 15px;
 
         @media (max-width:$mobile-breakpoint) {
-           padding: 0;
+            padding: 0;
         }
     }
 
@@ -73,7 +82,6 @@ body {
             margin-bottom: 30px;
             font-size: 24px;
             line-height: 30px;
-            font-weight: 900;
         }
     }
 
@@ -81,7 +89,6 @@ body {
         padding-top: 51px;
         padding-bottom: 45px;
         border-top: solid 1px $gray;
-        font-weight: 500;
         line-height: 19px;
 
         @media (max-width:$mobile-breakpoint) {
@@ -142,13 +149,11 @@ body {
     .contact-block {
         a {
             font-size: 20px;
-            font-weight: 500;
             line-height: 24px;
 
             @media (max-width:$mobile-breakpoint) {
                 font-size: 16px;
                 line-height: 19px;
-                font-weight: 400;
             }
 
         }
@@ -259,6 +264,93 @@ body {
             .menu-item {
                 margin-bottom: 20px;
             }
+        }
+    }
+}
+
+// Main body theming
+.book-page {
+    a {
+        color: $orange;
+
+        &:visited {
+            color: $orange;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    li {
+        a {
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 500;
+        }
+
+        &::marker {
+            color: $orange;
+        }
+    }
+
+    .markdown {
+        h1 {
+            font-size: 50px;
+            font-weight: bold;
+            line-height: 62px;
+            margin-bottom: 10px;
+
+            @media (max-width:$mobile-breakpoint) {
+                font-size: 32px;
+                line-height: 40px;
+            }
+        }
+
+        p,
+        dl {
+            font-size: 18px;
+            line-height: 28px;
+
+            @media (max-width:$mobile-breakpoint) {
+                line-height: 26px;
+            }
+        }
+    }
+
+    h2,
+    h3 {
+        font-size: 24px;
+        line-height: 28px;
+        margin-top: 0;
+        font-weight: bold;
+        padding-top: 30px;
+        margin-bottom: 0;
+
+        @media (max-width:$mobile-breakpoint) {
+            padding-top: 0;
+        }
+    }
+
+    h3 {
+        margin-bottom: 20px;
+
+        @media (max-width:$mobile-breakpoint) {
+            margin-top: 20px;
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    blockquote {
+        border-left: 5px solid $orange;
+        border-radius: 0;
+        padding-left: 30px;
+
+        p {
+            font-size: 20px !important;
         }
     }
 }
