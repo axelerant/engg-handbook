@@ -14,3 +14,5 @@ vscode:
     - DavidAnson.vscode-markdownlint
     - streetsidesoftware.code-spell-checker
     - znck.grammarly
+    - esbenp.prettier-vscode
+    - tombonnike.vscode-status-bar-format-toggle
