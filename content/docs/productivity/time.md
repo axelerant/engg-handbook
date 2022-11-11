@@ -1,5 +1,5 @@
 ---
-title: "Managing Time"
+title: Managing Time
 weight: 1
 description: Your time is your greatest resource and needs to be managed well. We want you to have harmony between your personal and work life and one of the foundational requirements for this is to manage your time well.
 ---
@@ -14,7 +14,7 @@ This will help you plan meetings with the team. We [work with people]({{< relref
 
 ## Understanding flow
 
-In positive psychology, a [flow state](https://en.wikipedia.org/wiki/Flow_(psychology)), also known colloquially as being in the zone, is the mental state in which a person performing some activity is fully immersed in a feeling of energized focus, full involvement, and enjoyment in the process of the activity. In essence, flow is characterized by the complete absorption in what one does, and a resulting transformation in one's sense of time.
+In positive psychology, a [flow state](<https://en.wikipedia.org/wiki/Flow_(psychology)>), also known colloquially as being in the zone, is the mental state in which a person performing some activity is fully immersed in a feeling of energized focus, full involvement, and enjoyment in the process of the activity. In essence, flow is characterized by the complete absorption in what one does, and a resulting transformation in one's sense of time.
 
 ## Guard your flow state
 

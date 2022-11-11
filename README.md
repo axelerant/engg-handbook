@@ -28,7 +28,9 @@ The above command, if it works correctly, will give you a link to view the gener
 
 ### Linting docs
 
-We use MarkdownLint to lint the markdown files. This runs as a test on GitHub actions everytime you raise a pull request. You can also run this on your local environment either by using the [VSCode extension](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) or installing the [Node package](https://github.com/DavidAnson/markdownlint) globally.
+We use MarkdownLint to lint the markdown files. This runs as a test on GitHub actions every time you raise a pull request. You can also run this on your local environment either by using the [VSCode extension](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) or using the [Node package](https://github.com/DavidAnson/markdownlint) included. In the case of the latter, you can use `yarn` commands to run the linters.
 
-- `npm install -g markdownlint-cli`
-- `markdownlint content/**/*.md --fix --ignore node_modules`
+```bash
+yarn
+yarn lint:md
+```
