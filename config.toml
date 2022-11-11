@@ -1,9 +1,13 @@
 baseURL = 'https://axelerant.github.io/engg-handbook/'
 languageCode = 'en-us'
 title = 'Axelerant Engineering Handbook'
-theme = 'hugo-book'
+theme = 'github.com/alex-shpak/hugo-book'
 enableGitInfo = true
 
 [params]
     BookRepo = 'https://github.com/axelerant/engg-handbook'
     BookEditPath = 'edit/main'
+
+[module]
+[[module.imports]]
+    path = 'github.com/alex-shpak/hugo-book'
