@@ -2,6 +2,7 @@
   "name": "engg-handbook",
   "version": "1.0.0",
   "repository": "https://github.com/axelerant/engg-handbook.git",
+  "license": "CC-BY-NC-SA-4.0",
   "scripts": {
     "format": "prettier --write {layouts,content,archetypes}/**/*",
     "lint:md": "markdownlint {content,archetypes}/**/*.md --fix --ignore node_modules",
