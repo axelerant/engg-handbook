@@ -229,11 +229,11 @@ body {
         .menu-item {
             @media (max-width: $mobile-breakpoint) {
                 display: none;
-            } 
+            }
         }
 
         &.active {
-            .menu-item{
+            .menu-item {
                 display: block;
             }
         }
@@ -355,4 +355,56 @@ body {
             font-size: 20px !important;
         }
     }
+}
+
+
+// Aside theming
+.book-menu {
+    .book-menu-content {
+        position: static;
+        border-left: 1px solid rgba(66, 66, 66, 0.3);
+        padding: 55px 31px 29px 29px;
+        min-width: 360px;
+        overflow-y: scroll;
+        height: 792px;
+
+        &::-webkit-scrollbar {
+            width: 20px;
+            background-color: $white-smoke;
+            height: 100px;
+        }
+       
+        &::-webkit-scrollbar-thumb {
+            background: $silver; 
+        }
+    }
+
+    .book-brand {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 27px;
+        // padding-left: 29px;
+    }
+
+    a {
+        font-size: 20px;
+        line-height: 30px;
+        color: $dark-gray;
+        margin-bottom: 32px;
+
+        &.active {
+            color: $orange;
+            font-size: 22px;
+            line-height: 27px;
+            font-weight: 700;
+            border-left: 5px solid $orange;
+            margin-left: -30px;
+            padding-left: 29px;
+        }
+    }
+
+    li {
+        margin: 0;
+    }
+
 }
