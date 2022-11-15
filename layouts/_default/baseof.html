@@ -11,6 +11,9 @@
   <body dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
     <input type="checkbox" class="hidden toggle" id="menu-control" />
     <input type="checkbox" class="hidden toggle" id="toc-control" />
+    {{ if .IsHome }}
+      {{ partial "docs/banner" . }}
+    {{ end }}
     <main class="container flex">
       <aside class="book-menu">
         <div class="book-menu-content">

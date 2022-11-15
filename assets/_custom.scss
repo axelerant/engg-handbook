@@ -286,8 +286,8 @@ body {
 
   li {
     a {
-      font-size: 20px;
-      line-height: 30px;
+      font-size: 18px;
+      line-height: 1.5;
       font-weight: 500;
     }
 
@@ -378,7 +378,7 @@ body {
 .book-menu {
   margin-right: 0;
 
-  @media (min-width: $tablet-breakpoint) {
+  @media (min-width: $desktop-breakpoint) {
     margin-right: 120px;
   }
 
@@ -488,4 +488,52 @@ body:has(#menu-control:checked) {
   position: absolute;
   right: 30px;
   top: 30px;
+}
+
+.book-footer {
+  margin-top: 5rem;
+}
+
+// Banner
+.banner {
+  display: none;
+  background-image: url('./banner.jpg');
+  width: 100%;
+  height: 400px;
+
+  @media (min-width: $tablet-breakpoint) {
+    display: block;
+  }
+}
+
+.banner__container {
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner__text h1 {
+  background-color: white;
+  font-size: 64px;
+  display: inline;
+  font-weight: bold;
+}
+
+.banner__text span {
+  color: #fc4c02;
+}
+
+.banner__text {
+  position: relative;
+  width: 50%;
+  padding-left: 82px;
+  height: 400px;
+  top: 80px;
+  line-height: 1;
+}
+
+.banner img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
