@@ -272,6 +272,10 @@ body {
 
 // Main body theming
 .book-page {
+  @media (max-width: $mobile-breakpoint) {
+    min-width: unset;
+  }
+
   a {
     color: $orange;
 
@@ -384,8 +388,9 @@ body {
 
   .book-menu-content {
     position: static;
-    padding: 55px 31px 29px 29px;
+    padding: 55px 31px 29px 16px;
     min-width: 360px;
+    overflow: unset;
 
     @media (max-width: $mobile-breakpoint) {
       min-width: auto;
@@ -413,7 +418,6 @@ body {
       position: relative;
 
       &:before {
-        content: '';
         position: absolute;
         left: -15px;
         top: 0;
@@ -506,8 +510,33 @@ body:has(#menu-control:checked) {
   }
 }
 
+.desktop-banner .banner {
+  @media (min-width: $tablet-breakpoint) {
+    display: none;
+  }
+  @media (max-width: $mobile-breakpoint) {
+    display: block;
+    margin-left: -16px;
+    width: calc(100% + 32px);
+    margin-bottom: 3rem;
+    height: 200px;
+    background-size: contain;
+
+    .banner__text {
+      padding-left: 0;
+      text-align: center;
+      width: auto;
+      top: 40px;
+    }
+
+    h1 {
+      font-size: 54px;
+    }
+  }
+}
+
 .banner__container {
-  width: 1280px;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -536,4 +565,146 @@ body:has(#menu-control:checked) {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.book-header {
+  margin-bottom: 20px;
+
+  img.book-icon {
+    all: unset;
+  }
+}
+// Desktop Header
+.header {
+  @media (max-width: $mobile-breakpoint) {
+    display: none;
+  }
+}
+.header__container {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__logo span {
+  font-size: 24px;
+}
+.header__logo-text {
+  padding-top: 20px;
+}
+.header__seperator {
+  height: 40px;
+  width: 1px;
+  margin-top: 10px;
+  background-color: black;
+  display: inline-block;
+  margin: 18px 20px 0;
+}
+
+/*--------- Search Boxcontent------ */
+.content {
+  width: 277px;
+  margin-left: auto;
+  position: relative;
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+}
+
+// Hire Us Button
+
+.header__hire-btn {
+  border-radius: 2px;
+  cursor: pointer;
+  width: 100% !important;
+  max-width: 150px;
+  display: block;
+  text-decoration: none;
+  transition: background 0.5s;
+  background: #fc4c02;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 19px 18px 15px;
+  position: relative;
+  border: 1px solid #fc4c02;
+  background-color: #fc4c02;
+  border-color: #c93100;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+}
+
+.header__hire-btn:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 1px solid #000;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  z-index: -1;
+  transition: 0.5s ease all;
+}
+
+.header__hire-btn:hover {
+  background: #fff;
+  color: #fc4c02;
+  border-color: rgba(201, 49, 0, 1);
+}
+
+.header__hire-btn:hover:after {
+  left: -1px;
+  top: -1px;
+}
+#book-search-input {
+  height: 47px;
+  line-height: 47px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 10px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// Search Results
+#book-search-results {
+  position: absolute;
+  background: $black;
+  z-index: 1;
+  padding-left: 0;
+  list-style: none;
+  padding: 0.5rem;
+  top: 100%;
+  border: 1px solid;
+  border-top: 0;
+  top: calc(100% - 8px);
+  left: 0;
+  right: 0;
+  border-radius: 0 0 10px 10px;
+
+  @media (min-width: $tablet-breakpoint) {
+    background: white;
+  }
+
+  &:empty {
+    display: none;
+  }
 }

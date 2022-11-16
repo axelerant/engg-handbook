@@ -11,6 +11,7 @@
   <body dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
     <input type="checkbox" class="hidden toggle" id="menu-control" />
     <input type="checkbox" class="hidden toggle" id="toc-control" />
+    {{ partial "docs/desktop-header" . }}
     {{ if .IsHome }}
       {{ partial "docs/banner" . }}
     {{ end }}
@@ -100,6 +101,9 @@
 {{ end }}
 
 {{ define "main" }}
+  {{ if .IsHome }}
+    <div class="desktop-banner">{{ partial "docs/banner" . }}</div>
+  {{ end }}
   <article class="markdown">
     {{- .Content -}}
   </article>
