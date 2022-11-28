@@ -301,6 +301,7 @@ body {
   }
 
   .markdown {
+
     h1,
     h2,
     h3,
@@ -436,8 +437,9 @@ body {
 
 .book-toc {
   display: none;
+
   @media (min-width: $desktop-breakpoint) {
-    // display: block;
+    display: block;
   }
 }
 
@@ -445,7 +447,7 @@ body:has(#menu-control:checked) {
   overflow: hidden;
 }
 
-#menu-control ~ main .book-menu .book-menu-content {
+#menu-control~main .book-menu .book-menu-content {
   @media (max-width: $mobile-breakpoint) {
     height: 100%;
     background-color: $black;
@@ -476,7 +478,7 @@ body:has(#menu-control:checked) {
   }
 }
 
-#menu-control:checked ~ main .book-menu .book-menu-content {
+#menu-control:checked~main .book-menu .book-menu-content {
   @media (max-width: $mobile-breakpoint) {
     width: 100vw;
     height: 100vh;
@@ -514,6 +516,7 @@ body:has(#menu-control:checked) {
   @media (min-width: $tablet-breakpoint) {
     display: none;
   }
+
   @media (max-width: $mobile-breakpoint) {
     display: block;
     margin-left: -16px;
@@ -574,12 +577,14 @@ body:has(#menu-control:checked) {
     all: unset;
   }
 }
+
 // Desktop Header
 .header {
   @media (max-width: $mobile-breakpoint) {
     display: none;
   }
 }
+
 .header__container {
   max-width: 80rem;
   margin-left: auto;
@@ -601,9 +606,11 @@ body:has(#menu-control:checked) {
 .header__logo span {
   font-size: 24px;
 }
+
 .header__logo-text {
   padding-top: 20px;
 }
+
 .header__seperator {
   height: 40px;
   width: 1px;
@@ -672,6 +679,7 @@ body:has(#menu-control:checked) {
   left: -1px;
   top: -1px;
 }
+
 #book-search-input {
   height: 47px;
   line-height: 47px;
@@ -708,3 +716,34 @@ body:has(#menu-control:checked) {
     display: none;
   }
 }
+
+
+// blockquote theming
+span.bq__author:before {
+  content: '\2014';
+  margin-right: 5px;
+}
+
+cite.bq__cite {
+  position: relative;
+  padding-left: 5px;
+
+  &:before {
+    content: ',';
+    position: absolute;
+    left: -3px;
+  }
+}
+
+
+// Table of content theming
+.book-toc {
+  .book-toc-content {
+    position: relative;
+  }
+
+  a {
+    color: $orange;
+  }
+}
+
