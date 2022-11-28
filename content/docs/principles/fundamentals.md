@@ -8,17 +8,17 @@ description: We balance the value of getting started quickly with a robust under
 
 There's a saying that goes you can't build your home on an uneven foundation. This is strongly mirrored in many scientific disciplines and while software engineering is a lot more forgiving than those disciplines, it doesn't make it unimportant. It makes it even more important to stress on those fundamentals because one can survive in this industry for a long time without worrying about them. That's not who we are at Axelerant.
 
-> We balance the value of getting started quickly with a robust understanding of the fundamentals.
+{{< blockquote quote="We balance the value of getting started quickly with a robust understanding of the fundamentals" >}}
 
 ## Understand the technology deeply {#technology}
+{{< blockquote author="Arthur C. Clarke" quote="Any sufficiently advanced technology is indistinguishable from magic." >}}
 
-> "Any sufficiently advanced technology is indistinguishable from magic." - Arthur C. Clarke
 
 We are engineers and we dig below the magic to see what makes the technology work. "It just works that way" is not far from "It _always_ works that way," and that is not something we take for granted at Axelerant. We understand why things work the way they do. We learn and build our knowledge every day. Our customers rely on us to solve their technological problems and we can't do that without understanding the technology.
 
 The above should not be read to mean that we obsess over technology. We use suitable abstractions to help us think about technology more effectively. But we are aware that there are abstractions and what they look like. We are aware of what they might mean for our choices of technology and how, ultimately, they affect the customer.
 
-> Ours is a learning journey.
+{{< blockquote quote="Ours is a learning journey" >}}
 
 ### Understand how computers work {#computers}
 
@@ -53,8 +53,7 @@ Classifying programming languages according to their traits is a good way to und
 - General or specialized
 
 ### Understand design patterns and SOLID principles {#design-principle}
-
-> Change is the only constant.
+{{< blockquote  quote="Change is the only constant" >}}
 
 Making changes in software will become havoc if it is not well-designed. Some of the best software engineers came up with design patterns and SOLID principles after they kept repeating the same mistake. Understanding them will help you to write software that is more adaptable to change.
 
@@ -62,7 +61,8 @@ Making changes in software will become havoc if it is not well-designed. Some of
 
 It is easy to get lost in the world of technology and solve problems that don't exist. It is important to be reminded that all we do is to help our customers, either directly or indirectly.
 
-> Understand the fundamentals and make a sound decision on what to use and how.
+{{< blockquote  quote="Understand the fundamentals and make a sound decision on what to use and how." >}}
+
 
 ## Working with source code {#source-code}
 

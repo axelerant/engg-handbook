@@ -6,7 +6,7 @@ description: When we take ownership of a system, we choose to do our best with i
 
 # We step up and speak up
 
-> "They don't understand that Excellence isn't about working extra hard to do what you're told. It's about taking the initiative to do work you decide is worth doing." - _Poke the Box_, Seth Godin
+{{< blockquote author="Seth Godin" cite="Poke the Box" quote="They don't understand that Excellence isn't about working extra hard to do what you're told. It's about taking the initiative to do work you decide is worth doing." >}}
 
 When we take ownership of a system, we choose to do our best with it. Remaining quiet when we see a problem is not something we do. We actively seek the hardest problems that are worth solving and we speak up when we see something that affects our system.
 

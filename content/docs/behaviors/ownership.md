@@ -6,7 +6,7 @@ description: As an engineer, our work doesn't end once we have written the code.
 
 # We own everything in our world
 
-> "Once people stop making excuses, stop blaming others, and take ownership of everything in their lives, they are compelled to take action to solve their problems." - _Extreme Ownership_, Jocko Willink, Leif Babin
+{{< blockquote author="Jocko Willink, Leif Babin" cite="Extreme Ownership" quote="Once people stop making excuses, stop blaming others, and take ownership of everything in their lives, they are compelled to take action to solve their problems." >}}
 
 As an engineer, we pick up a task and see it to completion. Completion doesn't mean that you implement what you were asked to do and call it a day. It means things like the following and a lot more.
 
