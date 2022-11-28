@@ -383,10 +383,6 @@ body {
 .book-menu {
   margin-right: 0;
 
-  @media (min-width: $desktop-breakpoint) {
-    margin-right: 120px;
-  }
-
   .book-menu-content {
     position: static;
     padding: 55px 31px 29px 16px;
