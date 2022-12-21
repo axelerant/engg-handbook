@@ -49,8 +49,15 @@ APM or Application Performance Monitoring can be defined as a process or a pract
 
 ### Replicating the database
 
-## Dealing with performance
+## [Dealing with performance of a web application](/docs/common-areas/performance-improvement)
 
-### Frontend vs Backend performance
+This section talks about the ways to deal with the performance of a web application. It is important to understand that 'dealing with performance' shouldn't be the last step of building a website, instead its an ongoing process. The performance of the website should be measured & improved at almost every step of development. The user visiting the website will come back to the website or not, depends upon the following factors -
 
+- Appearance of the website. (the look & feel)
+- The user experience. (user interaction with the website, it could be using a registration form or any other form that involves some user interation)
+- Performance of the website. (ex. page load speed, time taken by the website to fetch & display the content, generate the page with the listing of the content based upon certain filters, etc..)
+
+The factors are not limited to the ones mentioned above but these are some of the major concern areas when it comes to dealing with the performance of a website. Let's first understand the ways that could be used to measure the performance of the application and then we will focus on the ways to improve it.
+
+### Ways to measure the performance of the application
 ### Debug performance issues
