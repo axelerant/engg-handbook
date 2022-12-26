@@ -25,7 +25,11 @@ Most systems have multiple layers of caching, each of which would be suitable to
 
 ## [APM](/docs/common-areas/apm)
 
+<<<<<<< HEAD
 APM or Application Performance Monitoring can be defined as a process or a practice of monitoring and tracking the performance of a software application using specific tools. The performance of a Drupal application can be monitored using various tools such as NewRelic, Elastic APM, Sentry etc..
+=======
+APM or Application Performance Monitoring can be defined as a process or a practice of monitoring & tracking the performance of a software application using tools that capture data about application performance. The performance of a Drupal application can be monitored using various tools such as NewRelic, Elastic APM, Sentry etc..
+>>>>>>> e54e656 (common-areas-3: Added APM related information.)
 
 ## Backups
 
