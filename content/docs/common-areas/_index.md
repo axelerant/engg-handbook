@@ -24,11 +24,9 @@ Cache is a data storage layer that stores subset of data which helps in making f
 Most systems have multiple layers of caching, each of which would be suitable to specific scenarios. For example, Drupal websites typically read a lot of data from databases and API's, both of which can be cached independently.
 Moreover, Drupal itself is written using PHP which is an interpreted language and there is a cache for the code itself. Even CPU's employ a layer of caching which is not in scope of this handbook.
 
-## APM
+## [APM](/docs/common-areas/apm)
 
-### NewRelic
-
-### Sentry
+APM or Application Performance Monitoring can be defined as a process or a practice of monitoring & tracking the performance of a software application using tools that capture data about application performance. The performance of a Drupal application can be monitored using various tools such as NewRelic, Elastic APM, Sentry etc..
 
 ## Backups
 
