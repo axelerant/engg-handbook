@@ -7,7 +7,7 @@ weight: 1
 
 ## Setting up a new site
 
-We prefer [`ddev`](https://ddev.com/) for the local setup due to its compatibility with Apple chips.
+We prefer [`ddev`](https://ddev.com/) for the local setup due to its compatibility with [`Apple chips`](https://ddev.com/ddev-local/arm64-apple-silicon-m1-ddev-local-what-does-it-all-mean/).
 
 ## Setting up an existing site
 
