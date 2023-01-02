@@ -9,7 +9,7 @@ Configuration as Code is one the basic requirement in Drupal. We must be aware o
 
 ## Configuration per instance
 
-The `production` should not have `views_ui` module installed. The `development` instance should have that installed. Consider using [`config_split`](https://www.drupal.org/project/config_split) in this situation.
+The `production` should not have `views_ui` and `field_ui` module installed. The `development` instance should have that installed. Consider using [`config_split`](https://www.drupal.org/project/config_split) in this situation.
 
 ## Ignoring configurations
 
