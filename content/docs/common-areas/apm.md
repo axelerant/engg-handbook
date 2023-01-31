@@ -10,13 +10,13 @@ APM or Application Performance Monitoring can be defined as a process or a pract
 
 ## Performance monitoring tools
 
-For a web application, the APM tools can be used to monitor the following -
+For a web application, the APM tools can be used to monitor the following:
 
-- Uptime - Tracking and monitoring the web application's uptime and sending and alert if the application is down.
-- CPU usage - Keeps a check on the CPU usage of a web application that can be affected by the query processing & other operations of the application.
-- Transaction Monitoring - Keeping a check on the processes like - search functionality, user registration, content editing etc..
-- Page load speed - Simply recording and keeping a track of the page load speed.
-- Real time user monitoring - Keeping a track of the active user on the site and the operations being performed on the website.
+- Uptime: Tracking and monitoring the web application's uptime and sending and alert if the application is down.
+- CPU usage: Keeps a check on the CPU usage of a web application that can be affected by the query processing & other operations of the application.
+- Transaction Monitoring: Keeping a check on the processes like - search functionality, user registration, content editing etc..
+- Page load speed: Simply recording and keeping a track of the page load speed.
+- Real time user monitoring: Keeping a track of the active user on the site and the operations being performed on the website.
 
 There are a good number of tools available for integration for measuring the application performance. Some of them (that are widely used) are discussed below -
 
