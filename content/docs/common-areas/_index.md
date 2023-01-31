@@ -10,9 +10,7 @@ This guide covers common areas of concern with web projects and our approach to 
 
 ## [Logging](/docs/common-areas/logging)
 
-Logging in the web projects is a mechanism of keeping a log of all the site related operational events such as content creation, deletion, cron run, error reporting etc. The log messages are recorded and kept in either a log file (in simply a text format) or stored directly into a dedeicated table in the database.
-
-Drupal core ships with the [Database logging module](https://www.drupal.org/docs/8/core/modules/dblog/overview) that maintains the log & provides an effective interface to browse through the logged messages. In addition to that, it also provides an API called [Logging API](https://www.drupal.org/docs/8/api/logging-api/overview) that can be used to log custom messages of different types.
+Logging in web applications refers to keeping a log of all the operational events such as content creation, deletion, cron run, error reporting, etc. In the case of Drupal, the log messages are recorded and kept in either a log file (text format), in the database, or sent to an external service. Different applications have their own conventions about logging but general principles remain the same. Also, in most applications, there is always some support for logging in the [syslog](https://en.wikipedia.org/wiki/Syslog) format (text files).
 
 ## [Caching](/docs/common-areas/caching)
 
