@@ -49,15 +49,8 @@ APM or Application Performance Monitoring can be defined as a process or a pract
 
 ### Replicating the database
 
-## [Dealing with performance of a web application](/docs/common-areas/performance-improvement)
+## [Web Application Performance](/docs/common-areas/performance-improvement)
 
-This section talks about the ways to deal with the performance of a web application. It is important to understand that 'dealing with performance' shouldn't be the last step of building a website, instead its an ongoing process. The performance of the website should be measured & improved at almost every step of development. The user visiting the website will come back to the website or not, depends upon the following factors -
+Performance and its improvement is a complicated and nuanced topic. For a web application, there are many aspects of performance because web is a complex system. The performance of a web application involves issues concerning physical proximity, network, application delivery, runtime on the server and the client, and varying design styles of the application itself.
 
-- Appearance of the website. (the look & feel)
-- The user experience. (user interaction with the website, it could be using a registration form or any other form that involves some user interation)
-- Performance of the website. (ex. page load speed, time taken by the website to fetch & display the content, generate the page with the listing of the content based upon certain filters, etc..)
-
-The factors are not limited to the ones mentioned above but these are some of the major concern areas when it comes to dealing with the performance of a website. Let's first understand the ways that could be used to measure the performance of the application and then we will focus on the ways to improve it.
-
-### Ways to measure the performance of the application
-### Debug performance issues
+Performance improvement shouldn't be the last step of building a website. It is an ongoing process and it should be measured and improved at almost every milestone of development.

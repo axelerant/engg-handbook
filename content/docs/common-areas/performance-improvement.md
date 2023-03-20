@@ -1,22 +1,24 @@
 ---
-title: Dealing with Performance of a web application
+title: Performance of a Web Application
 weight: 8
-description: This section talks about the ways to deal with the performance of a web application. It is important to understand that 'dealing with performance' shouldn't be the last step of building a website, instead its an ongoing process. The performance of the website should be measured & improved at almost every step of development & deployment.
+description: Performance improvement shouldn't be the last step of building a website, instead it is an ongoing process. The performance of the website should be measured and improved at almost every milestone of development.
 ---
 
-# Dealing with Performance of a web application
+# Performance of a Web Application
 
-This section talks about the ways to deal with the performance of a web application. It is important to understand that 'dealing with performance' is not the last step of building a website, instead it is an on-going process. The performance of the website should be measured & improved at almost every step of development & deployment. Whether the user who has visited the website will come back to the website or not, depends upon the following factors -
+Performance and its improvement is a complicated and nuanced topic. For a web application, there are many aspects of performance because web is a complex system. The performance of a web application involves issues concerning physical proximity, network, application delivery, runtime on the server and the client, and varying design styles of the application itself.
 
-- Appearance of the website. (the look & feel)
-- The user experience. (user interaction with the website)
-- Performance of the website. (ex. page load speed, time taken by the website to fetch & display some content, generate the page with the listing of the content based upon certain filters, etc.)
+Performance improvement shouldn't be the last step of building a website. It is an ongoing process and it should be measured and improved at almost every milestone of development. Whether the user who has visited the website will come back to the website or not, depends upon the following factors:
+
+- Appearance of the website (the look and feel)
+- The user experience (user interaction with the website, it could be using a registration form or any other form that involves some user interation)
+- Performance of the website (ex. page load speed, time taken by the website to fetch & display the content, generate the page with the listing of the content based upon certain filters, etc...)
 
 The factors are not limited to the ones mentioned above but these are some of the major concern areas when it comes to dealing with the performance of a website. Let's first understand the ways that could be used to measure the performance of the application and then we will focus on the ways to improve it.
 
-## Ways to measure the performance of the application 
+## Ways to measure the performance of the application
 
-The performance of the application cab be measured using various open source tools available that can help measure the performance based upon the following common metrics - 
+The performance of the application cab be measured using various open source tools available that can help measure the performance based upon the following common metrics:
 
 - Page Load Speed
 - Time to Title
@@ -26,7 +28,7 @@ The performance of the application cab be measured using various open source too
 - Time to start render
 - DNS lookup speed
 
-Some of the top open source tools to measure the performance are as follows - 
+Some of the top open source tools to measure the performance are as follows:
 
 - [Google PageSpeed Insights](https://pagespeed.web.dev/)
 - [GTmetrix](https://gtmetrix.com/)
