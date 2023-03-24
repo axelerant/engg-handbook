@@ -49,8 +49,8 @@ APM or Application Performance Monitoring can be defined as a process or a pract
 
 ### Replicating the database
 
-## Dealing with performance
+## [Web Application Performance](/docs/common-areas/performance-improvement)
 
-### Frontend vs Backend performance
+Performance and its improvement is a complicated and nuanced topic. For a web application, there are many aspects of performance because web is a complex system. The performance of a web application involves issues concerning physical proximity, network, application delivery, runtime on the server and the client, and varying design styles of the application itself.
 
-### Debug performance issues
+Performance improvement shouldn't be the last step of building a website. It is an ongoing process and it should be measured and improved at almost every milestone of development.
