@@ -12,6 +12,10 @@ Your choice of tools you use to write code or work with issues will determine ho
 
 We share and publish our preferred IDE's and configuration but are able to give an option to use your preferred IDE, shell, tools, and other utilities in most cases. We recommend a powerful enough macOS system configured for command line usage and PHPStorm for IDE but many teams use alternatives efficiently.
 
+#### Why PHPStorm?
+
+PHPStorm is perfect for working with core PHP and PHP frameworks such as Drupal, Laravel, WordPress, Zend, Magento, Joomla, Yii, CakePHP, and others, as it provides the best code completion, refactoring, live error prevention, and more. It also works similarily for front-end technologies, such as HTML 5, CSS, Sass, Less, Stylus, CoffeeScript, TypeScript, Emmet, and JavaScript.
+
 ### Development environments
 
 Development environments are trickier to maintain as per individual preferences and that is why the team usually opts for a single development environment (configured in the project repository). Our choice of development environments are Lando and DDEV and we have tooling to improve some of our processes for both.
