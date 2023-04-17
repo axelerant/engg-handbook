@@ -18,4 +18,4 @@ PHPStorm is perfect for working with core PHP and PHP frameworks such as Drupal,
 
 ### Development environments
 
-Development environments are trickier to maintain as per individual preferences and that is why the team usually opts for a single development environment (configured in the project repository). Our choice of development environments are Lando and DDEV and we have tooling to improve some of our processes for both.
+Development environments are trickier to maintain as per individual preferences and that is why the team usually opts for a single development environment (configured in the project repository). Our choice of development environments are [Lando](https://docs.lando.dev/getting-started/installation.html) and [DDEV](https://ddev.readthedocs.io/en/stable/users/install/) and we have tooling to improve some of our processes for both.
