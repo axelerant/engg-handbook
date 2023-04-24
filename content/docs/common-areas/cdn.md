@@ -23,3 +23,13 @@ The benefits of using a CDN depend on the size and needs of an Internet property
 - Increasing content availability and redundancy: Large volumes of traffic or hardware issues can prevent a website from operating normally. A CDN can manage more traffic and withstand hardware failures than multiple origin servers because of its distributed architecture.
 - Improving website security: By offering DDoS mitigation, upgrades to security certificates, and other optimizations, a CDN may enhance website security.
 - SEO Improvement: Page loading speed is a very important factor when it comes to page ranking. This is one of the things search engines take into account in their algorithms. Not only that, site speed also increases the frequency with which Google crawls your site's pages, which in turn makes your content more widely available and indexed faster. 
+
+## What Are Some CDN Security Concerns?
+
+Once you understand the answer to “what is CDN security?,” it’s easy to see how CDN security can be vital to users having a great browsing experience. Unfortunately, security for a CDN can come with risks.
+
+Unlike firewalls, CDNs alone are unable to block bad bots from infecting a website. As such, it’s possible to hijack and exploit CDN servers containing cached information in a variety of ways.
+
+For example, if a hacker gained access to data cached on a CDN used by multiple businesses, customers’ private information would become vulnerable. Cybercriminals could then steal passwords, email addresses, and any other sensitive information which could be used to log into private accounts or leveraged in a ransom situation.
+
+Distributed denial-of-service (DDOS) attacks are another method for extortion and blackmailing, making them one of many major CDN security concerns. A simulated test showed that 16 different CDNs were vulnerable to a DDOS exploit that caused servers to repeatedly run the same command. These repeated commands eventually led to the servers becoming overloaded, ultimately taking the content offline.
