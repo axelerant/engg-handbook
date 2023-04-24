@@ -13,3 +13,13 @@ A content delivery network (CDN) is a geographically distributed group of server
 While a CDN does not host content and can’t replace the need for proper web hosting, it does help cache content at the network edge, which improves website performance. Many websites struggle to have their performance needs met by traditional hosting services, which is why they opt for CDNs.
 
 By utilizing caching to reduce hosting bandwidth, helping to prevent interruptions in service, and improving security, CDNs are a popular choice to relieve some of the major pain points that come with traditional web hosting.
+
+## Benefits of using a CDN
+
+The benefits of using a CDN depend on the size and needs of an Internet property. The following are the common benefits:
+
+- Improving website load times: web site’s loading time gets shorter because a CDN reuses the sessions previously opened by visitors. In such a way that when a user wants to access the website, it will load quickly and no need to wait to get the full view of the website. In case the caching content is lost they can be recuperated by the interconnection with other CDN servers.
+- Another major concern for websites is the consumption of bandwidth for hosting. The quantity of data that an origin server needs to provide can be reduced by CDNs through caching and other improvements, which lowers hosting costs for website owners.
+- Increasing content availability and redundancy: Large volumes of traffic or hardware issues can prevent a website from operating normally. A CDN can manage more traffic and withstand hardware failures than multiple origin servers because of its distributed architecture.
+- Improving website security: By offering DDoS mitigation, upgrades to security certificates, and other optimizations, a CDN may enhance website security.
+- SEO Improvement: Page loading speed is a very important factor when it comes to page ranking. This is one of the things search engines take into account in their algorithms. Not only that, site speed also increases the frequency with which Google crawls your site's pages, which in turn makes your content more widely available and indexed faster. 
