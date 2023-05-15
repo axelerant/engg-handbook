@@ -34,7 +34,10 @@ CDN helps cache content at the network edge, which improves website performance.
 
 By utilizing caching to reduce hosting bandwidth, helping to prevent interruptions in service, and improving security, CDNs are a popular choice to relieve some of the major pain points that come with traditional web hosting.
 
-### Compressed CSS/JS
+## Compressed CSS/JS
+Compressed CSS/JS refers to the technique of reducing the size and optimizing the performance of CSS/JavaScript files. A website can load more quickly, use less bandwidth, and put less strain on the server by compressing its CSS and JS. 
+By minimizing the size of your CSS/JS files and the amount of HTTP requests, compressed CSS/JS helps make a website faster and more effective. Additionally, compressed JS can make the CSS/JS code more challenging for others to interpret and edit, which can be helpful for defending your intellectual property. It is advised to preserve a copy of your original CSS/JS files for development since compressed CSS/JS might also make debugging more difficult.
+
 
 ## Reverse proxy
 
