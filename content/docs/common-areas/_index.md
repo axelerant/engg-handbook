@@ -29,7 +29,10 @@ APM or Application Performance Monitoring can be defined as a process or a pract
 
 ## Backups
 
-## CDN
+## [CDN](/docs/common-areas/cdn)
+CDN helps cache content at the network edge, which improves website performance. Many websites struggle to have their performance needs met by traditional hosting services, which is why they opt for CDNs.
+
+By utilizing caching to reduce hosting bandwidth, helping to prevent interruptions in service, and improving security, CDNs are a popular choice to relieve some of the major pain points that come with traditional web hosting.
 
 ### Compressed CSS/JS
 
