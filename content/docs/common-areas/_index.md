@@ -43,6 +43,7 @@ By minimizing the size of your CSS/JS files and the amount of HTTP requests, com
 A reverse proxy is a server that sits in front of web servers and forwards client requests to those servers. A reverse proxy can help increase the security, performance, and reliability of web services by performing tasks such as load balancing, caching, compression, encryption, and firewall protection. 
 
 ### Varnish
+Varnish is a web application accelerator also known as a caching HTTP reverse proxy1. It is a software that you install in front of any server that speaks HTTP and configure it to cache the contents. And it needs careful configuration and testing.
 
 ## CPU intensive tasks in background
 
