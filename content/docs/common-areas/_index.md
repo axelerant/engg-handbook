@@ -39,7 +39,8 @@ Compressed CSS/JS refers to the technique of reducing the size and optimizing th
 By minimizing the size of your CSS/JS files and the amount of HTTP requests, compressed CSS/JS helps make a website faster and more effective. Additionally, compressed JS can make the CSS/JS code more challenging for others to interpret and edit, which can be helpful for defending your intellectual property. It is advised to preserve a copy of your original CSS/JS files for development since compressed CSS/JS might also make debugging more difficult.
 
 
-## Reverse proxy
+## [Reverse proxy](/docs/common-areas/reverseproxy)
+A reverse proxy is a server that sits in front of web servers and forwards client requests to those servers. A reverse proxy can help increase the security, performance, and reliability of web services by performing tasks such as load balancing, caching, compression, encryption, and firewall protection. 
 
 ### Varnish
 
