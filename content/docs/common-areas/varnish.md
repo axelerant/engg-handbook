@@ -17,3 +17,15 @@ To optimize Varnish for web projects the following are required:
 - Fine-tune your VCL policies to match your web application’s logic and needs.
 - Test your Varnish configuration and monitor its performance using tools like varnishstat, varnishlog, or varnishncsa.
 
+Pros:
+- Varnish can speed up the delivery of web pages by a factor of 300 - 1000x, depending on your architecture.
+- Varnish can reduce the load on your web server and increase its peak resistance.
+- Varnish can serve static pages faster and handle high traffic better.
+- Varnish can be configured flexibly using VCL to match your web application’s logic and needs.
+
+Cons:
+- Varnish can only be used with Unix operating systems.
+- Varnish does not have standard integrated SSL support, which means you need another layer to handle HTTPS requests.
+- Varnish cannot update the cache real-time, which means you need to purge the cache manually or use a plugin to do it automatically when the content changes.
+- Varnish may conflict with other caching mechanisms or security features of your web application if not configured properly.
+
