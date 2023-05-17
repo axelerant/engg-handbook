@@ -8,7 +8,6 @@ description: Curiosity may have killed the cat but it made human beings what the
 
 {{< blockquote author="_Hans Rosling" cite="Factfulness" quote="Being curious means being open to new information and actively seeking it out. It means embracing facts that don’t fit your worldview and trying to understand their implications. It means letting your mistakes trigger curiosity instead of embarrassment." >}}
 
-
 If there ever was a way to not get stuck in the mundane and live your life with excitement, it would be to be curious. In the knowledge industry and specifically the information industry where technologies are outdated in six months, it is disadvantageous to not stay updated with current trends. Curiosity helps in staying up-to-date.
 
 ## Learning Strategies
@@ -28,6 +27,5 @@ Fear of missing out (FOMO) is a common problem in the current age of information
 It is important to balance the behavior of being curious with [knowing what is good enough]({{< relref "good-enough" >}}). I like this quote from a book that speaks to me about this topic.
 
 {{< blockquote author="Oliver Burkeman" cite="Four Thousand Weeks: Time Management for Mortals "quote="The exhilaration that sometimes arises when you grasp this truth about finitude has been called the “joy of missing out,” by way of a deliberate contrast with the idea of the “fear of missing out.” It is the thrilling recognition that you wouldn’t even really want to be able to do everything, since if you didn’t have to decide what to miss out on, your choices couldn’t truly mean anything" >}}
-
 
 Be mindful of going into rabbit holes too often. It is great to dig into a problem layer-by-layer but it is very easy to lose your way back to the surface. Choose your problems wisely and decide if it's worth your investment.

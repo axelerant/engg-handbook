@@ -11,8 +11,8 @@ There's a saying that goes you can't build your home on an uneven foundation. Th
 {{< blockquote quote="We balance the value of getting started quickly with a robust understanding of the fundamentals" >}}
 
 ## Understand the technology deeply {#technology}
-{{< blockquote author="Arthur C. Clarke" quote="Any sufficiently advanced technology is indistinguishable from magic." >}}
 
+{{< blockquote author="Arthur C. Clarke" quote="Any sufficiently advanced technology is indistinguishable from magic." >}}
 
 We are engineers and we dig below the magic to see what makes the technology work. "It just works that way" is not far from "It _always_ works that way," and that is not something we take for granted at Axelerant. We understand why things work the way they do. We learn and build our knowledge every day. Our customers rely on us to solve their technological problems and we can't do that without understanding the technology.
 
@@ -53,6 +53,7 @@ Classifying programming languages according to their traits is a good way to und
 - General or specialized
 
 ### Understand design patterns and SOLID principles {#design-principle}
+
 {{< blockquote  quote="Change is the only constant" >}}
 
 Making changes in software will become havoc if it is not well-designed. Some of the best software engineers came up with design patterns and SOLID principles after they kept repeating the same mistake. Understanding them will help you to write software that is more adaptable to change.
@@ -62,7 +63,6 @@ Making changes in software will become havoc if it is not well-designed. Some of
 It is easy to get lost in the world of technology and solve problems that don't exist. It is important to be reminded that all we do is to help our customers, either directly or indirectly.
 
 {{< blockquote  quote="Understand the fundamentals and make a sound decision on what to use and how." >}}
-
 
 ## Working with source code {#source-code}
 
