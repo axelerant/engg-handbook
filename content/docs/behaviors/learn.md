@@ -1,7 +1,7 @@
 ---
 title: Always learn
 weight: 10
-description: 
+description:
 ---
 
 # We always learn

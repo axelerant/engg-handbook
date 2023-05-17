@@ -1,14 +1,14 @@
 <figure>
-    <blockquote>
-      <p>{{ index .Params "quote" }}</p>
-      {{ if or (index .Params "author") (index .Params "cite") }}
-        <figcaption>
-          {{ if index .Params "author" }}
-            <span class="bq__author">{{ index .Params "author" }}</span>
-          {{ end }}{{ if index .Params "cite" }}
-            <cite class="bq__cite">{{ index .Params "cite" }}</cite>
-          {{ end }}
-        </figcaption>
-      {{ end }}
-    </blockquote>
-  </figure>
+  <blockquote>
+    <p>{{ index .Params "quote" }}</p>
+    {{ if or (index .Params "author") (index .Params "cite") }}
+      <figcaption>
+        {{ if index .Params "author" }}
+          <span class="bq__author">{{ index .Params "author" }}</span>
+        {{ end }}{{ if index .Params "cite" }}
+          <cite class="bq__cite">{{ index .Params "cite" }}</cite>
+        {{ end }}
+      </figcaption>
+    {{ end }}
+  </blockquote>
+</figure>

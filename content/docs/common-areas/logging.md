@@ -3,6 +3,7 @@ title: Logging
 weight: 1
 description: Logging in web applications refers to keeping a log of all the operational events such as content creation, deletion, cron run, error reporting, etc. The log messages are recorded and kept in either a log file (text format), in the database, or sent to an external service.
 ---
+
 # Logging
 
 Logging in web applications refers to keeping a log of all the operational events such as content creation, deletion, cron run, error reporting, etc. The log messages are recorded and kept in either a log file (text format), in the database, or sent to an external service.

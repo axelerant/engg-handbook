@@ -301,7 +301,6 @@ body {
   }
 
   .markdown {
-
     h1,
     h2,
     h3,
@@ -443,7 +442,7 @@ body:has(#menu-control:checked) {
   overflow: hidden;
 }
 
-#menu-control~main .book-menu .book-menu-content {
+#menu-control ~ main .book-menu .book-menu-content {
   @media (max-width: $mobile-breakpoint) {
     height: 100%;
     background-color: $black;
@@ -474,7 +473,7 @@ body:has(#menu-control:checked) {
   }
 }
 
-#menu-control:checked~main .book-menu .book-menu-content {
+#menu-control:checked ~ main .book-menu .book-menu-content {
   @media (max-width: $mobile-breakpoint) {
     width: 100vw;
     height: 100vh;
@@ -712,7 +711,6 @@ body:has(#menu-control:checked) {
   }
 }
 
-
 // blockquote theming
 span.bq__author:before {
   content: '\2014';
@@ -730,7 +728,6 @@ cite.bq__cite {
   }
 }
 
-
 // Table of content theming
 .book-toc {
   .book-toc-content {
@@ -741,4 +738,3 @@ cite.bq__cite {
     color: $gray;
   }
 }
-
