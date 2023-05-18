@@ -59,7 +59,6 @@ Some of the extensively used tools for analysing the performance are as follows 
 
 ## Compressed CSS/JS
 
-Compressed CSS/JS refers to the technique of reducing the size and optimizing the performance of CSS/JavaScript files. A website can load more quickly, use less bandwidth, and put less strain on the server by compressing its CSS and JS. By minimizing the size of the CSS/JS files and the amount of HTTP requests, compressed CSS/JS helps make a website faster and more effective. 
+Compressed CSS/JS refers to the technique of reducing the size and optimizing the performance of CSS/JavaScript files. A website can load more quickly, use less bandwidth, and put less strain on the server by compressing its CSS and JS. By minimizing the size of the CSS/JS files and the amount of HTTP requests, compressed CSS/JS helps make a website faster and more effective.
 
 Furthermore, Compressed CSS/JS can make the CSS/JS code more challenging for others to interpret and edit, which can be helpful for defending intellectual property. It is advised to preserve a copy of the original CSS/JS files for development since compressed CSS/JS might also make debugging more difficult.
-
