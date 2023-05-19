@@ -31,6 +31,8 @@ APM or Application Performance Monitoring can be defined as a process or a pract
 
 ## CDN
 
+A content delivery network, or Content Distribution Network (CDN), is a group of globally dispersed servers that accelerates the delivery of web content by bringing it closer to the user. CDNs have the benefits of high performance in loading content, minimizing bandwidth costs, and reaching content globally. CDN caches content on proxy servers that are located near where the user is, reducing latency.
+
 ### Compressed CSS/JS
 
 ## Reverse proxy
