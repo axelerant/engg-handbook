@@ -41,7 +41,9 @@ APM or Application Performance Monitoring can be defined as a process or a pract
 
 ### Queue
 
-### Cron jobs
+### [Cron jobs]({{< relref "/docs/common-areas/cron-jobs" >}})
+
+Cron jobs are a way to schedule and automate tasks on a web server. They are used to run scripts or commands at specific times or intervals. For example, they can be used to schedule backups of websites or databases, send email newsletters, or update website content.
 
 ## Scaling a Drupal site
 
