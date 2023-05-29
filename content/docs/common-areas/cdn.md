@@ -11,10 +11,3 @@ A content delivery network, or Content Distribution Network (CDN), is a group of
 The main goal of a CDN is to quickly and securely provide any kind of digital content to users, wherever they are in the world and with whatever device they prefer. In order to improve speed and connectivity, a CDN places servers at the exchange points between different networks. Depending on the desired level of coverage, the majority of CDN providers will offer their services over a variety of clearly defined PoPs. These PoPs are referred to as "edges", "edge nodes", "edge servers", or "edge networks".
 
 A CDN stores cached content on edge servers in point-of-presence (PoP) locations that are close to end users to minimize latency. Depending on the architecture, different CDNs can have thousands of servers spread across numerous distant points of presence (PoPs). Others create a worldwide network with a sparse distribution of PoPs.
-
-Even though the steps depend on the CDN provider, the common steps are:
-
-- Analyze the website and use a tool such as CDN Finder to check whether a CDN is integrated into the website.
-- Enable the CDN by selecting the preferred CDN service.
-- Configure the settings of your CDN service.
-- Update your DNS – update your DNS records to point to your CDN service.
