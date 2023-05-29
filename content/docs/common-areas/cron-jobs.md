@@ -1,7 +1,7 @@
 ---
 title: Cron Jobs
 weight: 4
-description: Cron jobs are a way to schedule and automate tasks on a web server. They are used to run scripts or commands at specific times or intervals. For example, they can be used to schedule backups of  websites or databases, send email newsletters, or update website content.
+description: Cron jobs are a way to schedule and automate tasks on a web server. They are used to run scripts or commands at specific times or intervals. For example, they can be used to schedule backups of websites or databases, send email newsletters, or update website content.
 ---
 
 # Cron Jobs
