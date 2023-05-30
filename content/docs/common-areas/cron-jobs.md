@@ -12,11 +12,11 @@ In order to operate on the web, cron jobs used the web server called a cron daem
 
 To set up a cron job, you will typically need to use a command-line interface (CLI) tool. Most web hosting providers offer a simple GUI for setting up cron jobs, but if you have access to the server directly, using the CLI is usually the more powerful and direct approach.
 
-The syntax for setting up a cron job can vary depending on the operating system and server setup. However, the basic format typically includes a schedule for when the task should run (using the ```* * * * *``` notation, with each asterisk representing a different time interval) and the command that should be executed when the task runs.
+The syntax for setting up a cron job can vary depending on the operating system and server setup. However, the basic format typically includes a schedule for when the task should run (using the `* * * * *` notation, with each asterisk representing a different time interval) and the command that should be executed when the task runs.
 
 For example, to schedule a task to run every day at midnight, the cron job command might look like this:
 
-``` 0 0 * * * /usr/bin/php /path/to/update.php ```
+`0 0 * * * /usr/bin/php /path/to/update.php`
 
 This command would run the PHP script located at /path/to/update.php every day at midnight using the PHP command-line interpreter.
 
