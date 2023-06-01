@@ -16,7 +16,7 @@ The syntax for setting up a cron job can vary depending on the operating system 
 
 For example, to schedule a task to run every day at midnight, the cron job command might look like this:
 
-` 0 0 * * * /usr/bin/php /path/to/update.php `
+`0 0 * * * /usr/bin/php /path/to/update.php`
 
 This command would run the PHP script located at /path/to/update.php every day at midnight using the PHP command-line interpreter.
 
