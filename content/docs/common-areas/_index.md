@@ -35,7 +35,9 @@ A content delivery network, or Content Distribution Network (CDN), is a group of
 
 ### Compressed CSS/JS
 
-## Reverse proxy
+## [Reverse proxy]({{< relref "/docs/common-areas/reverse-proxy" >}})
+
+A reverse proxy is a type of server that sits between client devices and web servers, forwarding client requests to those servers and serving the resulting responses back to the clients. Essentially, a reverse proxy is a tool that allows you to direct requests from one domain to another domain or to multiple domains.
 
 ### Varnish
 
