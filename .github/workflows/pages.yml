@@ -45,7 +45,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: lint
     env:
-      HUGO_VERSION: 0.111.3
+      HUGO_VERSION: 0.112.7
     steps:
       - name: Install Hugo CLI
         run: |
