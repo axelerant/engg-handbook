@@ -26,7 +26,7 @@ While reverse proxies are highly beneficial, they also present some challenges. 
 
 1. Configuration complexity: Setting up a reverse proxy can be complex, requiring knowledge of server administration and networking.
 
-2. Performance overhead: The added layer of the reverse proxy can introduce additional latency and overhead, affecting application performance.
+2. Performance overhead: The added layer of the reverse proxy may introduce additional latency and overhead, affecting application performance.
 
 3. SSL/TLS certificate management: SSL/TLS encryption is recommended for secure web connections, but managing certificates on the reverse proxy can be complicated.
 
