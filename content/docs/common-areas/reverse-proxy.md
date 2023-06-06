@@ -6,7 +6,7 @@ description: A reverse proxy is a type of server that sits between client device
 
 # Reverse Proxy
 
-A reverse proxy is a type of server that sits between client devices and web servers, forwarding client requests to those servers and serving the resulting responses back to the clients. Essentially, a reverse proxy is a tool that allows you to direct requests from one domain to another domain or to multiple domains.
+A reverse proxy is a type of server that sits between client devices and web servers, forwarding client requests to those servers and serving the resulting responses back to the clients. Essentially, a reverse proxy is a tool that allows you to direct requests from one server to another server or to multiple servers.
 
 Here are some features of reverse proxy:
 
