@@ -26,7 +26,7 @@ Some of the issues faced when having cron jobs are:
 
 2. Overlapping Jobs: If you have multiple cron jobs scheduled to run at the same time, you run the risk of those jobs overlapping and causing conflicts or errors. This can be especially problematic if your cron jobs are interacting with the same data or resources.
 
-3. Server Load: Cron jobs can consume resources on your server, especially if they are running frequently or processing large amounts of data. This can lead to slow performance or even crashes if your server is not able to handle the load.
+3. Server Load: Cron jobs can consume resources on your server, especially if they are running frequently or processing large amounts of data. This can lead to slow performance or even crashes if your server is not able to handle the load. That is why it is a good idea to schedule cron jobs when the servers are idle.
 
 4. Error Handling: Cron jobs need to be carefully designed to handle errors and exceptions, as they may be running unattended and could potentially cause problems if they encounter unexpected errors.
 
