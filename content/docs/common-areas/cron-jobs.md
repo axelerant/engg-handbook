@@ -10,6 +10,9 @@ Cron jobs are mostly used on web servers to carry out repetitive operations at a
 
 In order to operate on the web, cron jobs used the web server called a cron daemon. It launches your cron jobs at the appointed times by running in the background. All of your tasks and their times are listed in the configuration file crontab, which is where this schedule is kept. On a server, Cron is a background-running time-based job scheduler.
 
+
+## Scheduling cron jobs
+
 To set up a cron job, you will typically need to use a command-line interface (CLI) tool. Most web hosting providers offer a simple GUI for setting up cron jobs, but if you have access to the server directly, using the CLI is usually the more powerful and direct approach.
 
 The syntax for setting up a cron job can vary depending on the operating system and server setup. However, the basic format typically includes a schedule for when the task should run (using the `* * * * *` notation, with each asterisk representing a different time interval) and the command that should be executed when the task runs.
