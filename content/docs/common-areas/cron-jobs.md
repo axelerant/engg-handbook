@@ -23,7 +23,7 @@ For example, to schedule a task to run every day at midnight, the cron job comma
 
 This command would run the PHP script located at /path/to/update.php every day at midnight using the PHP command-line interpreter.
 
-Some of the issues faced when having cron jobs are:
+## Things to keep in mind
 
 1. Time Zone Differences: One of the major issues with cron jobs is that they are based on server time, which may have a different time zone than your location. This can lead to confusion and errors, especially when scheduling tasks that need to run at specific times.
 
