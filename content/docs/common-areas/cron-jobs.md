@@ -30,6 +30,6 @@ Some of the issues faced when having cron jobs are:
 
 4. Error Handling: Cron jobs need to be carefully designed to handle errors and exceptions, as they may be running unattended and could potentially cause problems if they encounter unexpected errors.
 
-5. Security: Cron jobs can potentially be a security risk if they are not properly secured, as they may be able to access sensitive data or perform unauthorized actions on your server. It is important to ensure that your cron jobs are restricted to authorized users and have appropriate permissions and access controls in place.
+5. Security: Cron jobs can potentially be a security risk if they are not properly secured, as they may be able to access sensitive data or perform unauthorized actions on your server. It is important to ensure that your cron jobs are restricted to authorized users and have appropriate permissions and access controls in place. Similarly, avoid running cron jobs as root.
 
 In summary, cron jobs are an essential tool for web projects. They allow to automate a variety of tasks, helping to save time and effort while keeping the project running smoothly.
