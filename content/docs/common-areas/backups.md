@@ -10,7 +10,7 @@ The saying - "Always have a backup plan" stands true and is an integral part of 
 
 ## Importance of taking the backup of your site
 
-These are some of the alarming cases that can be mitigated if the site resources are regularly backed up -
+These are some of the alarming cases that can be mitigated if the site resources are regularly backed up:
 
 - Incorrect database updates after a release.
 - Accidental content deletion.
