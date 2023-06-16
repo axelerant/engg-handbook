@@ -22,7 +22,7 @@ These are some of the alarming cases that can be mitigated if the site resources
 
 ### Full backup
 
-In this type of of backup all the information & resources of a website are copied over to the secondary target storage. The full backup ensures that files, database, scripts are backed up all the once. Generally, it is recommended to take the backup of the site at the regular intervals. For ex, some servers use automated scripts to perform the backup at set day & time. Based upon the scale of the website you can decide whether to perform Full, Differential or Incremental backup.
+In this type of backup all the information and resources of a website are copied over to the secondary target storage. The full backup ensures that files, databases, and scripts are backed up all the once. Generally, it is recommended to take the backup of the site at regular intervals. For example, some servers use automated scripts to perform the backup on a set day and time. Based on the website's scale, you can decide whether to perform a full, differential, or incremental backup.
 
 ### Differential backup
 
