@@ -43,7 +43,11 @@ A reverse proxy is a type of server that sits between client devices and web ser
 
 ## CPU intensive tasks in background
 
-### Queue
+In web development, CPU-intensive tasks refer to operations that require a significant amount of processing power or time to complete. These tasks can include activities such as processing large files, running complex algorithms, or performing data-intensive calculations. To improve performance and user experience, these tasks are often managed using techniques such as background processing, asynchronous execution, or queueing.
+
+### [Queue]({{< relref "/docs/common-areas/queue" >}})
+
+A queue is a data structure that can be used to manage CPU-intensive background tasks. A queue operates on the principle of first-in-first-out (FIFO), meaning that the first task added to the queue will be the first one to be processed. This can help ensure that tasks are completed in the order in which they were received.
 
 ### [Cron jobs]({{< relref "/docs/common-areas/cron-jobs" >}})
 
