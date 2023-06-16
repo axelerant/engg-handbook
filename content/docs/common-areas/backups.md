@@ -14,7 +14,7 @@ These are some of the alarming cases that can be mitigated if the site resources
 
 - Incorrect database updates after a release.
 - Accidental content deletion.
-- Virus Attacks.
+- Virus attacks.
 - Server issues.
 - Memory Usage issues.
 
