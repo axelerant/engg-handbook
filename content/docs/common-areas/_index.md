@@ -49,7 +49,11 @@ A reverse proxy is a type of server that sits between client devices and web ser
 
 Cron jobs are a way to schedule and automate tasks on a web server. They are used to run scripts or commands at specific times or intervals. For example, they can be used to schedule backups of websites or databases, send email newsletters, or update website content.
 
-## Scaling a Drupal site
+## [Scaling a Drupal site]({{< relref "/docs/common-areas/scaling-drupal-website" >}})
+
+In the present scenario of the web world, scalability of a website is an utmost important factor & one of the major areas of concerns. Scalability refers to the ability of a system to handle a heavier workload.
+
+If the web applications fails to scale it may lead to slower performance and if this happens frequently, eventually the system may give up.
 
 ### Horizontally scaling the web-server
 
