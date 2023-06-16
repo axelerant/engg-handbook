@@ -27,7 +27,7 @@ Most systems have multiple layers of caching, each of which would be suitable to
 
 APM or Application Performance Monitoring can be defined as a process or a practice of monitoring and tracking the performance of a software application using specific tools. The performance of a Drupal application can be monitored using various tools such as NewRelic, Elastic APM, Sentry etc..
 
-## [Backups](/docs/common-areas/backups)
+## [Backups]({{< relref "/docs/common-areas/backups" }}>)
 
 The saying - "Always have a backup plan" stands true and is an integral part of web application management too. Although a lot of measures can be taken to avoid the downtime of a website but it is hard to predict the situation. We should be well prepared for anything. Hence, having a back up plan or in other words, taking regular backups of your website can help you manage the downtime situation effectively. The website backups allows you to back up your sites and related databases via FTP, SFTP, FTPS, or SSH key to a secure cloud location.
 
