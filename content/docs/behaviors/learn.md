@@ -1,7 +1,7 @@
 ---
 title: Always learn
 weight: 10
-description:
+description: No one knows everything. To remain good at our jobs, we have to keep learning. At Axelerant, we make learning a central activity to everything we do. Either by picking up new challenges where we intentionally learn something new or by facing an unexpected requirement where you have to catch up to be able to solve your problems, learning happens in all scenarios.
 ---
 
 # We always learn
