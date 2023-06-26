@@ -22,9 +22,9 @@ The above should not be read to mean that we obsess over technology. We use suit
 
 ### Understand how computers work {#computers}
 
-We write programs to tell computers how to solve a problem. To do that well, you have to understand how computers work. How does the computer interpret your code? How does it work with data? How does memory work? How do networks work? Each of these questions lead to deep rabbitholes and there are a lot more questions like these that we have to deal with.
+We write programs to tell computers how to solve a problem. To do that well, you have to understand how computers work. How does the computer interpret your code? How does it work with data? How does memory work? How do networks work? Each of these questions lead to deep rabbit holes and there are a lot more questions like these that we have to deal with.
 
-You can't be productive if all you do is explore these rabbitholes. But you have to know enough of these topics to ask meaningful questions and learn.
+You can't be productive if all you do is explore these rabbit holes. But you have to know enough of these topics to ask meaningful questions and learn.
 
 #### Understand time and space complexity {#complexities}
 
