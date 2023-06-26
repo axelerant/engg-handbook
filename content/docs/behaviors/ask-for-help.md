@@ -12,7 +12,7 @@ At Axelerant, we don't expect you to know everything. We hired you for your stre
 
 Axelerant has long built a strong ethic of internal support within teams and between them. If you find yourself stuck on a problem for 30 mins, it is highly unlikely that you will figure out a solution soon, no matter what the next Google search will bring. It's time to ask for help.
 
-First, ask for help within your team. They have the most context and will be able to readily help you. If this doesn't work, it's time to ask #internal-support.
+First, ask for help within your team. They have the most context and will be able to readily help you. If this doesn't work, it's time to ask [#internal-support](https://axelerant.slack.com/archives/C028Z4BHQ).
 
 ## Asking for help
 
