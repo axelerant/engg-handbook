@@ -14,7 +14,7 @@ It is commonly found that we need about 45 minutes to find our state of flow eve
 
 First, we have to realize that we don't fight distractions. We avoid them. Fighting distractions is a losing battle and you can only win by planning ahead and avoiding distractions.
 
-Then, you have to be mindful that of your time. Have you gone down a rabbithole? Are you focusing on tangents not important to your work? Are you working on something that doesn't help your most important goal for the day? It is difficult to guard ourselves all the time but we can do this every few minutes. When you catch yourself distracted, reassess your priorities. Ask yourself: is this helping me achieve my goals today? If not, tell yourself to take a step back and rethink your priorities.
+Then, you have to be mindful that of your time. Have you gone down a rabbit hole? Are you focusing on tangents not important to your work? Are you working on something that doesn't help your most important goal for the day? It is difficult to guard ourselves all the time but we can do this every few minutes. When you catch yourself distracted, reassess your priorities. Ask yourself: is this helping me achieve my goals today? If not, tell yourself to take a step back and rethink your priorities.
 
 ## Understand yourself
 
