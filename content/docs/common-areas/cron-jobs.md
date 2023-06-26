@@ -8,7 +8,15 @@ description: Cron jobs are a way to schedule and automate tasks on a web server.
 
 Cron jobs are mostly used on web servers to carry out repetitive operations at a scheduled time. They can be used to automate a variety of tasks, such as periodically clearing out unnecessary files from an account, sending periodic emails like newsletters, flushing the website application's cache to make sure that it displays the most recent content, running routine maintenance checks, and reindexing and refreshing product and client information. For systems that operate continuously, like servers, cron jobs are recommended.
 
-In order to operate on the web, cron jobs used the web server called a cron daemon. It launches your cron jobs at the appointed times by running in the background. All of your tasks and their times are listed in the configuration file crontab, which is where this schedule is kept. On a server, Cron is a background-running time-based job scheduler.
+## Crontab
+
+In Cron Jobs, there is a file called crontab that contains the commands that are run by the cron daemon. The cron daemon is a background process that runs on your server and executes commands at scheduled intervals.
+
+For instance, Drupal uses crontab to run maintenance tasks such as cleaning up log files, checking for updates, and generating sitemaps. These tasks are important for keeping our Drupal site healthy and secure. We have two ways to set up crontab in Drupal:
+
+- Automatic cron: This is the default method, and it uses the cron daemon that is already running on your server. To enable automatic cron, go to Administration > Configuration > System > Cron and set the Frequency to the desired interval.
+
+- Manual cron: This method involves creating a cron job that runs the drush cron command.
 
 ## Scheduling cron jobs
 
@@ -22,7 +30,7 @@ For example, to schedule a task to run every day at midnight, the cron job comma
 
 This command would run the PHP script located at /path/to/update.php every day at midnight using the PHP command-line interpreter.
 
-[For details...](https://crontab.guru)
+To understand more about cron schedules from [here](https://crontab.guru)
 
 ## Things to keep in mind
 
