@@ -35,3 +35,21 @@ While reverse proxies are highly beneficial, they also present some challenges. 
 5. Application compatibility: Some applications may not be compatible with a reverse proxy, especially if they were not designed to work with one.
 
 6. Logging and monitoring: A reverse proxy can create additional logging and monitoring challenges, requiring the collection and analysis of logs from both the proxy and the backend servers.
+
+## Varnish
+
+Varnish is a web application accelerator that acts as a reverse proxy. It sits between the client and the web server and speeds up the delivery of web content by caching frequently accessed content. Varnish stores a copy of the content received from the web server, and if another request for the same content comes in, it serves the content directly from its cache instead of getting the content from the web server again. Varnish can also be configured to purge the cache periodically or in real-time to ensure the content is always up-to-date.
+
+When a client makes a request to your website, Varnish first checks its cache to see if the requested content is already cached. If it is, Varnish serves the content from the cache, which is much faster than making a request to your web server. If the requested content is not cached, Varnish makes a request to your web server and caches the content for future requests.
+
+Varnish Reverse Proxy can also be configured to perform other functions, such as load balancing and SSL termination. Load balancing distributes incoming requests across multiple servers to ensure that no single server becomes overwhelmed. SSL termination decrypts secure connections and encrypts outgoing connections, helping to protect user data.
+
+Things to keep in mind:
+
+- High learning curve: Varnish has a steep learning curve and requires extensive knowledge of HTTP, caching, and advanced configuration options. This can make it difficult for beginners to set up and manage.
+
+- Limitation on dynamic content: If the dynamic content of a web page is updated frequently, it can cause problems with Varnish reverse proxy. This is because Varnish caches the dynamic content, so if the content is updated, the cache will be stale. This can lead to inconsistencies between the cache and the origin server. This can result in user confusion and frustration. However, this can be mitigated by setting an appropriate cache expiration time or using features like cache invalidation or purging.
+
+- Complex configuration: Varnish requires a lot of configuration to get the most out of it. Optimizing the caching configuration, for example, can be challenging and may require manual tuning to achieve the best performance.
+
+- Limited SSL support: Varnish does not support SSL encryption out of the box, which means you need to set up a separate SSL termination proxy to handle secure connections, which can add complexity to your infrastructure.
