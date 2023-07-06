@@ -26,7 +26,7 @@ Most systems have multiple layers of caching, each of which would be suitable to
 ## [Debugging]({{< relref "/docs/common-areas/debugging"  >}})
 
 Debugging is an important component of any software development activity and not just web development. Perhaps
-debugging existing code is where developers spent most of their time. 
+debugging existing code is where developers spent most of their time.
 
 ## [APM]({{< relref "/docs/common-areas/apm" >}})
 
