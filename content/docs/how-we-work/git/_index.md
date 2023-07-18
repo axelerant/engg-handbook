@@ -16,6 +16,8 @@ Version control is a staple part of the development cycle and it is important we
 
 While there are multiple types of version control systems available, we have defaulted to using git in all cases. It is ubiquitous and the only difference among teams is where the repository is hosted and what kind of branching workflow is followed. At Axelerant, we always use git, mostly work with Github, and encourage trunk-based development workflows.
 
+{{< section-pages >}}
+
 ## Feature-branching and multiple environments
 
 The method of branching determines how quickly you are able to begin working on a new feature and complete it. In a GitOps workflow (such as the one we commonly work with when using platform.sh), the branching mechanism also defines what environments are available.
