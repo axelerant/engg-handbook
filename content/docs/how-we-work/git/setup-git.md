@@ -10,7 +10,7 @@ Setting up Git is essential to keeping track of changes made to our files, colla
 
 ```bash
 git config --global user.name 'Your Name'
-`git config --global user.email 'youremail@yourdomain.com'
+git config --global user.email 'youremail@yourdomain.com'
 
 Git uses this information to specify who made changes to the repository. When we commit changes to the repository, Git records name and email address data in the commit log. It also helps other developers to contact the person if they have any questions or suggestions.
 
