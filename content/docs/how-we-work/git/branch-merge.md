@@ -40,7 +40,7 @@ Merging composer.lock is a common issue because it is a file that contains a lis
 
 Generally, this conflict happens when people add/remove/update packages in different branches.
 
-The best way to handle this is to avoid having multiple people do it in the first place. Only one branch should deal with updates, and it should be merged quickly. And if there are other features that require a new module, they should add that module in a separate branch and merge it as soon as possible. This ensures that the composer.lock file rarely changes in individual branches.
+The best way to handle this is to push the changes to composer.json and lock files as frequently as possible. Only one branch should deal with updates, and it should be merged quickly. And if there are other features that require a new module, they should add that module in a separate branch and merge it as soon as possible. This ensures that the composer.lock file rarely changes in individual branches.
 
 The vital thing is the version and other metadata listed in the composer.lock file. It will only get changed if someone runs the relevant composer commands. Running commands like `composer update` creates a composer.lock merge conflict when there are conflicting changes to the dependencies between two branches at the time of merging. This is because composer update updates the composer.lock file with the latest versions of the dependencies. If there are conflicting changes to the dependencies between two branches, then the composer.lock file will contain both sets of changes.
 
