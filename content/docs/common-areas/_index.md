@@ -59,9 +59,7 @@ Cron jobs are a way to schedule and automate tasks on a web server. They are use
 
 ## Scaling a Drupal site
 
-### Horizontally scaling the web-server
-
-### Replicating the database
+When we are working on a Drupal project, one of the things we need to consider is scalability. Scalability is a critical aspect of any web application, and Drupal, a robust and flexible content management system (CMS), is no exception. As websites built with Drupal grow in size and complexity, it becomes essential to implement effective scaling strategies to maintain optimal performance and accommodate increasing user demands.
 
 ## [Web Application Performance]({{< relref "/docs/common-areas/performance-improvement" >}})
 
