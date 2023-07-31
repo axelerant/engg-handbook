@@ -1,10 +1,10 @@
 ---
 title: Rolling Back Changes
 weight: 7
-description: Working with forks in GitHub allows us to create a copy of an existing repository and make changes to it without affecting the original project. We can use forks to experiment with new features, fix bugs, or contribute to open source projects.
+description: In Git, to undo or reverse the effects of one or more commits or roll back changes, there are different ways depending on the situation and the desired outcome.
 ---
 
-# Working with Forks
+# Rolling Back Changes
 
 In Git, to undo or reverse the effects of one or more commits or [roll back changes](https://microsoft.github.io/code-with-engineering-playbook/source-control/git-guidance/#rolling-back-changes), there are different ways depending on the situation and the desired outcome. We use commands to restore files or branches to a previous state, remove untracked files, create new commits that undo previous ones, move the current branch pointer to a different commit, or delete files from the working directory and the index. Rolling back changes in Git requires careful consideration of the impact on the project history and collaboration.
 
