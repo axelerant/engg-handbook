@@ -48,7 +48,7 @@ to give insights regarding the problem. If a friend cannot be found, use a rubbe
 Sometimes the bug might be in the OS, an external module or a third party library rather than the application itself. Often
 it is more profitable to locate the bug in the application itself rather than external software. Even then you have to eliminate code to reach the problem.
 
-## Debugging checklist 
+## Debugging checklist
 
 Have a debugging checklist with the following questions.
 
@@ -58,10 +58,8 @@ Have a debugging checklist with the following questions.
 * If the suspect code passes its unit tests, are the tests complete enough? What happens if you run the tests with this data?
 * Do the conditions that cuased this bug exist anywhere else in the system? Are there other bugs still in the larval stage, just waiting to hatch?
 
+## Xdebug
 
-# Xdebug
 It is advisable to use and familiarise with the most commonly available Debugging tools. In PHP web applications Xdebug is the most widely used debugger. This provides much more options while debugging
 when compared to print and dump statements. Axelerant encourages the use of Xdebug with the aid of a supported IDE
 like PHPStorm for faster debugging.
-
-
