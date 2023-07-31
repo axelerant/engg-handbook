@@ -23,7 +23,7 @@ Caching is one of the major concern areas in any web project. If not handled eff
 
 Most systems have multiple layers of caching, each of which would be suitable to specific scenarios. For example, Drupal websites typically read a lot of data from databases and API's, both of which can be cached independently. Moreover, Drupal itself is written using PHP which is an interpreted language and there is a cache for the code itself. Even CPU's employ a layer of caching which is not in scope of this handbook.
 
-## [Debugging]({{< relref "/docs/common-areas/debugging"  >}})
+## [Debugging]({{< relref "/docs/common-areas/debugging" >}})
 
 Debugging is an important component of any software development activity and not just web development. Perhaps
 debugging existing code is where developers spent most of their time.
