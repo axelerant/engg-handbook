@@ -6,9 +6,7 @@ description: Debugging an application.
 
 # Debugging
 
-Debugging is an important part of web development activity and probably will consume most of a
-web developer's time.  Hence, Axelerant tries to promote the following pragmatic principles and thoughts
-regarding debugging.
+Debugging is an important part of web development activity and probably will consume most of a web developer's time. Hence, Axelerant tries to promote the following pragmatic principles and thoughts regarding debugging.
 
 * Bugs are part of the software development process, and it can be due to misunderstood requirements or due to coding errors.
 * No one writes perfect code and hence it should be accepted that there will be bugs and hence debugging will consume
@@ -29,8 +27,7 @@ You can only address a bug that can be reproduced and the first step would be to
 
 ## Binary Chop method
 
-This is another form of divide and conquer method. If you encounter bugs in a huge dataset or stack trace and trying to
-find the function call that broke the code, choose one in the middle and then check if the error-prone code is present
+This is another form of divide and conquer method. If you encounter bugs in a huge dataset or stack trace and trying to find the function call that broke the code, choose one in the middle and then check if the error-prone code is present
 there. Once found, proceed to find the next middle point and repeat the activity.
 
 ## Logging/Tracing
@@ -60,6 +57,5 @@ Have a debugging checklist with the following questions.
 
 ## Xdebug
 
-It is advisable to use and familiarise with the most commonly available Debugging tools. In PHP web applications Xdebug is the most widely used debugger. This provides much more options while debugging
-when compared to print and dump statements. Axelerant encourages the use of Xdebug with the aid of a supported IDE
+It is advisable to use and familiarise with the most commonly available Debugging tools. In PHP web applications Xdebug is the most widely used debugger. This provides much more options while debugging when compared to print and dump statements. Axelerant encourages the use of Xdebug with the aid of a supported IDE
 like PHPStorm for faster debugging.
