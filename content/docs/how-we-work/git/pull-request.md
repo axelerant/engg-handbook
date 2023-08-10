@@ -1,6 +1,6 @@
 ---
 title: Pull Request (PR)
-weight: 4
+weight: 3
 description: A Git PR, or pull request, is a way to propose changes to the codebase. Post review your changes are merged. This process helps to ensure that changes are reviewed by someone else, which reduces the chances of any errors.
 ---
 
