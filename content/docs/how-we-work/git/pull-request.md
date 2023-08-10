@@ -1,14 +1,14 @@
 ---
 title: Pull Request (PR)
 weight: 3
-description: A Git PR, or pull request, is a way to propose changes to the codebase. Post review your changes are merged. This process helps to ensure that changes are reviewed by someone else, which reduces the chances of any errors.
+description: A GitHub PR, or pull request, is a way to propose changes to the codebase. Once the changes are reviewed, they can be merged to the "main" branch. This process helps to ensure that changes are reviewed by someone else, which reduces the chances of any errors.
 ---
 
 # Pull Request (PR)
 
-A Git PR, or pull request, is a way to propose changes to the codebase. Post review your changes are merged. This process helps to ensure that changes are reviewed by someone else, which reduces the chances of any errors.
+A GitHub PR, or pull request, is a way to propose changes to the codebase. Once the changes are reviewed, they can be merged to the "main" branch. This process helps to ensure that changes are reviewed by someone else, which reduces the chances of any errors.
 
-By utilizing Git commands, we can [create and submit a pull request](https://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project#:~:text=Creating%20a%20Pull%20Request) to the repository owner and manage the entire process of review, approval, and merging of changes. The process involves creating a fork of the repository, cloning the fork to a local computer, making desired changes to the code, and committing these changes back to the repository. By submitting a PR, users can demonstrate how they have added value or addressed issues in the codebase, show evidence of their contributions, and allow the repository owner to evaluate the proposed changes prior to incorporating them into the codebase.
+We can [create and submit a pull request](https://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project#:~:text=Creating%20a%20Pull%20Request) to the repository owner and manage the entire process of review, approval, and merging of changes. The process involves creating a fork of the repository, cloning the fork to a local computer, making desired changes to the code, and committing these changes. A PR can be submitted once these changes are pushed. By submitting a PR, users allow the repository owner to evaluate the proposed changes prior to incorporating them into the codebase.
 
 ## PR failures/debugging/troubleshoot
 
