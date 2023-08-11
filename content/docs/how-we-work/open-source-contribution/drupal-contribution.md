@@ -7,7 +7,7 @@ weight: 2
 
 ## How to start Contributions
 
-1. [Create a Drupal.org account](https://www.drupal.org/user/register?destination=user/3643629/edit)
+1. [Create a Drupal.org account](https://www.drupal.org/user/register)
 
    - Confirm new account (ie trusted colleagues)
      - Fill up profile information
