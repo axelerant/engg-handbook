@@ -16,11 +16,11 @@ weight: 2
   - Events attended
   - Mentors
   - Developer: Git access
-- Add your organization (Axelerant Technologies) to your profile.
+- Add your organization (Axelerant) to your profile.
 
 ### Working on issues
 
-We can find all issues related to the module, theme, or Core in the sidebar of the project.
+You can find all issues related to the module, theme, or Core in the sidebar of the project.
 
 Before working on these issues, Read and understand the [issue etiquette documentation](https://www.drupal.org/issue-etiquette).
 
