@@ -23,3 +23,5 @@ Github makes some checks against our PR to see if it is ready to be merged. Fail
 Once a Pull Request has been submitted, it will need to be reviewed by a team member. The reviewer will check the changes for correctness, and they may also provide feedback on the changes. If the reviewer approves the changes, the PR can be merged into the main codebase.
 
 When a PR is reviewed, the reviewer may leave comments on the PR. These comments can be used to provide feedback on the changes or to ask questions. We promptly respond, discuss and understand the shared PR comment(s), and rework if applicable.
+
+Also, as a reviewer focusing on what matters most and automating certain aspects, code reviews can be more effective and efficient in ensuring code quality. The [Code Review Pyramid](https://www.morling.dev/blog/the-code-review-pyramid) emphasizes the crucial parts of a code review to help reviewers prioritize and provide helpful feedback.
