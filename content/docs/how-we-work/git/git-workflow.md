@@ -1,12 +1,12 @@
 ---
 title: Git Workflow
 weight: 4
-description: Git branching and merging are essential concepts for managing any software. By using branches, we can isolate different features or bug fixes, and merge them back into the main branch as soon as they are ready.
+description: Git Workflow is a set of practices and procedures used with the Git version control system to manage software development. It involves creating branches, committing changes, merging, and pushing changes back to a central repository. It is essential for collaborative software development and ensures effective management of project changes.
 ---
 
 # Git Workflow
 
-Git branching and merging are essential concepts for managing any software. By using branches, we can isolate different features or bug fixes, and merge them back into the main branch as soon as they are ready.
+Git Workflow is a set of practices and procedures used with the Git version control system to manage software development. It involves creating branches, committing changes, merging, and pushing changes back to a central repository. It is essential for collaborative software development and ensures effective management of project changes.
 
 ## Feature-branching and multiple environments
 
