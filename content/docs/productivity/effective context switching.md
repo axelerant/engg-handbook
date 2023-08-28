@@ -102,6 +102,6 @@ Below are the recommended steps to be done by the developers before they switch 
 
 If milestones deliveries are planned, then PMs are expected to communicate with each other to ensure that your weekly plan is communicated to you in advance.
 
-### I have to interact with multiple PMs and team members when working on multiple projects.
+### I have to interact with multiple PMs and team members when working on multiple projects
 
 Plan your focus time for development in the calendar and take the non-urgent/regular/non-client calls out of the focus time. In all other cases where you need to be on the call, kindly follow the guidelines mentioned above before switching to non-development work.
