@@ -18,7 +18,7 @@ In positive psychology, a [flow state](<https://en.wikipedia.org/wiki/Flow_(psyc
 
 ## Guard your flow state
 
-You are the one most responsible for guarding your time, your flow state. Being accountable and responsible for your tasks means that you would communicate with your team to set expectations to protect your own time. Meetings happen, distractions happen, interruptions happen; what is most important is how quickly you can recover from these interruptions by [context switching effectively]({{< relref "/docs/productivity/effective context switching.md" >}}).
+You are the one most responsible for guarding your time, your flow state. Being accountable and responsible for your tasks means that you would communicate with your team to set expectations to protect your own time. Meetings happen, distractions happen, interruptions happen; what is most important is how quickly you can recover from these interruptions by [context switching effectively]({{< relref "/docs/productivity/effective-context-switching.md" >}}).
 
 ## Prioritization
 
