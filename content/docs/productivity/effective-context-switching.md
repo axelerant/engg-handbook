@@ -35,22 +35,22 @@ Just thinking about another task splits our attention and makes it harder to foc
 
 Check [The Eisenhower Matrix: Prioritize Your Time on What Matters Most - Knock Down Silos by Slab](https://slab.com/blog/eisenhower-matrix/) on detailed guidelines for the same.
 
-#### Unlocking Your Potential: Organize Work and Calendar for Peak Performance
+## Unlocking Your Potential: Organize Work and Calendar for Peak Performance
 
 Understand, Identify, and classify items (excluding meetings) that need more time and those which need less time.
 
 For e.g.
 
-##### Large
+### Large
 
 - Developing/working on a custom code is something that requires at least 3 or more hours of focussed time or fixing a challenging bug.
 
-##### Medium
+### Medium
 
 - Ticket grooming is something that might need 2 - 4 hours of focused time.
 - Giving feedback to peers.
 
-##### Small
+### Small
 
 - Peer reviews are something that can be completed in less time compared to above, like 15-30 mins, unless it involves many files and is for large enhancement, in case of which it falls into Medium work.
 - Guiding peers/unblocking them (you are not expected to have long calls and do peer debugging with your peers unless it is explicitly called out). These are expected to be small sized ranging from 30 mins to an hour maximum.
