@@ -25,7 +25,7 @@ Let’s look above in more detail.
 
 ### Have thoughtful, asynchronous communication
 
-We encourage asynchronous communication as the 1st mode and getting on to meetings only when needed. Check [Being Axelerant | Meetings](<https://axelerant.atlassian.net/wiki/spaces/OA/pages/1447493744/Being+Axelerant#Meetings>) on how to effectively avoid and conduct meetings if the need arises.
+We encourage asynchronous communication as the 1st mode and getting on to meetings only when needed. Check [Being Axelerant | Meetings](https://axelerant.atlassian.net/wiki/spaces/OA/pages/1447493744/Being+Axelerant#Meetings) on how to effectively avoid and conduct meetings if the need arises.
 
 ### Capture tasks somewhere that’s not your head
 
@@ -33,7 +33,7 @@ Just thinking about another task splits our attention and makes it harder to foc
 
 #### Prioritize your work
 
-Check [The Eisenhower Matrix: Prioritize Your Time on What Matters Most - Knock Down Silos by Slab](<https://slab.com/blog/eisenhower-matrix/>) on detailed guidelines for the same.
+Check [The Eisenhower Matrix: Prioritize Your Time on What Matters Most - Knock Down Silos by Slab](https://slab.com/blog/eisenhower-matrix/) on detailed guidelines for the same.
 
 #### Unlocking Your Potential: Organize Work and Calendar for Peak Performance
 
@@ -61,13 +61,13 @@ Note that all the above work listed under Large, Medium and Small falls under qu
 Now a combination of prioritizing and organizing your work will help in a large way. Do the below in the same order.
 
 1. Prepare your Eisenhower matrix. Generalize things here so that you can quickly decide where each work falls in as it comes.
-    a. Get inputs from all stakeholders (Team and Client) to understand what is important and urgent so that they are in the best interest of the project, portfolio, and Axelerant.
-    b. Also, do consider your interests in the different areas of work, acknowledge, and balance them along with the above inputs to make sure you are satisfied with your efforts at the end of the day/week.
-    c. Identify the action items you need to take to rekindle lost interest.
+   a. Get inputs from all stakeholders (Team and Client) to understand what is important and urgent so that they are in the best interest of the project, portfolio, and Axelerant.
+   b. Also, do consider your interests in the different areas of work, acknowledge, and balance them along with the above inputs to make sure you are satisfied with your efforts at the end of the day/week.
+   c. Identify the action items you need to take to rekindle lost interest.
 2. Schedule time in the calendar for quadrant 2 large and medium-sized tasks of the Eisenhower matrix, which can be in this or next week.
-    a. This can be a recurring meeting with yourself as well.
-    b. Communicate to everyone that this is your focus time, including yourself.
-    c. This also requires you to look at the forthcoming work and plan for the same.
+   a. This can be a recurring meeting with yourself as well.
+   b. Communicate to everyone that this is your focus time, including yourself.
+   c. This also requires you to look at the forthcoming work and plan for the same.
 3. Have some free slots a week to handle quadrant 1 tasks of the Eisenhower matrix. Make sure these slots are spread throughout the week and not on particular days, as urgency can come at any time.
 4. Utilize time in between meetings for small-sized tasks or take a break if you need.
 5. When your free slots are free, pick things from the small-sized bucket.
