@@ -33,4 +33,5 @@ We use MarkdownLint to lint the markdown files. This runs as a test on GitHub ac
 ```bash
 yarn
 yarn lint:md
+yarn lint-fix:prettier
 ```
