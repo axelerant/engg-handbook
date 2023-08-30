@@ -12,11 +12,19 @@ Cron jobs are mostly used on web servers to carry out repetitive operations at a
 
 In Cron Jobs, there is a file called crontab that contains the commands that are run by the cron daemon. The cron daemon is a background process that runs on your server and executes commands at scheduled intervals.
 
-For instance, Drupal uses crontab to run maintenance tasks such as cleaning up log files, checking for updates, and generating sitemaps. These tasks are important for keeping our Drupal site healthy and secure. We have two ways to set up crontab in Drupal:
+The crontab (cron table) specifies when and how frequently a particular task should be executed. The crontab syntax consists of five fields that define the timing of execution and one field to specify the command to be run.
 
-- Automatic cron: This is the default method, and it uses the cron daemon that is already running on your server. To enable automatic cron, go to Administration > Configuration > System > Cron and set the Frequency to the desired interval.
+## Common applications of cron jobs
 
-- Manual cron: This method involves creating a cron job that runs the drush cron command.
+- Automate Database Backups
+
+- Automate data retrieval, synchronization, and updating processes
+
+- Automate the report generation process
+
+- Send scheduled emails
+
+- Performing routine maintenance activities, such as clearing caches, optimizing databases, cleaning up temporary files, or running periodic security checks
 
 ## Scheduling cron jobs
 
@@ -30,18 +38,18 @@ For example, to schedule a task to run every day at midnight, the cron job comma
 
 This command would run the PHP script located at /path/to/update.php every day at midnight using the PHP command-line interpreter.
 
-To understand more about cron schedules from [here](https://crontab.guru)
+We can create and test cron expressions via [crontab guru](https://crontab.guru).
 
 ## Things to keep in mind
 
-1. Time Zone Differences: One of the major issues with cron jobs is that they are based on server time, which may have a different time zone than your location. This can lead to confusion and errors, especially when scheduling tasks that need to run at specific times.
+- Time Zone Differences: One of the major issues with cron jobs is that they are based on server time, which may have a different time zone than your location. This can lead to confusion and errors, especially when scheduling tasks that need to run at specific times.
 
-2. Overlapping Jobs: If you have multiple cron jobs scheduled to run at the same time, you run the risk of those jobs overlapping and causing conflicts or errors. This can be especially problematic if your cron jobs are interacting with the same data or resources.
+- Overlapping Jobs: If you have multiple cron jobs scheduled to run at the same time, you run the risk of those jobs overlapping and causing conflicts or errors. This can be especially problematic if your cron jobs are interacting with the same data or resources.
 
-3. Server Load: Cron jobs can consume resources on your server, especially if they are running frequently or processing large amounts of data. This can lead to slow performance or even crashes if your server is not able to handle the load. That is why it is a good idea to schedule cron jobs when the servers are idle.
+- Server Load: Cron jobs can consume resources on your server, especially if they are running frequently or processing large amounts of data. This can lead to slow performance or even crashes if your server is not able to handle the load. That is why it is a good idea to schedule cron jobs when the servers are idle.
 
-4. Error Handling: Cron jobs need to be carefully designed to handle errors and exceptions, as they may be running unattended and could potentially cause problems if they encounter unexpected errors.
+- Error Handling: Cron jobs need to be carefully designed to handle errors and exceptions, as they may be running unattended and could potentially cause problems if they encounter unexpected errors.
 
-5. Security: Cron jobs can potentially be a security risk if they are not properly secured, as they may be able to access sensitive data or perform unauthorized actions on your server. It is important to ensure that your cron jobs are restricted to authorized users and have appropriate permissions and access controls in place. Similarly, avoid running cron jobs as root.
+- Security: Cron jobs can potentially be a security risk if they are not properly secured, as they may be able to access sensitive data or perform unauthorized actions on your server. It is important to ensure that your cron jobs are restricted to authorized users and have appropriate permissions and access controls in place. Similarly, avoid running cron jobs as root.
 
 In summary, cron jobs are an essential tool for web projects. They allow to automate a variety of tasks, helping to save time and effort while keeping the project running smoothly.
