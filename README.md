@@ -34,3 +34,12 @@ We use MarkdownLint to lint the markdown files. This runs as a test on GitHub ac
 yarn
 yarn lint:md
 ```
+
+#### Fixing linting issues
+
+If you are seeing linting errors, most of them can be fixed by running scripts as below. It's a good idea to run the lint commands again to check if some of the errors couldn't be fixed and will need to be fixed manually.
+
+```bash
+yarn lint-fix:md
+yarn lint-fix:prettier
+```
