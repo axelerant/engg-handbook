@@ -22,7 +22,7 @@ At Axelerant, we write code not only to solve a specific problem but also to pro
 
 - We write code that anticipates change, so that we can implement (most) changes in an easy and Agile way.
 
-- We write API layer that doesn't assume a particular UI, so that the API could be used in multiple (and unpredictable) situations (For example, used in these UIs: Web site, drush, rest, SMS).
+- We write API layer that doesn't assume a particular UI, so that the API could be used in multiple (and unpredictable) situations (For example, used in these UIs: Web site, drush, REST, SMS).
 
 - We remove dead code, because it's dead (and because it's confusing to leave it).
 
