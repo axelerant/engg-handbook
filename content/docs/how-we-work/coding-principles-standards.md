@@ -36,7 +36,7 @@ At Axelerant, we write code not only to solve a specific problem but also to pro
 
 ## Coding Standards
 
-- We follow established best practices so we can easily work with each others code, and contribute back.
+- We follow established team practices so we can easily work with each others code, and contribute back.
 
 - We don't hard code
 
