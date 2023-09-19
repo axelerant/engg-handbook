@@ -1,7 +1,7 @@
 ---
 title: Security
 weight: 3
-description: Security is an everlasting concern in the world of software engineering. Understanding what security means in the context of your work and the various vectors which might be responsible to compromise your system's security is extremely important.
+description: Security is an everlasting concern in the world of software engineering. Understanding what security means in the context of your work and the various vectors that might be responsible to compromise your system's security is extremely important.
 ---
 
 # Security
@@ -14,18 +14,21 @@ For example, an application relies on database credentials to connect to the dat
 
 ## Server and Website Security
 
-In particular, we practice server and site security by using only sanitized databases, taking care not to install restricted access files on development or personal instances outside the project defined security accreditation boundary and scrubbing unneeded data from our development systems
-And as developers, we follow technology specific coding standards and best practices and write secure code as per the respective community’s guidelines.
+In particular, we practice server and site security by:
+
+- Using only sanitized databases, sanitizing a database involves removing or modifying sensitive information to protect the privacy and security of the data.
+
+- Restricted access files should only be installed at locations within the project-defined security validation boundaries.
+
+- Scrubbing unneeded data from our development environments, which involves the time-to-time removal of any data that is no longer necessary for the project and ensuring that the remaining data is properly secured
+
+These practices could ensure that our personal information is not at risk of unauthorized access, security vulnerabilities, or potential breaches of sensitive information.
+
+As developers, we follow technology specific coding standards and best practices and write secure code as per the respective community’s guidelines.
 
 We minimize custom code, always preferring to use community maintained modules. And in general, we use stable versions of third-party libraries, including modules maintained by the community. It is important to note that alpha, beta, dev, and rc versions are not considered stable releases. And in our experience, in many cases, it is preferable to run a dev release over alpha/beta releases, where there have been a significant number of bug fixes and the security profile is identical.
 
 We periodically audit sites to determine if any security issues have been reported or if the set of enabled libraries/modules are all still in use on the site.
-
-### Drupal Specific As Drupal Developers
-
-- We follow [Drupal coding standards and best practices](https://www.drupal.org/docs/develop/standards)
-
-- We write [Secure Code in Drupal](https://www.drupal.org/docs/administering-a-drupal-site/security-in-drupal)
 
 ### Privileged Access
 
