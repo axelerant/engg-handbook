@@ -26,3 +26,15 @@ If you have written a generic implementation, others in the project can use it v
 - You have figured out the problem in the module - submit a patch
 - Someone needs help in a drupal.org issue queue, and you know the solution - go ahead and submit your comment
 - You developed a generic solution to a problem. Cool! Let's submit it as a module
+
+## Security
+
+While writing code in Drupal, it is mandatory to keep our code secure and apply the best practices.
+
+- [Writing secure code for Drupal](https://www.drupal.org/docs/administering-a-drupal-site/security-in-drupal/writing-secure-code-for-drupal)
+
+## Coding Standards
+
+We apply the Drupal coding standards when coding in Drupal projects. We always make sure that these standards are up-to-date and version-independent.
+
+- [Drupal coding standards and best practices](https://www.drupal.org/docs/develop/standards)
