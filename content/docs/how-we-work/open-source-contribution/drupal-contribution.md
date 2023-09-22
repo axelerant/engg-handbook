@@ -52,3 +52,5 @@ Follow along with the existing contributions.
 ### Attribute your work to Axelerant technologies
 
 Don't forget to add Axelerant as your organization and Drupal India Association as your customer.
+
+![Attribute to Axelerant](https://github.com/Yemaneberhan-Lemma/engg-handbook/assets/127758027/c3230e66-636b-48d0-ba4c-49e0a31cf012)
