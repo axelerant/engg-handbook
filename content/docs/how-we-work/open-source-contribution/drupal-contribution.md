@@ -22,6 +22,8 @@ weight: 2
 
 You can find all issues related to the module, theme, or Core in the sidebar of the project.
 
+![Working on issues](https://github.com/Yemaneberhan-Lemma/engg-handbook/assets/127758027/bd7a958c-1eb8-401c-b33b-69b1f9195f05)
+
 Before working on these issues, Read and understand the [issue etiquette documentation](https://www.drupal.org/issue-etiquette).
 
 ### [Understand the credit policy](https://www.drupal.org/core-credit-policy)
