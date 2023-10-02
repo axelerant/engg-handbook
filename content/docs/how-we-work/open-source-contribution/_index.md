@@ -30,3 +30,5 @@ Furthermore, we can participate in community events like cons, camps, and meetup
 ### Why should we contribute?
 
 When we contribute, we easily learn how to write clean, readable, and maintainable code. This not only makes our work more efficient but also earns us recognition and appreciation within the developer community. As we immerse ourselves in the codebase of the technology we're using to build our applications, we gain a profound understanding of its intricacies. This deep dive allows us to gauge the long-term cost-effectiveness of our projects and offers insights into what other developers are doing, giving us the freedom to extend and innovate as needed. This enabled us to add a noticeable point to our resume and build an outstanding portfolio.
+
+We can communicate with the contribution team to help us have a better contribution experience.
