@@ -27,6 +27,8 @@ If you have written a generic implementation, others in the project can use it v
 - Someone needs help in a drupal.org issue queue, and you know the solution - go ahead and submit your comment
 - You developed a generic solution to a problem. Cool! Let's submit it as a module
 
+We are enthusiastic towards [open source contribution](../../open-source-contribution).
+
 ## Security
 
 While writing code in Drupal, it is mandatory to keep our code secure and apply the best practices.
