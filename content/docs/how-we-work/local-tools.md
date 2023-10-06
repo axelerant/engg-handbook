@@ -28,7 +28,7 @@ Like choosing an IDE that works for you is important, it is also equally importa
 
 We use GitHub UI to interact with Pull requests (PRs) created by peers like review, merging or closing.
 
-- VS Code - [Manual](https://code.visualstudio.com/docs/sourcecontrol/github) with a quick [demo](https://vscode.github.com/)
+- VS Code - [Manual](https://code.visualstudio.com/docs/sourcecontrol/github) and short [demos](https://vscode.github.com/)
 - PHP Storm - [Manual](https://www.jetbrains.com/help/phpstorm/github.html)
 
 ##### JIRA
