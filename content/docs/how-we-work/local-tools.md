@@ -24,26 +24,23 @@ Visual Studio Code is a free and open-source editor that supports a broad range 
 
 Like choosing an IDE that works for you is important, it is also equally important you have the necessary extensions/plugins that works well with your IDE and caters to your development workflow.
 
-As a developer some of the most common tasks done are,
+##### GitHub
 
-- using GitHub UI to interact with Pull requests (PRs) created by peers like review, merging or closing
-- updating the ticket status and progress in a tool like JIRA (there are other tools as well however we use JIRA at Axelerant).
+We use GitHub UI to interact with Pull requests (PRs) created by peers like review, merging or closing.
 
-Using extensions to do the above right from the IDE allows for better collaboration, less turn around times for PR reviews and more accurate time logging and ticket updates.
-
-Below are some recommendations for the above tasks.
-
-##### GitHub extensions
-
-- VS Code - [Manual](https://code.visualstudio.com/docs/sourcecontrol/github) with [demos](https://vscode.github.com/)
+- VS Code - [Manual](https://code.visualstudio.com/docs/sourcecontrol/github) with a quick [demo](https://vscode.github.com/)
 - PHP Storm - [Manual](https://www.jetbrains.com/help/phpstorm/github.html)
 
-##### JIRA extensions
+##### JIRA
 
-- VS Code - [This extension](https://marketplace.visualstudio.com/items?itemName=gioboa.jira-plugin&ssr=false#overview) has better reviews than [Atlassian extension](https://marketplace.visualstudio.com/items?itemName=Atlassian.atlascode&ssr=false#overview)
-- PHP Storm - [This extension](https://plugins.jetbrains.com/plugin/11169-jira-integration) though there are [mixed reviews](https://plugins.jetbrains.com/plugin/11169-jira-integration/reviews) and some [issues](https://stackoverflow.com/questions/41593590/phpstorm-and-jira-integration), [this video](https://www.youtube.com/watch?v=uQuqIMtLrB0) might help
+We use JIRA for updating the ticket status and progress.
+
+- VS Code - [The JIRA plugin](https://marketplace.visualstudio.com/items?itemName=gioboa.jira-plugin&ssr=false#overview) has better reviews than [Atlassian plugin](https://marketplace.visualstudio.com/items?itemName=Atlassian.atlascode&ssr=false#overview)
+- PHP Storm - [The JIRA Integration plugin](https://plugins.jetbrains.com/plugin/11169-jira-integration) and a [demo](https://www.youtube.com/watch?v=uQuqIMtLrB0)
 
 **NOTE:** Though the above extensions support time tracking with JIRA, we use Mavenlink at Axelerant. You might want to use the feature to track the time but still log manually in Mavenlink.
+
+Using extensions to do the above right from the IDE allows for better collaboration, less turn around times for PR reviews and more accurate time logging and ticket updates.
 
 ### Development environments
 
