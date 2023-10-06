@@ -35,7 +35,7 @@ We use GitHub UI to interact with Pull requests (PRs) created by peers like revi
 
 We use JIRA for updating the ticket status and progress.
 
-- VS Code - [The JIRA plugin](https://marketplace.visualstudio.com/items?itemName=gioboa.jira-plugin&ssr=false#overview) has better reviews than [Atlassian plugin](https://marketplace.visualstudio.com/items?itemName=Atlassian.atlascode&ssr=false#overview)
+- VS Code - [The JIRA plugin](https://marketplace.visualstudio.com/items?itemName=gioboa.jira-plugin&ssr=false#overview) or the [Atlassian plugin](https://marketplace.visualstudio.com/items?itemName=Atlassian.atlascode&ssr=false#overview)
 - PHP Storm - [The JIRA Integration plugin](https://plugins.jetbrains.com/plugin/11169-jira-integration) and a [demo](https://www.youtube.com/watch?v=uQuqIMtLrB0)
 
 **NOTE:** Though the above extensions support time tracking with JIRA, we use Mavenlink at Axelerant. You might want to use the feature to track the time but still log manually in Mavenlink.
