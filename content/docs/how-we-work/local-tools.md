@@ -20,6 +20,28 @@ PHPStorm is perfect for working with core PHP and PHP frameworks such as Drupal,
 
 Visual Studio Code is a free and open-source editor that supports a broad range of programming languages. Visual Studio Code features a rich set of tools that enhance our productivity, such as an integrated terminal, Git integration, and IntelliSense, which provides real-time suggestions and code completion.
 
+#### Extensions/Plugins
+
+Like choosing an IDE that works for you is important, it is also equally important you have the necessary extensions/plugins that works well with your IDE and caters to your development workflow.
+
+##### GitHub
+
+We use GitHub UI to interact with Pull requests (PRs) created by peers like review, merging or closing.
+
+- VS Code - [Manual](https://code.visualstudio.com/docs/sourcecontrol/github) and short [demos](https://vscode.github.com/)
+- PHP Storm - [Manual](https://www.jetbrains.com/help/phpstorm/github.html)
+
+##### JIRA
+
+We use JIRA for updating the ticket status and progress.
+
+- VS Code - [The JIRA plugin](https://marketplace.visualstudio.com/items?itemName=gioboa.jira-plugin&ssr=false#overview) or the [Atlassian plugin](https://marketplace.visualstudio.com/items?itemName=Atlassian.atlascode&ssr=false#overview)
+- PHP Storm - [The JIRA Integration plugin](https://plugins.jetbrains.com/plugin/11169-jira-integration) and a [demo](https://www.youtube.com/watch?v=uQuqIMtLrB0)
+
+**NOTE:** Though the above extensions support time tracking with JIRA, we use Mavenlink at Axelerant. You might want to use the feature to track the time but still log manually in Mavenlink.
+
+Using extensions to do the above right from the IDE allows for better collaboration, less turn around times for PR reviews and more accurate time logging and ticket updates.
+
 ### Development environments
 
 Development environments are trickier to maintain as per individual preferences and that is why the team usually opts for a single development environment (configured in the project repository). Our choice of development environments are [Lando](https://docs.lando.dev/getting-started/installation.html) and [DDEV](https://ddev.readthedocs.io/en/stable/users/install/) and we have tooling to improve some of our processes for both.
