@@ -25,7 +25,7 @@ As developers, code contributions are the main part of our open source contribut
 
 We have many ways to make open source contributions besides writing code. Some examples include contributing to documentation, organizing events, providing mentorship, writing blog posts, and developing promotional materials. All of these contributions can greatly benefit a project and help it thrive.
 
-Furthermore, we can participate in community events like cons, camps, and meetups, which have informal contribution opportunities. We can also update documentation, including docs on drupal.org and inline code documentation. However, contributions that can be done by automation or bots, such as patch re-rolls and merge request rebase, may not receive credit. Another way to contribute is by volunteering at open source community camps or events, such as by adding content to camp or conference websites. We can also contribute by promoting it via social media to create awareness of its features and benefits.
+Furthermore, we can participate in community events like conferences, camps, and meetups, which have informal contribution opportunities. We can also be involved in updating the documentation. However, contributions that can be done by automation or bots, such as patch re-rolls and merge request rebase, may not receive credit. We can also contribute by promoting via social media to create awareness.
 
 ### Why should we contribute?
 
