@@ -22,7 +22,7 @@ weight: 2
 
 You can find all issues related to the module, theme, or Core in the sidebar of the project.
 
-![Working on issues](drupal_issues.png)
+![Working on issues](../drupal_issues.png)
 
 Before working on these issues, Read and understand the [issue etiquette documentation](https://www.drupal.org/issue-etiquette).
 
@@ -53,4 +53,4 @@ Follow along with the existing contributions.
 
 Don't forget to add Axelerant as your organization and Drupal India Association as your customer.
 
-![Attribute to Axelerant](drupal_attrib.png)
+![Attribute to Axelerant](../drupal_attrib.png)
