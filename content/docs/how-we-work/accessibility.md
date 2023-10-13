@@ -1,47 +1,36 @@
 ---
 title: Accessibility
 weight: 9
-description: We implement 508 and WCAG compliant websites so that people with all types of disabilities, whether it be cognitive impairment, learning disability, physical impairment, sensory impairment, or visual impairment, have access to our sites.
+description: In an increasingly digital world, our commitment to accessibility is not just a necessity—it's a strategic choice. As we navigate the landscape of technology, we stand as architects of change, sculpting solutions that comply with legal standards and are ethical statements of our dedication to diversity and inclusion.
 ---
 
 # Accessibility
 
-We implement 508 and WCAG compliant websites so that people with all types of disabilities, whether it be physical, mental, or visual impairment, have access to our sites.
+{{< blockquote author="UN" cite="Convention on The Rights of Persons with Disabilities" quote="Access to information and communications technologies, including the Web, is a basic human right." >}}
 
-## How we do this
+In an increasingly digital world, our commitment to accessibility is not just a necessity—it's a strategic choice. As we navigate the landscape of technology, we stand as architects of change, sculpting solutions that comply with legal standards and are ethical statements of our dedication to diversity and inclusion.
 
-- We use base themes/templates which implement ADA and WCAG guidelines.
-- We implement good SEO structures (which mimic good ADA structures).
-- We implement responsive design strategies that that can present complex data in hierarchical structures, capable of being navigated by audio cues.
-- We implement modules which enable readers to change color schemes and text size displays to accommodate their visual impairments.
-- We test sites using visual screen readers and accessibility testing tools.
-- We use good practices in using semantic markup in page templates and report design to define content hierarchy (e.g. primary head is h1, secondary head is h2, etc).
+At Axelerant, we believe the digital world should be accessible to everyone. We are committed to creating digital solutions that break down barriers. In this space, we don't just talk about making things work; we talk about making them work for everyone.
 
-## When we do this
+## Legal and Regulatory Landscape
 
-- We always produce work that is accessible to people of all abilities, regardless of client. However, we recognize that the level of accessibility compliance and prioritization can be influenced by budgetary and contractual implications.
-- We aim to do accessibility work continuously, as a component of each design and development task. Accessibility scans should be performed on a per-ticket basis and signed off on before work is considered complete.
-- Accessibility should NOT BE left until the end of a project.
+Navigating the legal and regulatory landscape is pivotal for any service provider committed to excellence in digital accessibility. At Axelerant, we understand the importance of compliance and ethical practices. Our primary approach aligns with essential internationally recognized standards, which include [EN 301 549](https://digital-strategy.ec.europa.eu/en/policies/latest-changes-accessibility-standard) and [Section 508](https://www.section508.gov/).
 
-## General Accessibility Guidelines
+## Web Content Accessibility Guidelines (WCAG)
 
-- Form elements should have labels.
-- Images should have alt text.
-- Decorative images or images with no content should either have a null alt tag (alt = "") or be rendered as background images.
-- Form buttons should have descriptive values.
-- Color should not be used as the sole method of conveying content or distinguishing visual elements.
-- Color alone is not used to distinguish links from surrounding text unless the luminance contrast between the link and the surrounding text is at least 3:1 and an additional differentiation (e.g., it becomes underlined) is provided when the link is hovered over or receives focus.
-- The page should be readable and functional when the text size is doubled. We need to use rem font-sizing to make the text scale as expected when the webpage is zoomed-in. Also provides reliable text-resizing in smaller browser widths.
-- Need to have adequate line spacing (at least 1/2 the height of the text) and paragraph spacing (1.5 times line spacing).
+[WCAG](https://www.w3.org/TR/WCAG22/), an internationally recognized set of guidelines, ensures accessible digital content. Adhering to WCAG is not just a legal obligation; it demonstrates a commitment to excellence in creating universally accessible experiences. At Axelerant, we strictly follow [WCAG 2.2 AA/AAA standards](https://www.w3.org/TR/WCAG22/) for all our digital assets, integrating accessibility throughout the development process. Accessibility is not an afterthought but an integral part of our comprehensive strategies, from requirements to deployment.
 
-## Making Accessible Links
+## POUR Principles
 
-- Don’t use the word “link” in your links.
-- Don’t capitalize links: Some screenreaders read capitalized text letter by letter.
-- Avoid ASCII characters. Text alternatives are recommended for ASCII smiley faces. If a link involves dashes (17 - 18 years), it is better to replace the hyphen with '"to". Screen-readers do not read ASCII characters.
-- Avoid using URLs as link text. Screenreaders read URL's letter by letter. Use descriptive link text.
-- Keep link text concise.
-- Generally, restrict the number of text links on a page. An exception to this rule is pagination/alphabetized links and these should include further contextual information or link text.
-- Be aware of pagination and alphabetized links: To make pagination links accessible, add text like "Go to page 1 | 2 | 3 .." before the pagination links. For alphabetized links (eg. glossary links), add a descriptive title before the links.
-- Always alert the user when opening new windows. It is important to alert visually-challenged users that a new window has been opened. The best way to indicate that a link opens in a new window is to add text to the link, such as “(opens in new window)”.
-- Be mindful when using anchor links. Adding descriptive text like Jump to.. or On this page will help indicate that the link is within the same page.
+We always take into account the [four principles of accessibility](https://www.w3.org/TR/WCAG21/#later-versions-of-accessibility-guidelines) (namely perceivable, operable, understandable, and robust, also called POUR principles), which are a set of guidelines designed to ensure that web content is accessible to all users.
+
+## Why Digital Accessibility?
+
+We believe digital accessibility brings a multitude of ethical and business benefits.
+By prioritizing inclusivity and respecting diverse users, we demonstrate our commitment to equality. This fosters enhanced user experiences, leading to increased customer satisfaction and loyalty. Additionally, ensuring equal access to opportunities facilitates market expansion, tapping into new demographics and revenue streams.
+Upholding integrity and transparency in our practices builds brand trust and reputation, creating a competitive edge as an accessibility champion.
+We always meet legal requirements, which not only showcase social responsibility but also mitigate legal risks, providing a secure operating environment. By embracing digital accessibility as an innovation catalyst, it enables us to be industry leaders through innovative and human-centric approaches.
+
+## Our Solutions and Approach
+
+At Axelerant, we follow "shift left" and "shift right" approaches. We adopt a "shift left" approach to ensure the early integration of digital accessibility from the initial planning and requirements analysis stages. By doing so, we aim to catch and address potential issues early, preventing the need for extensive retroactive fixes. Conversely, we implement a "shift right" approach, focusing on post-deployment monitoring and continuous improvement. Through this approach, we remain vigilant after the product launch, actively monitoring user feedback, tracking accessibility metrics, and swiftly addressing emerging issues.
