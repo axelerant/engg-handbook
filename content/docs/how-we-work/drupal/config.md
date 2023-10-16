@@ -14,3 +14,7 @@ The `production` should not have `views_ui` and `field_ui` module installed. The
 ## Ignoring configurations
 
 There is a configuration which you want to ignore whenever you are exporting configurations from your setup. Use [`config_ignore`](https://www.drupal.org/project/config_ignore).
+
+## Managing Secret Keys
+
+We use modules like [Key](https://www.drupal.org/project/key) to manage secrets keys (such as API and encryption keys).
