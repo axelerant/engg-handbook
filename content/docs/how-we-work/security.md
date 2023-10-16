@@ -14,11 +14,9 @@ For example, an application relies on database credentials to connect to the dat
 
 ## Server and Website Security
 
-We prioritize server and site security in our operations. This involves the use of sanitized databases, which entails the modification or removal of sensitive information to safeguard data privacy and security. Additionally, we routinely scrub unneeded data from our development environments, ensuring that any data no longer necessary for the project is removed and that the remaining data is securely stored.
+We are mindful of server and site security in our operations. This involves the use of sanitized databases, which entails the modification or removal of sensitive information to safeguard data privacy and security. Additionally, we routinely scrub unneeded data from our development environments, ensuring that any data no longer necessary for the project is removed and that the remaining data is securely stored.
 
 To further enhance security, we establish separate accounts for each user on production and implement two-factor authentication wherever feasible. While we do not create test accounts on production, we are mindful to remove any such accounts promptly after testing is completed, if they were necessary in the first place.
-
-Moreover, we regularly carry out automated backup procedures to ensure that critical data can be restored in the event of data loss due to security vulnerabilities. Lastly, we maintain separate configuration files for production, especially when they contain sensitive information such as credentials.
 
 These practices are crucial in ensuring that our personal information is not at risk of unauthorized access, security vulnerabilities, or potential breaches of sensitive information.
 
