@@ -14,15 +14,7 @@ For example, an application relies on database credentials to connect to the dat
 
 ## Server and Website Security
 
-In particular, we practice server and site security by:
-
-- Using only sanitized databases, sanitizing a database involves removing or modifying sensitive information to protect the privacy and security of the data.
-
-- Restricted access files should only be installed at locations within the project-defined security validation boundaries.
-
-- Scrubbing unneeded data from our development environments, which involves the time-to-time removal of any data that is no longer necessary for the project and ensuring that the remaining data is properly secured
-
-These practices could ensure that our personal information is not at risk of unauthorized access, security vulnerabilities, or potential breaches of sensitive information.
+These practices are crucial in ensuring that our personal information is not at risk of unauthorized access, security vulnerabilities, or potential breaches of sensitive information.
 
 As developers, we follow technology specific coding standards and best practices and write secure code as per the respective community’s guidelines.
 
