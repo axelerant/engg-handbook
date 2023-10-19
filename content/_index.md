@@ -6,15 +6,15 @@ draft: false
 
 # Axelerant Engineering Handbook
 
-Note: This handbook is close to release but not quite complete. In any case, it has been made public given our value of [openness]({{< relref "docs/principles/open-source" >}}). Please edit the pages here using the links below on each page.
+_Note: This handbook is close to release but not quite complete. Please edit the pages using the link at the bottom._
 
 This handbook is not a guide nor a tutorial for a specific language or technology we use at Axelerant. This handbook aims to show to an engineer at Axelerant what we value. It says who we are and how we work. It helps you understand what you need to do to succeed at Axelerant.
 
-The primary target audience for this handbook is an engineer who is new to The Axelerant Way, or someone who needs a reminder (we all do, from time to time). We will avoid diving deep into specific technologies and instead link to resources and references that will do the job. Reading those references is an important part of reading this handbook.
+The primary target audience for this handbook is an engineer who is new to [The Axelerant Way]({{< relref "docs/references/the-axelerant-way.md" >}}), or someone who needs a reminder (we all do, from time to time). We will avoid diving deep into specific technologies and instead link to resources and references that will do the job. Reading those references is an important part of reading this handbook.
 
 The handbook begins with the [principles that we follow]({{< relref "docs/principles" >}}) when working at Axelerant. We further elaborate on some of those principles in the next section which is to do with [behaviors we expect from each other]({{< relref "docs/behaviors" >}}). This is followed by a section on [being productive]({{< relref "docs/productivity" >}}). While the target audience for these sections are engineers (like the rest of the handbook), these three sections are probably suitable for all Axelerant team members.
 
-We then begin with general guidelines on technical topics. As mentioned before, we have tried to keep the specific methods out of the scope except when those methods are ubiquitous (such as [git]({{< relref "docs/how-we-work/git" >}})) in the industry or at Axelerant.
+We then cover general guidelines on technical topics. We talk about generic technologies first: concepts that will likely be required regardless of what you work on. This is followed by references on specific topics such as Drupal. We try not to replicate what's out there. Instead, we link to those resources and give pointers on our standard practices. We also understand that software development largely depends on the requirements. That is why, all of this is prescriptive but not mandatory.
 
 ## Contributing to the handbook
 
