@@ -5,7 +5,7 @@ weight: 5
 
 # Coding
 
-At Axelerant, we prefer using community modules. But sadly, that doesn't always meet the requirements.
+At Axelerant, we [prefer using community modules]({{< relref "../../principles/proudly-invented-elsewhere" >}}). But sadly, that doesn't always meet the requirements.
 
 ## Double check
 
@@ -23,7 +23,7 @@ If we have written a generic implementation, others in the project can use it ve
 
 ## Contribution first
 
-We have a strong enthusiasm for [open source contributions]({{< relref "../open-source-contribution/" >}}), particularly in coding. Whenever we encounter a problem within a module, our first instinct is to find a solution and submit a patch to address it. Similarly, if we come across someone seeking assistance in the drupal.org issue queue and we happen to know the answer, we gladly provide a comment to help them out. Additionally, when we develop a generic solution that can solve a common problem, we will submit it as a module. We believe in the power of collaboration and the impact of shared knowledge.
+We have a strong enthusiasm for [open source contributions]({{< relref "../open-source-contribution/" >}}), particularly in [Drupal]({{< relref "../open-source-contribution//drupal-contribution/" >}}) coding. Whenever we encounter a problem within a module, our first instinct is to find a solution and submit a patch to address it. Similarly, if we come across someone seeking assistance in the drupal.org issue queue and we happen to know the answer, we gladly provide a comment to help them out. Additionally, when we develop a generic solution that can solve a common problem, we will submit it as a module. We believe in the power of collaboration and the impact of shared knowledge.
 
 ## Security
 
@@ -31,8 +31,25 @@ While writing code in Drupal, it is mandatory to keep our code secure and apply 
 
 - [Writing secure code for Drupal](https://www.drupal.org/docs/administering-a-drupal-site/security-in-drupal/writing-secure-code-for-drupal)
 
-## Coding Standards
+## Drupal-specific Coding Standards
 
-We apply the Drupal coding standards when coding in Drupal projects. We always make sure that these standards are up-to-date and version-independent.
+- We follow [Drupal Coding Standards](https://www.drupal.org/docs/develop/standards), which include PHP, CSS, JavaScript, Twig, YAML, and more.
 
-- [Drupal coding standards and best practices](https://www.drupal.org/docs/develop/standards)
+- We ensure [Code Quality with DCQ](https://www.drupal.org/project/dcq) which includes the Coder module to ensure code meets Drupal standards.
+
+- We use namespaces so that we avoid namespace collisions.
+
+- We always try to use Drupal functions where they exist. This helps with upgrades, among other things.
+
+- We use a theme system. When theming, don’t hack module code when it is possible to use a theme function instead.
+
+  - The corollary: when coding modules, keep all markup in theme functions.
+
+- We use render arrays and theme functions, so we can separate logic and presentation.
+  We try to keep modules that could be useful on another site completely generic from the start (a good technique is to develop on a fresh Drupal install rather than the actual site) and theme the site-specific stuff in your site theme.
+
+- We use contrib modules (or write new ones!)
+
+  - The Most Important Decision in Developing a Drupal Site: Contributed vs. custom development: When writing code, we try to think about abstracting functionality where appropriate. This makes it easier for us to contribute back to the larger community and also lets us recycle our work on different projects. Keep an eye on the horizon!
+
+- We put any site text longer than a line or two in a settings field (or, at the very least, a variable).
