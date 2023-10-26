@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: engg-handbook
+  annotations:
+    github.com/project-slug: axelerant/engg-handbook
+spec:
+  type: other
+  lifecycle: unknown
+  owner: axelerant-coe-tech-internal
