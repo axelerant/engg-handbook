@@ -35,7 +35,7 @@ While writing code in Drupal, it is mandatory to keep our code secure and apply 
 
 - We follow [Drupal Coding Standards](https://www.drupal.org/docs/develop/standards), which include PHP, CSS, JavaScript, Twig, YAML, and more.
 
-- We ensure [Code Quality with DCQ](https://www.drupal.org/project/dcq) which includes the Coder module to ensure code meets Drupal standards.
+- We use tools like the [Drupal Quality Checker](https://github.com/axelerant/drupal-quality-checker) to ensure that our code meets Drupal standards.
 
 - We use namespaces so that we avoid namespace collisions.
 
