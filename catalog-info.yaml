@@ -1,10 +1,11 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: engg-handbook
+  name: Engineering Handbook
   annotations:
     github.com/project-slug: axelerant/engg-handbook
 spec:
-  type: other
+  type: website
   lifecycle: unknown
   owner: axelerant-coe-tech-internal
+  system: 42583535-axelerant-coe-tech-internal
