@@ -35,6 +35,37 @@ We currently have the below handbooks at Axelerant.
 
 4. **Engagement Handbook** specific to the project.
 
+```mermaid
+flowchart TD
+    Content(Content is)
+    AxlHB(Axelerant Handbook)
+    EngHB(Engineering Handbook)
+    DelHB(Delivery Handbook)
+    EggHB(Engagement Handbook)
+
+    P1[engineering related]
+    P2[delivery related]
+    P3[non-delivery<br /><em>e.g., sales, marketing, etc.</em>]
+
+    P1a{Do you think<br /> other projects would<br /> have a similar need?}
+    P2a{Do you think<br /> other projects would<br /> have a similar need?}
+
+    Content --> P1
+    Content --> P2
+    Content --> P3
+
+    P1 -- Yes --> P1a
+    P1a -- Yes --> EngHB
+    P1a -- No --> EggHB
+
+    P2 -- Yes --> P2a
+    P2a -- Yes --> DelHB
+    P2a -- No --> EggHB
+
+    P3 -- <em>possibly</em> --> AxlHB
+```
+
+{{< details "Textual description of the flowchart above" >}}
 Ask the following questions to yourself whenever you find that you are unsure whether the content you have needs to go into which handbook.
 
 1. Is the content applicable for engineers alone (check the Engineering Handbook for what kind of content we already have)?
@@ -55,6 +86,8 @@ Ask the following questions to yourself whenever you find that you are unsure wh
 
 3. Is the content applicable for everyone in a project however not related to delivery but involves other departments like Sales, Marketing, etc…?
    - If the answer to the above question is yes, this might be a potential candidate for Axelerant Handbook. Kindly check with the respective department head who can guide you further.
+
+{{< /details >}}
 
 ### Need for judicial application
 
