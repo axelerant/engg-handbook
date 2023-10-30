@@ -1,7 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: Engineering Handbook
+  name: engg-handbook
+  title: Engineering Handbook
   annotations:
     github.com/project-slug: axelerant/engg-handbook
     backstage.io/techdocs-ref: content/docs
