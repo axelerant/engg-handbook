@@ -4,6 +4,7 @@ metadata:
   name: Engineering Handbook
   annotations:
     github.com/project-slug: axelerant/engg-handbook
+    backstage.io/techdocs-ref: content/docs
 spec:
   type: website
   lifecycle: unknown
