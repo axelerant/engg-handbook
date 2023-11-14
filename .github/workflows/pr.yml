@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - uses: xt0rted/markdownlint-problem-matcher@v1
+      - uses: xt0rted/markdownlint-problem-matcher@v2
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
