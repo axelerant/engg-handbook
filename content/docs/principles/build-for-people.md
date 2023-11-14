@@ -1,18 +1,18 @@
 ---
 weight: 2
-description: We don't write code in a vacuum. We write code to solve problems for our customer, using systems used by their customers, all of which will be maintained by your teammates.
+description: We don't write code in a vacuum. We write code to solve problems for our customers using systems that their customers use, all of which will be maintained by our teammates.
 ---
 
 # Build for People
 
-We don't write code in a vacuum. We write code to solve problems for our customer, using systems used by their customers, all of which will be maintained by your teammates. We write code once but it is read many times and executed significantly more times.
+We don't write code in a vacuum. We write code to solve problems for our customers using systems that their customers use, all of which will be maintained by our teammates. We write code once but it is read many times and executed many times more than it is read.
 
 ## Solve the problem {#solve}
 
-You could write the most beautiful, most efficient, most poetic code you possibly can, but if it doesn't help your customer, it doesn't help anyone. Write great code and solve the problem.
+We write the most beautiful, most efficient, most poetic code you possibly can, but if it doesn't help our customer, it doesn't help anyone. We write great code and solve the problem.
 
 ## Write readable code {#readable-code}
 
-Do not try to be clever with your code. There is a saying that debugging is harder than writing code. So if you write the cleverest possible code then, by definition, you are not clever enough to debug it.
+We do not try to be clever with our code. There is a saying that debugging is harder than writing code. So if we write the cleverest possible code then, by definition, we are not clever enough to debug it.
 
-Write your code so that it can be read and understood by other people.
+We write our code so that it can be read and understood by other people.
