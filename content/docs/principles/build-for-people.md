@@ -9,7 +9,7 @@ We don't write code in a vacuum. We write code to solve problems for our custome
 
 ## Solve the problem {#solve}
 
-We write the most beautiful, most efficient, most poetic code you possibly can, but if it doesn't help our customer, it doesn't help anyone. We write great code and solve the problem.
+You could write the most beautiful, most efficient, most poetic code you possibly can, but if it doesn't help our customer, it doesn't help anyone. We write great code and solve the problem.
 
 ## Write readable code {#readable-code}
 
