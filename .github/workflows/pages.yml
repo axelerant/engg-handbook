@@ -34,7 +34,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 20
       - name: Install node modules
         run: yarn
       - name: Lint files
@@ -45,7 +45,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: lint
     env:
-      HUGO_VERSION: 0.112.7
+      HUGO_VERSION: 0.120.4
     steps:
       - name: Install Hugo CLI
         run: |
