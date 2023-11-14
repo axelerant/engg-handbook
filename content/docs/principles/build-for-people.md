@@ -13,6 +13,6 @@ You could write the most beautiful, most efficient, most poetic code you possibl
 
 ## Write readable code {#readable-code}
 
-We do not try to be clever with our code. There is a saying that debugging is harder than writing code. So if we write the cleverest possible code then, by definition, we are not clever enough to debug it.
+Do not try to be clever while writing code. There is a saying that debugging is harder than writing code. So if we write the cleverest possible code then, by definition, we are not clever enough to debug it.
 
 We write our code so that it can be read and understood by other people.
