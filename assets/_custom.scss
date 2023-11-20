@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'Gilroy';
-  src:
-    url('./fonts/Gilroy-Bold.woff2') format('woff2'),
+  src: url('./fonts/Gilroy-Bold.woff2') format('woff2'),
     url('Gilroy-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
@@ -10,8 +9,7 @@
 
 @font-face {
   font-family: 'Gilroy';
-  src:
-    url('./fonts/Gilroy-Regular.woff2') format('woff2'),
+  src: url('./fonts/Gilroy-Regular.woff2') format('woff2'),
     url('Gilroy-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
@@ -20,8 +18,7 @@
 
 @font-face {
   font-family: 'Gilroy';
-  src:
-    url('./fonts/Gilroy-Medium.woff2') format('woff2'),
+  src: url('./fonts/Gilroy-Medium.woff2') format('woff2'),
     url('Gilroy-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
@@ -344,7 +341,7 @@ body {
     }
   }
 
-  h2{
+  h2 {
     font-size: 24px;
     line-height: 28px;
     margin-top: 0;
