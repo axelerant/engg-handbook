@@ -344,8 +344,7 @@ body {
     }
   }
 
-  h2,
-  h3 {
+  h2 {
     font-size: 24px;
     line-height: 28px;
     margin-top: 0;
@@ -359,6 +358,10 @@ body {
   }
 
   h3 {
+    font-size: 20px;
+    margin-top: 0;
+    font-weight: bold;
+    padding-top: 30px;
     margin-bottom: 20px;
 
     @media (max-width: $mobile-breakpoint) {
@@ -367,7 +370,7 @@ body {
   }
 
   h4 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   blockquote {
@@ -376,7 +379,7 @@ body {
     padding-left: 30px;
 
     p {
-      font-size: 20px !important;
+      font-size: 18px !important;
     }
   }
 }
