@@ -27,7 +27,7 @@ We have many ways to make open source contributions besides writing code. Some e
 
 Furthermore, we can participate in community events like conferences, camps, and meetups, which have informal contribution opportunities. We can also be involved in updating the documentation. However, contributions that can be done by automation or bots, such as patch re-rolls and merge request rebase, may not receive credit. We can also contribute by promoting via social media to create awareness.
 
-### Why should we contribute?
+## Why should we contribute?
 
 When we contribute, we easily learn how to write clean, readable, and maintainable code. This not only makes our work more efficient but also earns us recognition and appreciation within the developer community. As we immerse ourselves in the codebase of the technology we're using to build our applications, we gain a profound understanding of its intricacies. This deep dive allows us to gauge the long-term cost-effectiveness of our projects and offers insights into what other developers are doing, giving us the freedom to extend and innovate as needed. This enabled us to add a noticeable point to our resume and build an outstanding portfolio.
 
