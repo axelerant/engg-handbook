@@ -54,3 +54,11 @@ Follow along with the existing contributions.
 Don't forget to add Axelerant as your organization and Drupal India Association as your customer.
 
 ![Attribute to Axelerant](../drupal_attrib.png)
+
+## [Abuse of the Contribution Credit System and its Consequences](https://www.drupal.org/drupalorg/docs/marketplace/abuse-of-the-contribution-credit-system)
+
+The abuse of the credit system has different consequences for individuals and organizations.
+
+Individuals may receive a temporary block to prevent credit spamming, with the aim of helping them become authentic contributors, and may receive educational material. If educational materials are ignored, the block may be extended.
+
+Organizations face more serious consequences, including negative credits to nullify the value of farming and temporary delisting from the marketplace. After the first warning, educational materials are sent. A second warning results in negative credit and a warning of potential delisting for up to a week. A third warning increases the negative credit and the potential delisting period to a month. A fourth warning applies negative credit again and warns of indefinite delisting, requiring the organization to work with the Drupal Association on a remediation plan.
