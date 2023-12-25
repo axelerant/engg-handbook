@@ -22,25 +22,25 @@ The above should not be read to mean that we obsess over technology. We use suit
 
 ### Understand how computers work {#computers}
 
-We write programs to tell computers how to solve a problem. To do that well, we have to understand how computers work. How does the computer interpret our code? How does it work with data? How does memory work? How do networks work? Each of these questions lead to deep rabbit holes and there are a lot more questions like these that we have to deal with.
+We write programs to tell computers how to solve a problem. To do that well, we have to understand how computers work. How does the computer interpret our code? How does it work with data? How does memory work? How do networks work? Each of these questions leads to deep rabbit holes and there are a lot more questions like these that we have to deal with.
 
-We can't be productive if all we do is explore these rabbit holes. But we have to know enough of these topics to ask meaningful questions and learn.
+We can't be productive if all we do is explore these rabbit holes. But we have to know enough about these topics to ask meaningful questions and learn.
 
 #### Understand time and space complexity {#complexities}
 
 The computer takes a certain number of CPU cycles when it executes an instruction we wrote in the code. Every variable that we create consumes a certain amount of memory. So, we assess the solution we wrote to solve a problem. It should be fair on the computer whether the number of data is less or more.
 
-### Understand how Internet works {#internet}
+### Understand how the Internet works {#internet}
 
-Axelerant focuses mainly on web development and understanding how Internet works is critical. What is Internet? How are the networks built? How do two computers on the opposite sides of the planet talk to each other? How does the web work? What is HTTP? How do browsers work? What are the common things browsers do to speed up a user's experience? The list is endless and we can only learn if we look out to learn.
+Axelerant focuses mainly on web development and understanding how the Internet works is critical. What is the Internet? How are the networks built? How do two computers on opposite sides of the planet talk to each other? How does the web work? What is HTTP? How do browsers work? What are the common things browsers do to speed up a user's experience? The list is endless and we can only learn if we look out to learn.
 
 ### Understand how operating systems work {#os}
 
-All computers, that is to say our laptop, or our phone, and the server we may be working with use an operating system. The code we write will run in that context. So we need to know enough about the operating system that affects our code. How does an operating system organize files? How does it deal with processes? How does it run long-running processes (such as servers)? How does it deal with memory management? How does it deal with security?
+All computers, that is to say, our laptops, our phones, and the servers we may be working with use an operating system. The code we write will run in that context. So we need to know enough about the operating system that affects our code. How does an operating system organize files? How does it deal with processes? How does it run long-running processes (such as servers)? How does it deal with memory management? How does it deal with security?
 
 ### Understand programming languages {#languages}
 
-We use a language to talk to the computer and they come in all shapes and sizes. It's important we know what questions to ask to understand a programming language better. What paradigm does it follow? Does it enforce a type system? How does it find an entry-point in our code? How deeply does it let us interact with our machine? How does our code get invoked? What resources are available to our code while it's running?
+We use a language to talk to the computer and they come in all shapes and sizes. It's important we know what questions to ask to understand a programming language better. What paradigm does it follow? Does it enforce a type system? How does it find an entry point in our code? How deeply does it let us interact with our machine? How does our code get invoked? What resources are available to our code while it's running?
 
 #### Distinguish types of programming languages {#language-types}
 
@@ -54,15 +54,15 @@ Classifying programming languages according to their traits is a good way to und
 
 ### Understand design patterns and SOLID principles {#design-principle}
 
-{{< blockquote  quote="Change is the only constant" >}}
+{{< blockquote quote="Change is the only constant" >}}
 
-Making changes in software will become havoc if it is not well-designed. Some of the best software engineers came up with design patterns and SOLID principles after they kept repeating the same mistake. Understanding them will help us to write software that is more adaptable to change.
+Making changes in software will cause havoc if it is not well-designed. Some of the best software engineers came up with design patterns and SOLID principles after they kept repeating the same mistake. Understanding them will help us to write software that is more adaptable to change.
 
 ## Understand why we use anything {#anything}
 
 It is easy to get lost in the world of technology and solve problems that don't exist. It is important to be reminded that all we do is to help our customers, either directly or indirectly.
 
-{{< blockquote  quote="Understand the fundamentals and make a sound decision on what to use and how." >}}
+{{< blockquote quote="Understand the fundamentals and make a sound decision on what to use and how." >}}
 
 ## Working with source code {#source-code}
 

@@ -3,5 +3,11 @@
         "Axelerant",
         "rebalance",
         "relref"
+    ],
+    "grammarly.selectors": [
+        {
+            "language": "markdown",
+            "scheme": "file"
+        }
     ]
 }

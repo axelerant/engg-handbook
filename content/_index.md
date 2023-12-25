@@ -14,11 +14,11 @@ This handbook documents [The Axelerant Way]({{< relref "docs/references/the-axel
 
 {{< blockquote author="adapted from Viktor Frankl, Man's Search for Meaning" quote="Those who have a 'why' can tolerate any number of 'hows'." >}}
 
-Taking inspiration from ideas such as above that focus on "why", this handbook also focuses on why we make the decisions the way we do. We cover how we work, of course, but we also primarily try to convey why we do that so that you can decide the circumstances in which you may choose not to follow the guidelines here.
+Taking inspiration from ideas such as above that focus on "why", this handbook also focuses on why we make decisions the way we do. We cover how we work, of course, but we also primarily try to convey why we do that so that you can decide the circumstances in which you may choose not to follow the guidelines here.
 
 ## Who is it for?
 
-The primary target audience for this handbook is an engineer who is new to [The Axelerant Way]({{< relref "docs/references/the-axelerant-way.md" >}}), or someone who needs a reminder (we all do, from time to time). When we say engineers in this handbook, we are referring to those who are involved in defining, writing, reviewing, testing, deploying, and operating any software system. At Axelerant, this includes developers with backend, frontend, QA, and SRE competencies (as of this writing).
+The primary target audience for this handbook is an engineer who is new to [The Axelerant Way]({{< relref "docs/references/the-axelerant-way.md" >}}) or someone who needs a reminder (we all do, from time to time). When we say engineers in this handbook, we are referring to those who are involved in defining, writing, reviewing, testing, deploying, and operating any software system. At Axelerant, this includes developers with backend, frontend, QA, and SRE competencies (as of this writing).
 
 We will avoid diving too deep into specific technologies and instead link to resources and references that will do the job. Reading those references is an important part of reading this handbook.
 
@@ -34,7 +34,7 @@ This handbook also serves as a constant reference during engineering onboarding.
 
 ## [Contributing to the handbook]({{< relref "docs/references/contributing.md" >}})
 
-You can suggest any changes to any of the pages by clicking on the "Edit this page" link at the bottom of each page. You can also use [Github](https://github.com/axelerant/engg-handbook) to add new pages to the handbook. As an engineer, you might want to clone the repo in your own environment (or use [Gitpod](https://gitpod.io/#https://github.com/axelerant/engg-handbook)) to make changes.
+You can suggest any changes to any of the pages by clicking on the "Edit this page" link at the bottom of each page. You can also use [Github](https://github.com/axelerant/engg-handbook) to add new pages to the handbook. As an engineer, you might want to clone the repo in your environment (or use [Gitpod](https://gitpod.io/#https://github.com/axelerant/engg-handbook)) to make changes.
 
 We welcome all contributions to the handbook, including from people outside Axelerant. That said, this handbook is meant to be opinionated and a (relatively) long-term guide. This is why we may not be able to accept all the changes we receive. Please read the above section to discern the intention of this handbook and hopefully, that can explain why we may not be able to accept your contribution.
 

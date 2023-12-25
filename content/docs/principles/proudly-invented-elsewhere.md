@@ -5,7 +5,7 @@ description: Software development is not new. That means somebody might have alr
 
 # Proudly Invented Elsewhere
 
-Software development is not new. Somebody has already faced a similar problem to what you are solving and solved it. Use libraries whenever you can. Even though a library might only meet 70-80% of our requirement, we consider using it.
+Software development is not new. Somebody has already faced a similar problem to what you are solving and solved it. Use libraries whenever you can. Even though a library might only meet 70-80% of our requirements, we consider using it.
 
 We prefer using established libraries over writing custom code. This approach helps us keep our count of lines of code small and that means fewer bugs for us. Using these libraries also provides a learning opportunity from a worldwide community of programmers.
 
