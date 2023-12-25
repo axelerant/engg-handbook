@@ -23,7 +23,7 @@ If we have written a generic implementation, others in the project can use it ve
 
 ## Contribution first
 
-We have a strong enthusiasm for [open source contributions]({{< relref "../open-source-contribution/" >}}), particularly in [Drupal]({{< relref "../open-source-contribution//drupal-contribution/" >}}) coding. Whenever we encounter a problem within a module, our first instinct is to find a solution and submit a patch to address it. Similarly, if we come across someone seeking assistance in the drupal.org issue queue and we happen to know the answer, we gladly provide a comment to help them out. Additionally, when we develop a generic solution that can solve a common problem, we will submit it as a module. We believe in the power of collaboration and the impact of shared knowledge.
+We have a strong enthusiasm for [open source contributions]({{< relref "../open-source-contribution/" >}}), particularly in Drupal coding. We proactively solve module issues and contribute generic solutions to [drupal.org](http://drupal.org/), embodying the spirit of collaboration and shared knowledge. [Learn more]({{< relref "../open-source-contribution//drupal-contribution/" >}}).
 
 ## Security
 
