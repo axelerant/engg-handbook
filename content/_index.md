@@ -10,7 +10,7 @@ _Note: This handbook is close to release but not quite complete. Please edit the
 
 ## What is this?
 
-This handbook documents [The Axelerant Way]({{< relref "docs/references/the-axelerant-way" >}}) for engineers at Axelerant.  It is neither a guide nor a tutorial for a specific language or technology we use at Axelerant. Rather, it aims to show an engineer at Axelerant what we value, who we are, and how we work. It helps you understand what you need to do to succeed at Axelerant.
+This handbook documents [The Axelerant Way]({{< relref "docs/references/the-axelerant-way" >}}) for engineers at Axelerant. It is neither a guide nor a tutorial for a specific language or technology we use at Axelerant. Rather, it aims to show an engineer at Axelerant what we value, who we are, and how we work. It helps you understand what you need to do to succeed at Axelerant.
 
 ## Who is it for?
 
