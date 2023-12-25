@@ -40,7 +40,13 @@ jobs:
       - name: Lint markdown files
         run: yarn lint:md
       - name: Lint with prettier
+        id: prettier
         run: yarn lint:prettier
+      - name: Show prettier problems
+        if: ${{ failure() && steps.prettier.conclusion == 'failure' }}
+        run: |
+          yarn lint-fix:prettier
+          git diff
 
   # Build job
   build:
