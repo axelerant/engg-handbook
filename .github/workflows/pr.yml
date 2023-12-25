@@ -20,8 +20,10 @@ jobs:
           node-version: 20
       - name: Install node modules
         run: yarn
-      - name: Lint files
-        run: yarn lint
+      - name: Lint markdown files
+        run: yarn lint:md
+      - name: Lint with prettier
+        run: yarn lint:prettier
 
   build:
     runs-on: ubuntu-latest
