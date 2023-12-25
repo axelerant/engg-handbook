@@ -1,10 +1,10 @@
 ---
-title: Focus on Fundamentals
+title: Remember the Fundamentals
 weight: 3
 description: We balance the value of getting started quickly with a robust understanding of the fundamentals.
 ---
 
-# Focus on Fundamentals
+# Remember the Fundamentals
 
 There's a saying that goes you can't build your home on an uneven foundation. This is strongly mirrored in many scientific disciplines, and while software engineering is a lot more forgiving than those disciplines, that doesn't make it unimportant. It makes it even more important to stress those fundamentals because one can survive in this industry for a long time without worrying about them. That's not who we are at Axelerant.
 

@@ -6,10 +6,11 @@ description: Engineering is the science of picking tradeoffs. Be mindful of what
 
 # Know your tradeoffs
 
-There will always be a moment when there are two or more choices, and you pick one. The situation happens more often in software development. At Axelerant, we value your decision. But it should have a reasoning behind it.
+It's a common joke that senior software engineers answer all technical questions with "It depends." It happens far more often than you think. It turns out that making decisions in designing software is not easy.
 
-1. Is the solution adaptable to [change]({{< ref "fundamentals.md#design-principle" >}})?
-1. Can it be delivered to the customer within the deadline?
-1. Can it be picked up by anyone from your team in case you are away?
+Maturity in software engineering is a result of understanding the tradeoffs in all your decisions. There is no perfect solution; only the most relevant one. Our job as a software engineer is to:
 
-And there can be more. Our core value is to work as a team. So, [do not hesitate]({{< ref "ask-for-help.md" >}}) to review your decision with your peers.
+1. Make sure we make the best decision possible given what we know.
+2. Design the system so that it is easy to redesign our solution if things change.
+
+We can't see all ends and this is where the wisdom of the team comes in. Our core value is to work as a team. So, [do not hesitate]({{< ref "ask-for-help.md" >}}) to review your decision with your peers.
