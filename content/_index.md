@@ -28,6 +28,10 @@ The handbook begins with the [principles that we follow]({{< relref "docs/princi
 
 We then cover general guidelines on technical topics. We talk about generic technologies first: concepts that will likely be required regardless of what you work on. This is followed by references on specific topics such as Drupal. We try not to replicate what's already out there. Instead, we link to those resources and give pointers on our standard practices. We also understand that software development largely depends on the requirements. That is why, all of this is prescriptive, not mandatory.
 
+### Relationship to Onboarding
+
+This handbook also serves as a constant reference during engineering onboarding. Our intention is to build the handbook along the framework of PPP: principles, practices, and platform. The first two sections of the handbook already match the first two components of that framework. The "platform" component is woven throughout the handbook and will also be maintained elsewhere as "Axelerant Minimum Viable Platform". This is currently work-in-progress.
+
 ## [Contributing to the handbook]({{< relref "docs/references/contributing.md" >}})
 
 You can suggest any changes to any of the pages by clicking on the "Edit this page" link at the bottom of each page. You can also use [Github](https://github.com/axelerant/engg-handbook) to add new pages to the handbook. As an engineer, you might want to clone the repo in your own environment (or use [Gitpod](https://gitpod.io/#https://github.com/axelerant/engg-handbook)) to make changes.
