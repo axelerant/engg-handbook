@@ -15,6 +15,10 @@ updates:
       interval: "weekly"
     commit-message:
       prefix: "github-actions"
+    groups:
+      actions:
+        patterns:
+          - "actions/*"
 
   - package-ecosystem: "gomod"
     directory: "/"
