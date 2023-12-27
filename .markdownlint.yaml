@@ -6,7 +6,7 @@ single-title:
   front_matter_title: ""
 proper-names:
   code_blocks: false
-  # Disable this rule when needed using <!-- markdownlint-disable-next-line MD044 -->
+  # Disable this rule when needed using <!-- markdownlint-disable-line MD044 -->
   # See https://github.com/DavidAnson/markdownlint/issues/1081#issuecomment-1870229958
   names:
   - Axelerant
