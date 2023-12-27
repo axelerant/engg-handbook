@@ -10,7 +10,7 @@ _Note: This handbook is close to release but not quite complete. Please edit the
 
 ## What is this?
 
-This handbook documents [The Axelerant Way]({{< relref "docs/references/the-axelerant-way" >}}) for engineers at Axelerant. It is neither a guide nor a tutorial for a specific language or technology we use at Axelerant. Rather, it aims to show an engineer at Axelerant what we value, who we are, and how we work. It helps you understand what you need to do to succeed at Axelerant.
+<!-- markdownlint-disable-line MD044 -->This handbook documents [The Axelerant Way]({{< relref "docs/references/the-axelerant-way" >}}) for engineers at Axelerant. It is neither a guide nor a tutorial for a specific language or technology we use at Axelerant. Rather, it aims to show an engineer at Axelerant what we value, who we are, and how we work. It helps you understand what you need to do to succeed at Axelerant.
 
 {{< blockquote author="adapted from Viktor Frankl, Man's Search for Meaning" quote="Those who have a 'why' can tolerate any number of 'hows'." >}}
 
@@ -18,7 +18,7 @@ Taking inspiration from ideas such as above that focus on "why", this handbook a
 
 ## Who is it for?
 
-The primary target audience for this handbook is an engineer who is new to [The Axelerant Way]({{< relref "docs/references/the-axelerant-way.md" >}}), or someone who needs a reminder (we all do, from time to time). When we say engineers in this handbook, we are referring to those who are involved in defining, writing, reviewing, testing, deploying, and operating any software system. At Axelerant, this includes developers with backend, frontend, QA, and SRE competencies (as of this writing).
+<!-- markdownlint-disable-line MD044 -->The primary target audience for this handbook is an engineer who is new to [The Axelerant Way]({{< relref "docs/references/the-axelerant-way.md" >}}), or someone who needs a reminder (we all do, from time to time). When we say engineers in this handbook, we are referring to those who are involved in defining, writing, reviewing, testing, deploying, and operating any software system. At Axelerant, this includes developers with backend, frontend, QA, and SRE competencies (as of this writing).
 
 We will avoid diving too deep into specific technologies and instead link to resources and references that will do the job. Reading those references is an important part of reading this handbook.
 
