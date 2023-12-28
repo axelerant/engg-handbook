@@ -23,59 +23,15 @@ Different programming languages or CMSs may use different process to log message
 
 We establish clear logging and observability standards for the entire team to follow. It is much better to utilize automated tools, such as log analyzers and dashboards, to enhance visibility and decrease manual effort.
 
-### How does Drupal log messages?
+### How to log the messages effectively?
 
-Drupal Core provides a [Logging API](https://www.drupal.org/docs/8/api/logging-api/overview) that can be used by any logging service through a module. The Drupal Core ships two such modules: [DBLog](https://www.drupal.org/docs/8/core/modules/dblog/overview) and [Syslog](https://www.drupal.org/docs/8/core/modules/syslog/overview) and there are a lot more such modules in the contrib space. DBLog is convenient on any site as it logs all messages in the database and this allows it to provide an user interface to see those messages. But this comes with a performance hit and it is generally recommended to disable this in favor of Syslog or other modules in production.
+As mentioned above, logging can be used to keep a record of the events or operations performed on a website. These messages or events can be logged at various levels, for example:
 
-#### Logging API
+- Application-level logging is the practice of logging events, messages, and data within an application itself.
 
-Logging API was introduced in Drupal 8 and it replaces the hook_watchdog() implementation that was widely used in Drupal 7 to log the messages. Following are the two examples for logging messages in Drupal 8 -
+- Server-level logging: logging all the server-related events where the website is hosted. For example, browsing through the Apache server logs to debug web server-related issues.
 
-- Example 1 (procedural way) -
-
-```php
-// Logs a notice
-\Drupal::logger('my_module')->notice($message);
-// Logs an error
-\Drupal::logger('my_module')->error($message);
-```
-
-- Example 2 (injecting the whole factory)
-
-```yaml
-services:
-  myservice_that_needs_to_log_to_multiple_channels:
-    class: Drupal\mymodule\MyService
-    arguments: ['@logger.factory']
-```
-
-Log the messages in your custom Service class as follows -
-
-```php
-use Drupal\Core\Logger\LoggerChannelFactoryInterface;
-
-class MyService {
-  public function __construct(LoggerChannelFactoryInterface $factory) {
-    $this->loggerFactory = $factory;
-  }
-
-  public function doStuff($message) {
-    // Logs a notice to "my_module" channel.
-    $this->loggerFactory->get('my_module')->notice($message);
-     // Logs an error to "my_other_module" channel.
-    $this->loggerFactory->get('my_other_module')->error($message);
-  }
-}
-```
-
-#### How to log the messages effectively?
-
-As mentioned above, logging can be used to keep a record of the events or operations performed on a website. These messages or events can be logged at various levels, example -
-
-- Application level logging - For instance, Drupal logs the messages using the dblog module that ships with drupal core.
-- Server level logging - Logging all the server related events where the website is hosted. For example, browsing through the apache server logs to debug web server related issues.
-
-The default messages logged in both the cases above hold a lot of information about the operation performed or the event occured. It consists of:
+The default messages logged in both cases above hold a lot of information about the operation performed or the event that occurred. It consists of:
 
 - Date of the message logged
 - User
@@ -83,7 +39,7 @@ The default messages logged in both the cases above hold a lot of information ab
 - Type
 - The actual message, that may hold the complete backtrace of the action performed.
 
-This is what makes the logged message useful for future references.
+This is what makes the logged message useful for future reference.
 
 ## Metrics
 
@@ -115,7 +71,7 @@ There are a good number of tools available for integration for measuring the app
 
 ### New Relic
 
-[New Relic](https://newrelic.com/) is Saas based Application performance monitoring tool that uses a standardized Apdex (application performance index) score to set and rate application performance across the environment in a unified manner. Some of the key features include the following -
+[New Relic](https://newrelic.com/) is Saas based Application performance monitoring tool that uses a standardized Apdex (application performance index) score to set and rate application performance across the environment in a unified manner. Some of the key features include the following:
 
 - End-to-end user monitoring through browser support
 - External services performance monitoring

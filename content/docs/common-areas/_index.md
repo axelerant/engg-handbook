@@ -8,9 +8,9 @@ bookCollapseSection: true
 
 This guide covers common areas of concern with web projects and our approach to solve those problems.
 
-## [Logging]({{< relref "/docs/common-areas/logging" >}})
+## [Observability]({{< relref "/docs/common-areas/observability" >}})
 
-Logging in web applications refers to keeping a log of all the operational events such as content creation, deletion, cron run, error reporting, etc. In the case of Drupal, the log messages are recorded and kept in either a log file (text format), in the database, or sent to an external service. Different applications have their own conventions about logging but general principles remain the same. Also, in most applications, there is always some support for logging in the [syslog](https://en.wikipedia.org/wiki/Syslog) format (text files).
+In the dynamic landscape of web application development, we view observability as a crucial matter, providing insights into system behavior. Observability helps us better understand the workings of a system by surfacing application data using various tools. The three pillars of observability—logs, metrics, and traces—play a pivotal role in enhancing system understanding and troubleshooting.
 
 ## [Caching]({{< relref "/docs/common-areas/caching" >}})
 
@@ -27,10 +27,6 @@ Most systems have multiple layers of caching, each of which would be suitable to
 
 Debugging is an important component of any software development activity and not just web development. Perhaps
 debugging existing code is where developers spent most of their time.
-
-## [APM]({{< relref "/docs/common-areas/apm" >}})
-
-APM or Application Performance Monitoring can be defined as a process or a practice of monitoring and tracking the performance of a software application using specific tools. The performance of a Drupal application can be monitored using various tools such as NewRelic, Elastic APM, Sentry etc..
 
 ## [Backups]({{< relref "/docs/common-areas/backups" >}})
 
