@@ -8,9 +8,9 @@ description: When we build websites, we do so with the expectation that they wil
 
 When we build software, we do so with the expectation that it will need to be updated and changed over time. This is because the needs of businesses and organizations are constantly evolving, and their software needs to reflect that. We design our systems with this in mind, using flexible and scalable solutions that can be easily adapted to meet changing needs.
 
-## Agile with a Small A
+## Agile with a Small 'a'
 
-We believe in agile development, which is a process of iterative development and continuous improvement. We work closely with our clients to gather their requirements and feedback, and we use this information to inform the development process. We also recognize that our client's needs may change over the course of the project, and we are flexible enough to adapt to these changes.
+We keep an [agile](https://www.prosci.com/blog/stop-confusing-agile-with-agile) mindset, which involves iterative development and continuous improvement. We work closely with our clients to gather their requirements and feedback, and we use this information to inform the development process. We also recognize that our client's needs may change over the course of the project, and we are flexible enough to adapt to these changes.
 
 ## Reuse and Build
 
