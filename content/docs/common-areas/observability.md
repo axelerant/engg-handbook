@@ -8,9 +8,13 @@ description: In the dynamic landscape of web application development, we view ob
 
 In the dynamic landscape of web application development, we view observability as a crucial matter, providing insights into system behavior. Observability helps us better understand the workings of a system by surfacing application data using various tools. The three pillars of observability—logs, metrics, and traces—play a pivotal role in enhancing system understanding and troubleshooting.
 
-Logs are time-stamped records of discrete events that have occurred within a system. They provide a wealth of information, including error messages, system status updates, transaction records, and more. They are particularly useful for debugging during development and understanding system behavior.
+It is the synergy of these three pillars that forms the foundation of observability. By collecting and analyzing data from these sources, we can gain a deep understanding of our systems and make informed decisions about how to optimize performance.
+
+We use New Relic as our primary observability tool, leveraging its comprehensive metrics for performance monitoring. Additionally, we use Sentry as a secondary tool, focusing on error tracking and detailed logging to ensure efficient debugging. This combination allows us to maintain a robust observability framework for our web development projects.
 
 ## Logging
+
+Logs are time-stamped records of discrete events that have occurred within a system. They provide a wealth of information, including error messages, system status updates, transaction records, and more. They are particularly useful for debugging during development and understanding system behavior.
 
 Logging in web applications refers to keeping a log of all the operational events such as content creation, deletion, cron run, error reporting, etc. The log messages are recorded and kept in either a log file (text format), in the database, or sent to an external service.
 
@@ -48,10 +52,6 @@ The second pillar, metrics, are numerical representations of data measured over 
 ## Traces
 
 Finally, traces provide a detailed view of function calls and other requests during the execution of a single transaction. A trace represents an actual execution and can be examined to understand the flow of the program in a single service and even across multiple services. It is also helpful to find performance bottlenecks in a system.
-
-It is the synergy of these three pillars that forms the foundation of observability. By collecting and analyzing data from these sources, we can gain a deep understanding of our systems and make informed decisions about how to optimize performance.
-
-We use New Relic as our primary observability tool, leveraging its comprehensive metrics for performance monitoring. Additionally, we use Sentry as a secondary tool, focusing on error tracking and detailed logging to ensure efficient debugging. This combination allows us to maintain a robust observability framework for our web development projects.
 
 ## APM (Application Performance Monitoring)
 
