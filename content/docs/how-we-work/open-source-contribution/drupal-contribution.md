@@ -11,7 +11,7 @@ weight: 2
 
 To contribute to Drupal, start by creating a Drupal.org account. This account is our gateway to engaging with the community, participating in discussions, and contributing to the platform's development.
 
-Go to [Create a Drupal. org account](https://www.drupal.org/user/register) then you need to:
+Go to [Create a Drupal.org account](https://www.drupal.org/user/register) then you need to:
 
 - Confirm the new account (i.e., trusted colleagues)
 - Fill out your profile information
