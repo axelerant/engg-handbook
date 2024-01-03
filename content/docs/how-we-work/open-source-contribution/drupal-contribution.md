@@ -5,9 +5,13 @@ weight: 2
 
 # Drupal Contribution
 
-## How to start Contributions
+## How to Start Contributions
 
-### [Create a Drupal.org account](https://www.drupal.org/user/register)
+### Create a Drupal.org Account
+
+To contribute to Drupal, start by creating a Drupal.org account. This account is our gateway to engaging with the community, participating in discussions, and contributing to the platform's development.
+
+Go to [Create a Drupal. org account](https://www.drupal.org/user/register) then you need to:
 
 - Confirm the new account (i.e., trusted colleagues)
 - Fill out your profile information
@@ -34,7 +38,7 @@ Before working on these issues, it is recommended to understand the issue etique
 
 ### Issue Etiquette and Credit System
 
-When contributing to Drupal, it is essential to know the Drupal [issue etiquette](https://www.drupal.org/issue-etiquette), - that elaborates on what to do and what not to do. If the contribution matters, it can obtain fair credit based on the [credit policy](https://www.drupal.org/about/core/policies/maintainers/how-is-credit-granted-for-drupal-core-issues) or guidelines.
+When contributing to Drupal, it is essential to know the Drupal [issue etiquette](https://www.drupal.org/issue-etiquette), - which elaborates on what to do and what not to do. If the contribution matters, it can obtain fair credit based on the [credit policy](https://www.drupal.org/about/core/policies/maintainers/how-is-credit-granted-for-drupal-core-issues) or guidelines.
 
 #### Abuse of the Contribution Credit System and its Consequences
 
