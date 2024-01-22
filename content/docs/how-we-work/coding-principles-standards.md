@@ -48,4 +48,4 @@ In our projects, we strictly adhere to the established coding standards. These s
 
 ## Pair Programming
 
-Pair programming is a software development technique where two developers work together. Sometimes it is proven helpful to debug code collectively by connecting on calls, sometimes [rubber-ducking]({{< relref "../common-areas/debugging/#rubber-ducking" >}}) tactics are clearly achieved through this approach. Pair programming generally helps in improving code quality, including productivity and communication skills.
+Pair programming is a software development technique where two developers work together. Sometimes it is proven helpful to debug code collectively by connecting on calls, sometimes [rubber-ducking]({{< relref "../common-areas/debugging/#rubber-ducking" >}}) tactics are clearly achieved through this approach. The benefit of pair programming is that it improves code quality in the first iteration itself, improves the [lottery factor (bus factor)]({{< relref "../behaviors/team/#understand-lottery-factor" >}}), increases knowledge sharing, eliminates waiting for code reviews, and results in healthier teams.
