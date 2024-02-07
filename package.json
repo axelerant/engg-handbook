@@ -5,9 +5,9 @@
   "license": "CC-BY-NC-SA-4.0",
   "scripts": {
     "lint-fix:md": "markdownlint {content,archetypes}/**/*.md --fix --ignore node_modules",
-    "lint-fix:prettier": "prettier --write {layouts,content,assets,archetypes}/**/*",
+    "lint-fix:prettier": "prettier --write {layouts,assets}/**/*",
     "lint:md": "markdownlint {content,archetypes}/**/*.md --ignore node_modules",
-    "lint:prettier": "prettier --check {layouts,content,assets,archetypes}/**/*",
+    "lint:prettier": "prettier --check {layouts,assets}/**/*",
     "lint": "concurrently npm:lint:*",
     "lint-fix": "concurrently npm:lint-fix:*"
   },
