@@ -1,7 +1,7 @@
 ---
 title: Effective Context Switching
 weight: 6
-description: Maintaining a flow state is not something that happens naturally unless you guard it and take steps to make sure you spend as much as possible time in flow state.
+description: Maintaining a flow state is not something that happens naturally unless you guard it and take steps to make sure you spend as much as possible time in a flow state.
 ---
 
 # Effective Context Switching
@@ -21,15 +21,13 @@ Some tips to minimize context switching include scheduling dedicated time for sp
 
 Hence we encourage breaks and rest when needed and value-focused work over constant availability.
 
-Let’s look above in more detail.
-
 ### Have thoughtful, asynchronous communication
 
-We encourage asynchronous communication as the 1st mode and getting on to meetings only when needed. Check [Being Axelerant | Meetings](https://axelerant.atlassian.net/wiki/spaces/OA/pages/1447493744/Being+Axelerant#Meetings) on how to effectively avoid and conduct meetings if the need arises.
+We encourage asynchronous communication as the first mode and getting on to meetings only when needed. Check [Being Axelerant | Meetings](https://axelerant.atlassian.net/wiki/spaces/OA/pages/1447493744/Being+Axelerant#Meetings) on how to effectively avoid and conduct meetings if the need arises.
 
-### Capture tasks somewhere that’s not your head
+### Capture tasks somewhere that's not your head
 
-Just thinking about another task splits our attention and makes it harder to focus on what’s in front of us at the moment. Studies show that simply making a plan to complete a task later helps to reduce repetitive thoughts about the task.
+Just thinking about another task splits our attention and makes it harder to focus on what's in front of us at the moment. Studies show that simply making a plan to complete a task later helps to reduce repetitive thoughts about the task.
 
 #### Prioritize your work
 
@@ -37,9 +35,7 @@ Check [The Eisenhower Matrix: Prioritize Your Time on What Matters Most - Knock 
 
 ## Unlocking Your Potential: Organize Work and Calendar for Peak Performance
 
-Understand, Identify, and classify items (excluding meetings) that need more time and those which need less time.
-
-For e.g.
+Understand, identify, and classify items (excluding meetings) that need more time and those that need less time.
 
 ### Large
 
@@ -47,13 +43,13 @@ For e.g.
 
 ### Medium
 
-- Ticket grooming is something that might need 2 - 4 hours of focused time.
+- Ticket grooming is something that might need 2-4 hours of focused time.
 - Giving feedback to peers.
 
 ### Small
 
 - Peer reviews are something that can be completed in less time compared to above, like 15-30 mins, unless it involves many files and is for large enhancement, in case of which it falls into Medium work.
-- Guiding peers/unblocking them (you are not expected to have long calls and do peer debugging with your peers unless it is explicitly called out). These are expected to be small sized ranging from 30 mins to an hour maximum.
+- Guiding peers/unblocking them (you are not expected to have long calls and do peer debugging with your peers unless it is explicitly called out). These are expected to be small-sized ranging from 30 mins to an hour.
 - Checking Emails and Slack messages.
 
 Note that all the above work listed under Large, Medium and Small falls under quadrants 1 and 2 of the Eisenhower matrix.
@@ -68,7 +64,7 @@ Now a combination of prioritizing and organizing your work will help in a large 
 
 - Schedule time in the calendar for quadrant 2 large and medium-sized tasks of the Eisenhower matrix, which can be in this or next week.
 
-  - This can be a recurring meeting with yourself as well.
+  - This can be a recurring meeting with you as well.
   - Communicate to everyone that this is your focus time, including yourself.
   - This also requires you to look at the forthcoming work and plan for the same.
 

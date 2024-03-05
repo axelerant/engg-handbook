@@ -10,7 +10,7 @@ All the hard work that you do may not be useful if that doesn't help the team or
 
 ## Getting lost in the weeds
 
-It is easy to get lost in the weeds while working on an issue. This happens to an extent that we forget the actual requirements that we need to deliver. This often looks like spending a lot of time [perfecting]({{< relref "../behaviors/good-enough.md" >}}) something beyond what is necessary. Other times, we focus our attention on things that are only auxiliary to what we are building and ignoring the core value (bikeshedding).
+It is easy to get lost in the weeds while working on an issue. This happens to such an extent that we forget the actual requirements that we need to deliver. This often looks like spending a lot of time [perfecting]({{< relref "../behaviors/good-enough.md" >}}) something beyond what is necessary. Other times, we focus our attention on things that are only auxiliary to what we are building and ignoring the core value (bikeshedding).
 
 ## Burnout
 
