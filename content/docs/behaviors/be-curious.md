@@ -6,7 +6,7 @@ description: Curiosity may have killed the cat but it made human beings what the
 
 # Be Curious
 
-{{< blockquote author="_Hans Rosling" cite="Factfulness" quote="Being curious means being open to new information and actively seeking it out. It means embracing facts that don’t fit your worldview and trying to understand their implications. It means letting your mistakes trigger curiosity instead of embarrassment." >}}
+{{< blockquote author="_Hans Rosling_" cite="Factfulness" quote="Being curious means being open to new information and actively seeking it out. It means embracing facts that don’t fit your worldview and trying to understand their implications. It means letting your mistakes trigger curiosity instead of embarrassment." >}}
 
 If there ever was a way to not get stuck in the mundane and live your life with excitement, it would be to be curious. In the knowledge industry and specifically the information industry where technologies are outdated in six months, it is disadvantageous to not stay updated with current trends. Curiosity helps in staying up-to-date.
 
