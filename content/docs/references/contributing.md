@@ -107,18 +107,17 @@ This is a list of known issues and gotchas to keep in mind when working with Mar
 
 In some circumstances, using links in headers will result in various problems. This happens when any of the parent pages tries to generate a table of contents in some way (e.g., by using the `<section-pages>` shortcode).
 
-When not using `relref`, it will simply result in a broken link in the generated table of contents. Instead of the link to the section, it will render the link to the one specified in the heading.
+- When not using `relref`, it will simply result in a broken link in the generated table of contents. Instead of the link to the section, it will render the link to the one specified in the heading.
+- When using `relref`, it enters an infinite loop and sometimes breaks with an error like this:
 
-When using `relref`, it enters an infinite loop and sometimes breaks with an error like this:
+  ```log
+  panic: unknown shortcode token "(temporary token)" (number of tokens: 1)
 
-```log
-panic: unknown shortcode token "(temporary token)" (number of tokens: 1)
-
-goroutine 10462 [running]:
-github.com/gohugoio/hugo/hugolib.(*cachedContent).contentRendered.func1.3({0x103ded2a0, 0x14001928930}, {0x14002f8cb20, 0x1a})
-        github.com/gohugoio/hugo/hugolib/page__content.go:553 +0x17c
-github.com/gohugoio/hugo/hugolib.expandShortcodeTokens({0x103ded2a0, 0x14001928930}, {0x14000d9e800, 0x70d, 0x800}, 0x14001cd5c18)
-```
+  goroutine 10462 [running]:
+  github.com/gohugoio/hugo/hugolib.(*cachedContent).contentRendered.func1.3({0x103ded2a0, 0x14001928930}, {0x14002f8cb20, 0x1a})
+          github.com/gohugoio/hugo/hugolib/page__content.go:553 +0x17c
+  github.com/gohugoio/hugo/hugolib.expandShortcodeTokens({0x103ded2a0, 0x14001928930}, {0x14000d9e800, 0x70d, 0x800}, 0x14001cd5c18)
+  ```
 
 FWIW, using the actual temporary token in the markdown will also throw this error. The temporary token is `HAHA HUGO SHORTCODE some_number HBHB` (without spaces).
 
