@@ -1,0 +1,32 @@
+---
+title: Git Workflow and Health
+weight: 1
+description: We must aim for certain elements of consistency based on our (industry) collective experience. Many of these are defined so because they are obvious to the developer community in general.
+---
+
+# Git Workflow and Health
+
+The exact Git workflow necessarily changes from one project to another. That said, it is possible and we must aim for certain elements of consistency based on our (industry) collective experience. Many of these are defined so because they are obvious to the developer community in general.
+
+* Define a standard name for the trunk. Either `main` or `master` are commonly expected names.
+* The default branch on GitHub must be set to the trunk.
+* Regularly remove merged branches. It's a good idea to remove it immediately after a PR is merged.
+* Avoid long-lived branches (except the trunk). Any exceptions must be [documented]({{< relref "baseline" >}}#documentation).
+* Close stale PRs and remove the branches. Old code is highly unlikely to be useful for any purpose.
+* Remove unused files from the repository.
+
+## Concerns and Questions
+
+There may be some concerns in implementing the above. This section will attempt to address them.
+
+### Deleting merged branches
+
+The branches can be deleted immediately once they are merged. This helps in making the list of actual WIP branches more readable both in UI and in CLI.
+
+[Git branches](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) are simply labels and deleting a branch results in no information loss except the name of the branch itself (which is often written in commit messages and pull requests anyway). Further, GitHub lets us restore a deleted branch with a click of a button. Consequently, there is no reason to keep a branch once it's merged.
+
+### Protecting the default branch on GitHub
+
+[GitHub provides a variety of protection mechanism](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches) for different branches. It especially recommends that the main branch (often called `main` or `master`) is protected from accidental pushes.
+
+We recommend that the default branch is always protected. At a minimum, a PR should be required before merging to the main branch. You can also enforce conditions such as the PR must have approvals and requiring reviews from code owners. More rules can be found in the [documentation](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches).

@@ -1,6 +1,7 @@
 ---
 title: Our Reference Baseline
 weight: 1
+bookCollapseSection: true
 description: This is our reference baseline of technologies and techniques we use on a project.
 ---
 
@@ -8,9 +9,9 @@ description: This is our reference baseline of technologies and techniques we us
 
 This is our reference baseline of technologies and techniques we use on any project. At this time, this baseline is standardized for our support projects but will eventually also apply to our managed projects.
 
-## Git Workflow and health
+## Git Workflow and Health
 
-The exact Git workflow necessarily changes from one project to another. That said, it is possible and we must aim for certain elements of consistency based on our (industry) collective experience. Many of these are defined so because they are obvious to the developer community in general.
+The exact [Git workflow]({{< relref "git-workflow" >}}) necessarily changes from one project to another. That said, it is possible and we must aim for certain elements of consistency based on our (industry) collective experience. Many of these are defined so because they are obvious to the developer community in general.
 
 * Define a standard name for the trunk. Either `main` or `master` are commonly expected names.
 * The default branch on GitHub must be set to the trunk.
@@ -18,6 +19,8 @@ The exact Git workflow necessarily changes from one project to another. That sai
 * Avoid long-lived branches (except the trunk). Any exceptions must be [documented](#documentation).
 * Close stale PRs and remove the branches. Old code is highly unlikely to be useful for any purpose.
 * Remove unused files from the repository.
+
+Read more details [here]({{< relref "git-workflow" >}}).
 
 ## Local Development with DDEV
 
