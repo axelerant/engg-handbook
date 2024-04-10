@@ -98,3 +98,33 @@ It is important to reiterate that the decision will involve discrete judgment an
 The Engineering Handbook uses [Markdown](https://www.markdownguide.org/basic-syntax/) primarily due to its target audience: engineers. Markdown, a developer-friendly format, simplifies the editing process and integrates seamlessly with version control systems like Git. Currently, the handbook is hosted on GitHub as a public repository, reflecting our commitment to openness and engineering proficiency. This decision has two implications: pragmatically, it’s easier for developers to work with, and aspirationally, it encourages engineers to regularly interact with command-line and coding-related tools outside their projects, reinforcing our engineering-focused culture.
 
 When contributing to the Engineering Handbook using Markdown, it’s important to be mindful of special texts that may be responsible for formatting or creating dynamic content. For instance, you might come across a section at the top enclosed between `---` lines. This is known as the “front matter”, and it’s where you can set predefined page variables. There are also shortcodes that are used to create dynamic content within your Markdown files. They are specific to the system you’re using and are typically enclosed in double curly braces `{{ }}`. For example, **\{\{< section-pages >\}\}** is a shortcode that dynamically generates a list of all pages in the current section.
+
+## Common Issues
+
+This is a list of known issues and gotchas to keep in mind when working with Markdown here.
+
+### Using links in headers (with or without relref)
+
+In some circumstances, using links in headers will result in various problems. This happens when any of the parent pages tries to generate a table of contents in some way (e.g., by using the `<section-pages>` shortcode).
+
+When not using `relref`, it will simply result in a broken link in the generated table of contents. Instead of the link to the section, it will render the link to the one specified in the heading.
+
+When using `relref`, it enters an infinite loop and sometimes breaks with an error like this:
+
+```log
+panic: unknown shortcode token "(temporary token)" (number of tokens: 1)
+
+goroutine 10462 [running]:
+github.com/gohugoio/hugo/hugolib.(*cachedContent).contentRendered.func1.3({0x103ded2a0, 0x14001928930}, {0x14002f8cb20, 0x1a})
+        github.com/gohugoio/hugo/hugolib/page__content.go:553 +0x17c
+github.com/gohugoio/hugo/hugolib.expandShortcodeTokens({0x103ded2a0, 0x14001928930}, {0x14000d9e800, 0x70d, 0x800}, 0x14001cd5c18)
+```
+
+FWIW, using the actual temporary token in the markdown will also throw this error. The temporary token is `HAHA HUGO SHORTCODE some_number HBHB` (without spaces).
+
+#### Solution
+
+There are two options. Pick any of these:
+
+1. Don't use `<section-pages>` in any of the parent pages (`_index.md` in the same directory or above).
+2. Don't place links in headers level 2 and below. Links in a level 1 header does not run through `<section-pages>` and does not cause problems.
