@@ -13,12 +13,16 @@ This is our reference baseline of technologies and techniques we use on any proj
 
 The exact [Git workflow]({{< relref "git-workflow" >}}) necessarily changes from one project to another. That said, it is possible and we must aim for certain elements of consistency based on our (industry) collective experience. Many of these are defined so because they are obvious to the developer community in general.
 
+{{< details "A brief checklist to check the git workflow health" >}}
+
 * Define a standard name for the trunk. Either `main` or `master` are commonly expected names.
 * The default branch on GitHub must be set to the trunk.
 * Regularly remove merged branches. It's a good idea to remove it immediately after a PR is merged.
 * Avoid long-lived branches (except the trunk). Any exceptions must be [documented](#documentation).
 * Close stale PRs and remove the branches. Old code is highly unlikely to be useful for any purpose.
 * Remove unused files from the repository.
+
+{{< /details >}}
 
 Read more details [here]({{< relref "git-workflow" >}}).
 
