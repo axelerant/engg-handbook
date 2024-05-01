@@ -74,3 +74,20 @@ Once DDEV is configured for a project, follow these steps:
 5. Commit the files in the `.ddev` directory and the settings files mentioned above. Push the changes.
 
 {{< /details >}}
+
+## Database
+
+The default database we pick is [MariaDB](https://mariadb.org/). Like with the application cache, we may switch to [MySQL](https://www.mysql.com/) depending on the hosting provider. In all cases, we try to match the versions on the production instance as closely as possible.
+
+As of this writing, the LTS version for [MariaDB](https://endoflife.date/mariadb) is 10.11 and for [MySQL](https://endoflife.date/mysql) is 8.0. Try to pick this version for both local development and production unless there is a specific need. Both Drupal 10 and 11 can use these versions.
+
+{{< details "Configure database version for local development" >}}
+Once DDEV is configured, use one of these commands to set the database version:
+
+* For MariaDB 10.11, run `ddev config --database=mariadb:10.11`.
+* For MySQL 8.1, run `ddev config --database=mysql:8.0`.
+* Change the version numbers if required.
+
+{{< /details >}}
+
+On some hosts, you also have to set the transaction isolation level. Follow the [instructions here](https://www.drupal.org/docs/getting-started/system-requirements/setting-the-mysql-transaction-isolation-level).
