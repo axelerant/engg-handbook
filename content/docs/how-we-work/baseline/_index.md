@@ -55,3 +55,20 @@ Once DDEV is installed, follow these steps:
 6. Commit the files in the `.ddev` directory and other generated files such as `settings.ddev.php` and create a PR.
 
 {{< /details >}}
+
+## Application Cache
+
+With CMSes like Drupal, we always use an application cache like [Redis](https://redis.io/) or [Memcached](https://memcached.org/). With Drupal's built-in dynamic caching abilities, there is no reason to not use an external cache. Given the size of our typical project, the slight increase in complexity is worth it.
+
+We default to Redis unless there is a good reason to use Memcached. Often the reason is that the hosting provider may only support Memcached. Given the [recent Redis announcement](https://redis.io/blog/redis-adopts-dual-source-available-licensing/), we may change this recommendation based on the hosting landscape and performance considerations.
+
+{{< details "Configure Redis on a project" >}}
+Once DDEV is configured for a project, follow these steps:
+
+1. Run `ddev get ddev/ddev-redis` (for Redis 7, run use `ddev/ddev-redis-7`).
+2. Run `ddev restart`.
+3. These add-ons will typically add a `settings.ddev.redis.php`. Verify it exists.
+4. Update `settings.php` to configure Redis for the hosting provider. You can copy the settings from `setting.ddev.redis.php` and update the values to use the hosting provider's mechanism to set Redis.
+5. Commit the files in the `.ddev` directory and the settings files mentioned above. Push the changes.
+
+{{< /details >}}
