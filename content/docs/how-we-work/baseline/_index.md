@@ -26,6 +26,14 @@ The exact [Git workflow]({{< relref "git-workflow" >}}) necessarily changes from
 
 Read more details [here]({{< relref "git-workflow" >}}).
 
+## Documentation
+
+Documentation is one of the most underrated activities a developer can take up. We remind and encourage the team to keep the documentation current by applying process gates. This may look like a check applied when reviewing a PR, when approving a task, or before marking a task as "done".
+
+Keep in mind the audience for the documentation when writing. The audience could be you, 2 weeks later. It could be another developer on the team learning the system or being onboarded to the project. Keep the documentation readable and get to the point quickly.
+
+Technical documentation _must_ be located in the project repository where it is easy for the developer to refer to it without leaving the IDE. Integration with the IDP allows us to render and read the documentation using a browser. Because the documentation is written in plain text files, markdown is the optimal format for this which is both easy to learn and easy to read.
+
 ## Local Development with DDEV
 
 [DDEV](https://ddev.readthedocs.io/en/stable/) is our tool of choice for setting up local development environments across projects. You need Docker to run it and you can [provide the Docker engine](https://ddev.readthedocs.io/en/stable/users/install/docker-installation/) using the official Docker Desktop, Colima, or Orbstack. Follow the [installation instructions](https://ddev.readthedocs.io/en/stable/users/install/ddev-installation/) to set up DDEV on your machine.
@@ -43,7 +51,3 @@ Once DDEV is installed, follow these steps:
 6. Commit the files in the `.ddev` directory and other generated files such as `settings.ddev.php` and create a PR.
 
 {{< /details >}}
-
-## Documentation
-
-WIP
