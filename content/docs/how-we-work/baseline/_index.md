@@ -21,6 +21,8 @@ The exact [Git workflow]({{< relref "git-workflow" >}}) necessarily changes from
 * Avoid long-lived branches (except the trunk). Any exceptions must be [documented](#documentation).
 * Close stale PRs and remove the branches. Old code is highly unlikely to be useful for any purpose.
 * Remove unused files from the repository.
+* Changes are only merged through a pull request.
+* Pull Requests contain complete details of the change or points to Jira issues that describes the same.
 
 {{< /details >}}
 
