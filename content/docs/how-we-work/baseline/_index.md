@@ -91,3 +91,9 @@ Once DDEV is configured, use one of these commands to set the database version:
 {{< /details >}}
 
 On some hosts, you also have to set the transaction isolation level. Follow the [instructions here](https://www.drupal.org/docs/getting-started/system-requirements/setting-the-mysql-transaction-isolation-level).
+
+## File Storage for user content
+
+Drupal supports public and private file schemes to store user-uploaded content. The public file scheme is the default mechanism and is suitable unless there is a specific requirement. Both of these schemes are stored in the local filesystem (e.g., public files are saved in `sites/default/files`). Hosts that support Drupal provide a mechanism to make these locations writable.
+
+In the future, we will provide infrastructure support to keep these files on an object store such as S3 by default. For now, use modules like [`stage_file_proxy`](https://www.drupal.org/project/stage_file_proxy) to access these files in development environments.
