@@ -85,7 +85,7 @@ As of this writing, the LTS version for [MariaDB](https://endoflife.date/mariadb
 Once DDEV is configured, use one of these commands to set the database version:
 
 * For MariaDB 10.11, run `ddev config --database=mariadb:10.11`.
-* For MySQL 8.1, run `ddev config --database=mysql:8.0`.
+* For MySQL 8.0, run `ddev config --database=mysql:8.0`.
 * Change the version numbers if required.
 
 {{< /details >}}
