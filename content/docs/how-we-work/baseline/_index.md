@@ -34,7 +34,7 @@ Documentation is one of the most underrated activities a developer can take up. 
 
 Keep in mind the audience for the documentation when writing. The audience could be you, 2 weeks later. It could be another developer on the team learning the system or being onboarded to the project. Keep the documentation readable and get to the point quickly.
 
-Technical documentation _must_ be located in the project repository where it is easy for the developer to refer to it without leaving the IDE. Integration with the IDP allows us to render and read the documentation using a browser. Because the documentation is written in plain text files, markdown is the optimal format for this which is both easy to learn and easy to read.
+Technical documentation _must_ be located in the project repository where it is easy for the developer to refer to it without leaving the IDE. Integration with the [IDP](#idp-integration) allows us to render and read the documentation using a browser. Because the documentation is written in plain text files, markdown is the optimal format for this which is both easy to learn and easy to read.
 
 ## Code Hosting
 
@@ -97,3 +97,46 @@ On some hosts, you also have to set the transaction isolation level. Follow the 
 Drupal supports public and private file schemes to store user-uploaded content. The public file scheme is the default mechanism and is suitable unless there is a specific requirement. Both of these schemes are stored in the local filesystem (e.g., public files are saved in `sites/default/files`). Hosts that support Drupal provide a mechanism to make these locations writable.
 
 In the future, we will provide infrastructure support to keep these files on an object store such as S3 by default. For now, use modules like [`stage_file_proxy`](https://www.drupal.org/project/stage_file_proxy) to access these files in development environments.
+
+## Local checks
+
+We run local checks on our changes before committing our changes. For Drupal projects, we have a convenient wrapper called [`drupal-quality-checker`](https://github.com/axelerant/drupal-quality-checker) that uses GrumPHP to run various checks on commits. Installation is a question of installing the composer package and copying the configuration files.
+
+### Code Quality checks
+
+We use tools such as `PHPCS`, `PHPStan`, `eslint`, `stylelint`, and others depending on the language. It is always a good idea to run these tools before making a commit and we do that automatically through tools such as `drupal-quality-checker` and `husky`. Include such tools in your project at all times and have them run on git commits. Additionally, these tools must also run in CI jobs.
+
+## Debugging
+
+Step debuggers are extremely important tools to have ready during development. For PHP, the debugger of choice is XDebug. There is an excellent integration available with [DDEV](#local-development-with-ddev) and IDE configuration is not very complex. [Documentation for XDebug with DDEV](https://ddev.readthedocs.io/en/stable/users/debugging-profiling/step-debugging/) has all the setup instructions to enable XDebug and configure IDEs to listen to it.
+
+## IDP Integration
+
+[Axelerant IDP](https://idp.axelerant.com/) is the portal to view all technical information relevant to a project. Our IDP is built with Backstage and we add projects to the IDP using a `catalog-info.yaml` file. This file defines some of the attributes such as the name, Jira project ID, team, and IDs for external tools like NewRelic and Sentry.
+
+{{< details "Example catalog-info.yaml" >}}
+Here is an [example file](https://github.com/contrib-tracker/backend/blob/main/catalog-info.yaml) from contrib-tracker.
+
+```yaml
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: contrib-tracker
+  description: Axelerant Contribution Tracker
+  title: Contrib Tracker
+  annotations:
+    github.com/project-slug: contrib-tracker/backend
+    sentry.io/project-slug: contrib-tracker
+    newrelic.com/dashboard-guid: <GUID>
+    jira/project-key: CONT
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: website
+  owner: platform_engineering
+  lifecycle: production
+  system: public website
+```
+
+{{< /details >}}
+
+Once you add this file to the default branch in your repository, manually import the project using the "[Register an existing component](https://idp.axelerant.com/catalog-import)" button in the IDP.
