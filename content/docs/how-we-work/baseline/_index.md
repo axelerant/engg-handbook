@@ -154,3 +154,39 @@ Since a CI pipeline is considerably more complex, an example describes the proce
 As we are on GitHub, we use Dependabot for tracking updates. We typically track updates for all the dependencies we use (typically PHP, JavaScript, and GitHub Actions itself). We schedule alerts on a weekly basis unless there is a specific need. We also [group](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#groups) related dependencies so that we are not flooded by pull requests and associated CI runs.
 
 As before, use the contrib tracker project as an example of [a Dependabot configuration file](https://github.com/contrib-tracker/backend/blob/main/.github/dependabot.yml) and change it to suit your needs.
+
+## Logging
+
+We can't fix what we can't see. Logging is the most fundamental aspect of observability in how our applications run so that we fix a problem, even proactively. For this, we rely on something more sophisticated than simply logging into the database or syslog. Our tool of choice for this purpose is [Sentry](https://axelerant.sentry.io/).
+
+Any application that you build must be configured to write logs to Sentry. This is fairly straightforward as Sentry has SDKs in a number of languages and frameworks. For Drupal, use the [Raven](https://www.drupal.org/project/raven) module to pull in the integration and also configure what should be logged.
+
+We need to create a project on Sentry and then use the details to set up the integration.
+
+{{< tabs "sentry" >}}
+{{< tab "Sentry Project" >}}
+
+### Creating a project on Sentry
+
+Follow these steps only if the project doesn't already exist.
+
+1. Log in using Google to [Sentry's Axelerant portal](https://axelerant.sentry.io/).
+2. Go to Projects -> [Create Project](https://axelerant.sentry.io/projects/new/).
+3. Select the appropriate framework. Use "PHP" for Drupal.
+4. Set your preferred alert frequency. We configure alerts on Slack.
+5. Name the project on Sentry with the same name as the project. "Team" can remain `#axelerant` unless there is a specific need for a separate team.
+6. Click the "Create project" button. Use the DSN in configuring the integration for your respective framework.
+{{< /tab >}}
+{{< tab "Drupal" >}}
+
+### Drupal integration through Raven
+
+1. Install the Raven module. `ddev composer require drupal/raven`.
+2. Enable the Raven module. `ddev drush en -y raven`.
+3. Go to Raven configuration settings at `/admin/config/development/logging`. You should see a new section called "Sentry". DO NOT set the DSN here. Configure the options you need as you wish. You may enable JavaScript error handler as well.
+4. In the PHP section, set the warning levels to at least "Warning" and above. Drupal generates a lot of `INFO` logs which would exhaust our quota.
+5. In "Ignored channels", at least have these two channels: `access denied` and `page not found`. This removes a lot of typical URL scanning attempts from the logs. Actual 404s can be checked in other places such as Analytics.
+6. Here is an [example Raven configuration file](https://github.com/contrib-tracker/backend/blob/main/config/sync/raven.settings.yml) from contrib-tracker.
+7. Set the DSN through `settings.php`. For platform.sh, you can also create a variable named `drupalsettings:raven.settings:client_key` and set it to the DSN. The default platform.sh integration (`settings.platformsh.php`) loads this correctly.
+{{< /tab >}}
+{{< /tabs >}}
