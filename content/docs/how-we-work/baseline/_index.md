@@ -140,3 +140,11 @@ spec:
 {{< /details >}}
 
 Once you add this file to the default branch in your repository, manually import the project using the "[Register an existing component](https://idp.axelerant.com/catalog-import)" button in the IDP.
+
+## Continuous Integration (CI)
+
+Our CI tool of choice is GitHub Actions. We rely on automation to run repeated tasks reliably and as we use GitHub for [hosting our code](#code-hosting), it is a simple decision to use GitHub Actions we have included as part of our Enterprise subscription.
+
+A typical CI pipeline begins with linting and code-style checks. This is followed by tests arranged in the order of quickest tests first followed by longer ones (this is so that we get quick feedback in case of a failure). Finally, the pipeline deploys to a feature branch or a present environment for manual verification.
+
+Since a CI pipeline is considerably more complex, an example describes the process best. Our go-to example is [the pipeline of Contrib Tracker](https://github.com/contrib-tracker/backend/blob/main/.github/workflows/ci.yml). Use that as your base and change the specifics as required.
