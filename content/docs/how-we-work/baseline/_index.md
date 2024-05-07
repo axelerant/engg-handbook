@@ -148,3 +148,9 @@ Our CI tool of choice is GitHub Actions. We rely on automation to run repeated t
 A typical CI pipeline begins with linting and code-style checks. This is followed by tests arranged in the order of quickest tests first followed by longer ones (this is so that we get quick feedback in case of a failure). Finally, the pipeline deploys to a feature branch or a present environment for manual verification.
 
 Since a CI pipeline is considerably more complex, an example describes the process best. Our go-to example is [the pipeline of Contrib Tracker](https://github.com/contrib-tracker/backend/blob/main/.github/workflows/ci.yml). Use that as your base and change the specifics as required.
+
+## Updates Tracking
+
+As we are on GitHub, we use Dependabot for tracking updates. We typically track updates for all the dependencies we use (typically PHP, JavaScript, and GitHub Actions itself). We schedule alerts on a weekly basis unless there is a specific need. We also [group](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#groups) related dependencies so that we are not flooded by pull requests and associated CI runs.
+
+As before, use the contrib tracker project as an example of [a Dependabot configuration file](https://github.com/contrib-tracker/backend/blob/main/.github/dependabot.yml) and change it to suit your needs.
