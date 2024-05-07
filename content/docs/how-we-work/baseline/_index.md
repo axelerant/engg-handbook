@@ -196,3 +196,35 @@ Follow these steps only if the project doesn't already exist.
 We automate our tests using [Cypress](https://www.cypress.io/). We focus more on functional testing rather than unit testing because this is more of a fit for a typical project at Axelerant. Unit testing has its place and we should write unit tests but we recognize that writing tests introduces a cognitive load. To limit the number of paradigms that people have to deal with, we are limiting ourselves to the most impactful kind of tests and that is a functional test run in a browser-like environment.
 
 We have a framework built using Cypress and integrated with Percy for visual regression testing. It may be found on [GitHub](https://github.com/axelerant-qa/cypress-e2e-automation-framework) along with instructions on how to integrate it in a project. These tests must run via CI but should also be run locally before pushing the changes. A CI run example may be found in [the contrib-tracker example pipeline](https://github.com/contrib-tracker/backend/blob/main/.github/workflows/ci.yml).
+
+## Reverse Proxy
+
+WIP
+
+## Backup and Recovery Plan
+
+WIP
+
+## Incident Reporting
+
+WIP
+
+## Infrastructure (non-prod)
+
+WIP
+
+## Secret Management
+
+WIP
+
+## Access control for team members
+
+WIP
+
+## Deployment (prod)
+
+WIP
+
+## Search Engine
+
+WIP
