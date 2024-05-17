@@ -211,7 +211,7 @@ WIP
 
 ## Infrastructure (non-prod)
 
-WIP
+To streamline our development and deployment processes, we've selected [Platform.sh](https://platform.sh/) as our preferred infrastructure platform for our non-production environments. This all-in-one solution removes the burden of managing infrastructure, allowing our development teams to focus on building exceptional applications. Platform.sh's automated processes and integrated tools ensure efficient deployments and a reliable foundation for our applications to thrive.
 
 ## Secret Management
 
