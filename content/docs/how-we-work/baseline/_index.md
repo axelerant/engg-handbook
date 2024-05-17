@@ -199,7 +199,7 @@ We have a framework built using Cypress and integrated with Percy for visual reg
 
 ## Reverse Proxy
 
-WIP
+For optimal performance and user experience, we leverage Varnish as our primary [reverse proxy]({{< relref "../../common-areas/reverse-proxy.md" >}}) solution. This high-speed HTTP engine acts as a caching layer, intelligently storing frequently accessed content. By efficiently reducing server load, Varnish ensures faster page load times and a more responsive feel for our applications. This focus on performance aligns with our commitment to delivering a seamless user experience. As we prioritize impact and efficiency, Varnish aligns perfectly with our development works.
 
 ## Backup and Recovery Plan
 
