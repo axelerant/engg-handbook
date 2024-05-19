@@ -256,7 +256,12 @@ As mentioned before, a module is not strictly necessary to use Varnish. But it i
 
 ## Backup and Recovery Plan
 
-WIP
+Use the backup capabilities of the PaaS provider where the websites are hosted. PaaS providers provide mechanisms to set the backup frequency and retention. Here is a list of some of the common ones that we use.
+
+* [Acquia Cloud](https://docs.acquia.com/acquia-cloud-platform/manage-apps/back-up)
+* [Acquia Site Factory](https://docs.acquia.com/site-factory/manage/website/backup)
+* [Pantheon](https://docs.pantheon.io/guides/backups)
+* [Platform.sh](https://docs.platform.sh/environments/backup.html)
 
 ## Incident Reporting
 
