@@ -199,7 +199,60 @@ We have a framework built using Cypress and integrated with Percy for visual reg
 
 ## Reverse Proxy
 
-For optimal performance and user experience, we leverage Varnish as our primary [reverse proxy]({{< relref "../../common-areas/reverse-proxy.md" >}}) solution. This high-speed HTTP engine acts as a caching layer, intelligently storing frequently accessed content. By efficiently reducing server load, Varnish ensures faster page load times and a more responsive feel for our applications. This focus on performance aligns with our commitment to delivering a seamless user experience. As we prioritize impact and efficiency, Varnish aligns perfectly with our development works.
+A [reverse proxy]({{< relref "../../common-areas/reverse-proxy.md" >}}) is highly recommended for most of the sites that we build. [Varnish](https://varnish-cache.org/) is a popular option for use with Drupal and it is supported out of the box with most of the PaaS providers we use.
+
+Varnish is a separate application from Drupal's server stack. You do not _need_ any module or customization on Drupal as long as the cache headers are correct. In practice, it is useful to install a module such as [Purge](https://www.drupal.org/project/purge) to invalidate the cache when required.
+
+{{< tabs "varnish" >}}
+{{< tab "General" >}}
+
+### General Architecture
+
+Varnish usually sits in front of your web server and can directly serve traffic from the Internet. It will listen to requests and if not already cached, it can talk to a web server to retrieve the content and, depending on the cache headers, cache it. This means that Varnish may be installed on a completely different machine than the web server.
+
+```mermaid
+block-beta
+  columns 7
+  Internet(("Internet")) space varnish{{"Varnish"}} space web("Web Server") space:2
+  space:7
+  space:4 fpm("PHP-FPM") space:2
+  space:4 app(["Drupal"]) space db[("Database")]
+  space:6 other("Other Services...")
+  Internet-->varnish
+  varnish-->web
+  web-->fpm
+  fpm-->app
+  app-->db
+  app-->other
+  style fpm stroke-dasharray: 5 5
+  style other stroke-dasharray: 5 5
+```
+
+{{< /tab >}}
+{{< tab "DDEV" >}}
+
+### DDEV installation
+
+If Varnish is used in production, it is a good idea to keep it enabled during development as well. This helps us test issues that may crop up during development. For DDEV, use the [Varnish addon for DDEV](https://github.com/ddev/ddev-varnish) to install Varnish in your Drupal project.
+
+```bash
+ddev get ddev/ddev-varnish
+ddev restart
+```
+
+The addon creates new URLs that may be used during development to skip Varnish. If your Drupal URL is `contrib.ddev.site`, then this addon will also add `novarnish.contrib.ddev.site`. You can use the latter to bypass Varnish during development.
+{{< /tab >}}
+{{< tab "Drupal" >}}
+
+### Drupal integration using modules
+
+As mentioned before, a module is not strictly necessary to use Varnish. But it is often necessary to invalidate cache entries according to Drupal's rules.
+
+1. Install the Purge and Varnish Purger modules. `ddev composer require drupal/purge drupal/varnish_purge`.
+2. Enable the Varnish purger module. `ddev drush en -y varnish_purger` _(notice the spelling)_.
+3. Set up the VCL config to work with Drupal tags depending on the specific versions. See this [documentation page](https://www.drupal.org/docs/drupal-apis/cache-api/cache-tags-varnish) for snippets and details.
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Backup and Recovery Plan
 
