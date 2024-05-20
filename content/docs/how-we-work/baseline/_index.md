@@ -265,7 +265,22 @@ Use the backup capabilities of the PaaS provider where the websites are hosted. 
 
 ## Incident Reporting
 
-WIP
+We use [OpsGenie](https://axelerant.app.opsgenie.com/) for incident reporting and it is integrated with our other tools such as Jira and Slack. We use [UptimeRobot](https://uptimerobot.com/) to monitor the websites that we support and create alerts in OpsGenie through its integration.
+
+```mermaid
+block-beta
+  columns 5
+  space:4 jira("Jira")
+  uptimerobot("UptimeRobot") space opsgenie{"OpsGenie"} space slack("Slack")
+  jsd("Jira Service Desk") space:3 app("OpsGenie App")
+  uptimerobot--"Site down"-->opsgenie
+  jsd-->opsgenie
+  opsgenie-->jira
+  opsgenie-->slack
+  opsgenie-->app
+```
+
+Each website that we maintain must be configured on UptimeRobot for monitoring. This sends alerts to OpsGenie which, in turn, sends notifications as per our team structures. For teams to be able to respond to alerts, there must be a runbook with all the information required to understand the alert and resolve the situation.
 
 ## Infrastructure (non-prod)
 
