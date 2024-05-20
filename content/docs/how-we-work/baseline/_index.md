@@ -315,7 +315,23 @@ All the platforms that we use to collaborate on code and projects provide some s
 
 ## Deployment (prod)
 
-WIP
+When continuous deployment is not possible, tagged deployment is preferred when deploying a release to the production. Since there is usually only a single version of a website in production, a simple branched workflow with a single trunk branch (often called `main` or `master`) is sufficient. This branch can be continuously deployed to a staging environment for internal or user testing. Once a test run is complete, that commit is tagged and deployed to the production instance.
+
+```mermaid
+gitGraph:
+  commit
+  commit tag: "v20240503"
+  branch feature-123
+  commit
+  commit
+  checkout main
+  commit
+  merge feature-123
+  commit tag: "v20240517"
+  commit
+```
+
+In the above, the `main` branch represents the staging environment and the tags of `v20240503` and `v20240517` are the tags deployed to production. As you might have deduced, the version numbers are dates in `vYYYYMMDD` format. Any version format may be used as long as this is well-defined and understood within the team. For websites, versions of this format make it easy to create tags and figure out what a tag means without worrying about semantic versioning.
 
 ## Search Engine
 
