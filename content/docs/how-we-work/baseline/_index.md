@@ -311,7 +311,7 @@ Additional places where secrets may be stored are:
 
 ## Access control for team members
 
-WIP
+All the platforms that we use to collaborate on code and projects provide some sort of access control. Apply the principle of least privilege required when assigning permissions. Specifically on GitHub, teams must be used to grant access to a repository or multiple repositories. Using teams helps us manage access control in a single place and gives a suitable level of access to any number of repositories. Typically, multiple teams should be created for team leads and other engineers so that the team consisting of team leads can get elevated rights on the repository.
 
 ## Deployment (prod)
 
