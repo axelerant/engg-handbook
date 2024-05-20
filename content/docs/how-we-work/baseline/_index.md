@@ -284,7 +284,21 @@ Each website that we maintain must be configured on UptimeRobot for monitoring. 
 
 ## Infrastructure (non-prod)
 
-To streamline our development and deployment processes, we've selected [Platform.sh](https://platform.sh/) as our preferred infrastructure platform for our non-production environments. This all-in-one solution removes the burden of managing infrastructure, allowing our development teams to focus on building exceptional applications. Platform.sh's automated processes and integrated tools ensure efficient deployments and a reliable foundation for our applications to thrive.
+To streamline our development and deployment processes, we use [Platform.sh](https://platform.sh/) as the platform for our non-production environments. We try to match the stack as closely as possible with the production environment. This means that we replicate all parts of the stack–components like varnish, redis, and SOLR. We also try to match the version as closely as possible.
+
+To configure your project to run on platform.sh, you need at least these three files.
+
+* [`.platform.app.yaml`](https://github.com/platformsh-templates/drupal10/blob/master/.platform.app.yaml)
+* [`.platform/routes.yaml`](https://github.com/platformsh-templates/drupal10/blob/master/.platform/routes.yaml)
+* [`.platform/services.yaml`](https://github.com/platformsh-templates/drupal10/blob/master/.platform/services.yaml)
+
+The links below point to sample configuration for a Drupal 10 website. Here are a few more templates you can evaluate
+
+* [Drupal 10](https://github.com/platformsh-templates/drupal10)
+* [Drupal 9](https://github.com/platformsh-templates/drupal9)
+* [WordPress](https://github.com/platformsh-templates/wordpress-composer)
+* [Laravel](https://github.com/platformsh-templates/laravel)
+* [Decoupled Drupal](https://github.com/platformsh-templates/nextjs-drupal)
 
 ## Secret Management
 
