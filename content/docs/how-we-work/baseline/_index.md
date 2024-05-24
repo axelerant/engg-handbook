@@ -302,7 +302,7 @@ The links below point to sample configuration for a Drupal 10 website. Here are 
 
 ## Secret Management
 
-We use various platforms to securely store and access our secrets. Of them, 1Password is our canonical source for all types of secrets that we need on a project. This includes account logins, API keys and tokens, credentials, and other sensitive information that would be used by the team or by the system during build or runtime.
+We use various platforms to securely store and access our secrets. Of them, 1Password is our canonical source for all types of secrets that we need on a project. This includes [account logins, API keys and tokens, credentials, and other sensitive information](https://developer.1password.com) that would be used by the team or by the system during build or runtime.
 
 Additional places where secrets may be stored are:
 
@@ -337,7 +337,7 @@ In the above, the `main` branch represents the staging environment and the tags 
 
 Common search engines used with Drupal are SOLR and Elastic Search. We typically always prefer SOLR because of the available ecosystem within Drupal, hosting support, and tools. But Elastic Search and other proprietary options such as Algolia or open-source ones like Meilisearch. When the search index is externally hosted, we don't have to worry about setting it up for local development or in other infrastructure. For self-hosted options, there are ways to configure local environments to run the search indexer.
 
-For SOLR, keep in mind that there are multiple DDEV recipes and you should use the one that matches your production instance. For example, Acquia Search is currently Solr 7 (planned upgrade to 8). In this case, you should use 
+For SOLR, keep in mind that there are multiple DDEV recipes and you should use the one that matches your production instance. For example, Acquia Search is currently Solr 7 (planned upgrade to 8). In this case, you should use
 
 * [ddev-solr](https://github.com/ddev/ddev-solr) _(recommended)_. It installs SolrCloud with Solr 9.
 * [ddev-drupal-solr](https://github.com/ddev/ddev-drupal-solr). It installs Solr 8 and does not work with earlier versions.
