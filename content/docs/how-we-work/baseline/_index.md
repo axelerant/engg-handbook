@@ -337,7 +337,7 @@ In the above, the `main` branch represents the staging environment and the tags 
 
 Common search engines used with Drupal are SOLR and Elastic Search. We typically always prefer SOLR because of the available ecosystem within Drupal, hosting support, and tools. But Elastic Search and other proprietary options such as Algolia or open-source ones like Meilisearch. When the search index is externally hosted, we don't have to worry about setting it up for local development or in other infrastructure. For self-hosted options, there are ways to configure local environments to run the search indexer.
 
-For SOLR, keep in mind that there are multiple DDEV recipes and you should use the one that matches your production instance. For example, Acquia Search is currently Solr 7 (planned upgrade to 8). In this case, you should use 
+For SOLR, keep in mind that there are multiple DDEV recipes and you should use the one that matches your production instance. For example, Acquia Search is currently Solr 7 (planned upgrade to 8). In this case, you should use
 
 * [ddev-solr](https://github.com/ddev/ddev-solr) _(recommended)_. It installs SolrCloud with Solr 9.
 * [ddev-drupal-solr](https://github.com/ddev/ddev-drupal-solr). It installs Solr 8 and does not work with earlier versions.
