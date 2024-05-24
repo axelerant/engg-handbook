@@ -21,7 +21,7 @@ There may be some concerns in implementing the above. This section will attempt 
 
 ### Deleting merged branches
 
-The branches can be deleted immediately and [automatically](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-the-automatic-deletion-of-branches) managing-the-automatic-deletion-of-branches) once they are merged. This helps in making the list of actual WIP branches more readable both in UI and in CLI.
+The branches can be deleted immediately and [automatically](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-the-automatic-deletion-of-branches) once they are merged. This helps in making the list of actual WIP branches more readable both in UI and in CLI.
 
 [Git branches](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) are simply labels and deleting a branch results in no information loss except the name of the branch itself (which is often written in commit messages and pull requests anyway). Further, GitHub lets us restore a deleted branch with a click of a button. Consequently, there is no reason to keep a branch once it's merged.
 
