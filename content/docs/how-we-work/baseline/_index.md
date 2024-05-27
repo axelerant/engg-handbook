@@ -302,7 +302,7 @@ The links below point to sample configuration for a Drupal 10 website. Here are 
 
 ## Secret Management
 
-We use various platforms to securely store and access our secrets. Of them, 1Password is our canonical source for all types of secrets that we need on a project. This includes [account logins, API keys and tokens, credentials, and other sensitive information](https://developer.1password.com) that would be used by the team or by the system during build or runtime.
+We use various platforms to securely store and access our secrets. Of them, 1Password is our canonical source for all types of secrets that we need on a project. This includes account logins, [SSH keys](https://developer.1password.com/docs/ssh/), [API keys and tokens](https://developer.1password.com/docs/cli/shell-plugins/), credentials, and other sensitive information that would be used by the team or by the system during build or runtime.
 
 Additional places where secrets may be stored are:
 
