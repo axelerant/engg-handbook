@@ -1,6 +1,6 @@
 ---
 title: Continuous Improvement
-weight: 6
+weight: 7
 description: Continuous improvement is essential for maintaining and enhancing the quality and effectiveness of our work. By periodically stepping back from routine project tasks to evaluate and refine our long-term strategies, we can drive continuous improvement and revenue growth. This practice ensures that we are not only meeting current project demands but also positioning ourselves for future success.
 
 ---
