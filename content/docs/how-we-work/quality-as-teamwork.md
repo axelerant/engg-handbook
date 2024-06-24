@@ -1,6 +1,6 @@
 ---
 title: Quality as Teamwork
-weight: 7
+weight: 15
 description: Being committed to providing a quality product is crucial in our development process. This commitment ensures that our QA team can focus more on edge cases rather than basic functionality. Each team member should strive to deliver high-quality code and solutions, reducing the likelihood of defects and enhancing overall project quality.
 ---
 
