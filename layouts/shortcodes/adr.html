@@ -1,0 +1,17 @@
+<section class="adr-card">
+  <section class="adr-meta">
+    <span class="adr-status">
+      {{ .Get "status" }}
+    </span>
+  </section>
+  <h2>{{ .Get "title" }}</h2>
+  <section class="adr-section">
+    <p>{{ .Get "decision" }}</p>
+  </section>
+  <section class="adr-meta">
+    <span class="adr-date"
+      ><img src="/svg/calendar.svg" width="20px" alt="" />
+      <span>{{ .Get "date" }}</span>
+    </span>
+  </section>
+</section>
