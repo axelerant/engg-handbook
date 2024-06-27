@@ -15,3 +15,5 @@ You are in the midst of a client meeting. There is a decision taken that is goin
 There is a feeling of uncomfortableness during a discussion where you are finding a pause to speak. Or, you might think the issue is obvious, and the client will realize it later. These feelings will stop you from bringing up the concern in the meeting.
 
 Shake off those feelings. Share your observations right away. At Axelerant, we highly value stepping outside our comfort zone.
+
+Stepping up and speaking up also means we communicate effectively with clients. We don't let feelings of discomfort or uncertainty hold us back. We communicate clearly and concisely, understanding the issue before speaking up. We focus on solutions and avoid technical jargon. When unsure about how to communicate, we seek guidance from peers, PMs, or TLs to ensure our message is clear. Addressing concerns promptly and accurately is crucial to our approach. This method resolves issues quickly and builds trust and confidence with our clients.
