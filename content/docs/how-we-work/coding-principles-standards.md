@@ -46,6 +46,30 @@ In our projects, we strictly adhere to the established coding standards. These s
 
   - When writing code, our code should solve ONLY and EXACTLY the use case that we are trying to support. In many instances, we have a desire to make things MORE FLEXIBLE in the FUTURE but that is code we will have to support without knowing whether any of those use cases will ever come up. Another big reason for wanting to be FLEXIBLE is that refactoring is hard, and it feels easier to have flexibility at the front, but that is why we write automated tests, so refactoring will not be as painful.
 
+## Quality as Teamwork
+
+### Commitment to Quality
+
+We are committed to providing a quality product, allowing our QA team to focus on edge cases rather than basic functionality. Each of us strives to deliver high-quality code and solutions, reducing defects and enhancing overall project quality.
+
+### Clarity and Completeness
+
+We ensure each ticket aspect is clear and unambiguous before taking it up. This includes scope, acceptance criteria, implementation details, and estimations, leading to smoother project execution.
+
+### Status Updates
+
+We maintain updated tickets with the current status for effective project management, tracking progress, identifying bottlenecks, and facilitating timely interventions.
+
+### Developer Testing
+
+We conduct thorough developer testing for all positive scenarios before passing the ticket to QA, helping identify and resolve issues early.
+
+### Collaboration and Openness
+
+We foster a collaborative environment, open to team suggestions and inputs, working together to improve processes and solutions, leading to innovative ideas and better problem-solving.
+
+By adhering to these principles, we align our engineering efforts with our commitment to high-quality products and clear communication.
+
 ## Pair Programming
 
 Pair programming is a software development technique where two developers work together. Sometimes it is proven helpful to debug code collectively by connecting on calls, sometimes [rubber-ducking]({{< relref "../common-areas/debugging/#rubber-ducking" >}}) tactics are clearly achieved through this approach. The benefit of pair programming is that it improves code quality in the first iteration itself, improves the [lottery factor (bus factor)]({{< relref "../behaviors/team/#understand-lottery-factor" >}}), increases knowledge sharing, eliminates waiting for code reviews, and results in healthier teams.
