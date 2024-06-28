@@ -30,5 +30,3 @@ An ADR typically includes the following sections:
 5. **Decision**: The decision that was made.
 6. **Consequences**: The outcomes and consequences of the decision.
 7. **Alternatives Considered**: Other options that were considered and why they were not chosen.
-
-{{< section-pages >}}
