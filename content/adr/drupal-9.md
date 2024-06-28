@@ -7,9 +7,3 @@ status: "accepted"
 categories:
   - Drupal
 ---
-
-# ADR for Angular
-
-Below is a list of all Architecture Decision Records (ADRs) for our Drupal project.
-
-{{< adr-list >}}

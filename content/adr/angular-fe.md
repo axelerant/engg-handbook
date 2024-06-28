@@ -7,9 +7,3 @@ status: "proposed"
 categories:
   - Angular
 ---
-
-# ADR for Angular
-
-Below is a list of all Architecture Decision Records (ADRs) for our Angular project.
-
-{{< adr-list >}}
