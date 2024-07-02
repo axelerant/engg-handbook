@@ -1,6 +1,5 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-type: "adrs"
 date: "{{ time.Now.Format "2006-01-02" }}"
 decision: "Decision summary goes here."
 status: "proposed"
