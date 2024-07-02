@@ -1,0 +1,57 @@
+@import 'variables';
+
+// ADR theming
+.adr-list .adr-card {
+  border: 1px solid $white-smoke;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: $white;
+
+  > h2 {
+    font-size: 1em;
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  .adr-meta {
+    font-size: 0.9em;
+    color: $dark-gray;
+    span {
+      margin-top: 2px;
+    }
+    .adr-date {
+      display: flex;
+      gap: 10px;
+    }
+  }
+
+  .adr-status {
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    float: right;
+    .status-accepted {
+      background-color: #4caf50; /* Green */
+    }
+
+    .status-proposed {
+      background-color: #2196f3; /* Blue */
+    }
+
+    .status-denied {
+      background-color: #f44336; /* Red */
+    }
+  }
+
+  .adr-section {
+    margin-bottom: 15px;
+    p {
+      margin: 0;
+      font-size: 0.8em;
+      line-height: 1.2;
+    }
+  }
+}
