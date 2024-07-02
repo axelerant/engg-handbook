@@ -1,7 +1,7 @@
 ---
 title: 'Implement Angular Routing'
 type: "adrs"
-date: "12-07-2024"
+date: "2024-07-12"
 decision: "We will implement Angular routing to manage navigation and enable lazy loading for improved performance."
 status: "accepted"
 categories:
