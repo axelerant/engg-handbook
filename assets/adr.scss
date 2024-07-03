@@ -60,4 +60,34 @@
   a:visited {
     color: $black;
   }
+
+  /* Styling for the filter buttons */
+  .filter-section {
+    .filter-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 10px;
+      padding: 0;
+      .filter-button {
+        background-color: $white;
+        border: 1px solid $silver;
+        color: $black;
+        border-radius: 4px;
+        cursor: pointer;
+        padding: 6px 12px;
+        font-size: 14px;
+        transition: background-color 0.5s;
+        outline: none;
+        &:hover {
+          background-color: $silver;
+        }
+        &.active {
+          background-color: $orange;
+          border: 1px solid $orange;
+          color: #fff;
+        }
+      }
+    }
+  }
 }
