@@ -191,80 +191,13 @@ Follow these steps only if the project doesn't already exist.
 {{< /tab >}}
 {{< /tabs >}}
 
-### Handling Alerts
+### Routine Monitoring
 
-#### Monitoring Alerts in Sentry
-
-1. Access the Issues Dashboard
-
-    * In Sentry, go to the **Issues** tab to view all logged errors and alerts. The Issues dashboard provides a comprehensive overview of all logged events, grouped by the type and frequency of occurrence.
-
-2. Set Up Alert Rules:
-
-   * Configure alert rules to receive notifications for specific issues. Navigate to **Project Settings** > **Alerts** and define the conditions for alerts. You can set up alerts based on various criteria such as event frequency, error severity, and affected users.
-
-   * **Notification Settings**: Customize how and where you receive alerts. Options include email, SMS, Slack, or other third-party integrations. Make sure to configure these settings to ensure timely notifications.
-   * **Alert Thresholds**: Define thresholds for different alert types. For example, you might set a threshold to alert you only if an error occurs more than 10 times in an hour, helping to avoid alert fatigue.
-
-3. Configure Slack Notifications:
-   * **Integrate Sentry with Slack**:
-     * Navigate to **Project Settings** > **Integrations**.
-     * Select **Slack** and follow the prompts to authenticate and authorize Sentry to access your Slack workspace.
-     * Choose the Slack channel where you want to receive alerts.
-   * **Set Up Slack Notification Rules**:
-     * In **Project Settings** > **Alerts**, create a new alert rule.
-     * Define the conditions for the alert, such as error type and frequency.
-     * Under **Actions**, select **Send a notification to Slack** and choose the integrated Slack channel.
-     * Save the rule to start receiving Slack notifications for the defined alerts.
-
-#### Creating Tickets from Alerts
-
-1. Review the Alert Details:
-   * Click on an alert to view detailed information, including stack traces, affected users, and the frequency of occurrences. Detailed error context helps in understanding the issue better and aids in faster resolution.
-   * **Error Context**: Review the contextual data provided by Sentry, such as the environment (production, staging), user actions leading to the error, and system state. This information is critical for diagnosing and resolving issues efficiently.
-
-2. Integrate Sentry with your ticketing system: (e.g. Jira, Github Issues).
-   * Navigate to **Project Settings** > **Integrations**.
-   * Select **Jira** and follow the prompts to authenticate and authorize Sentry to access your Jira instance.
-   * Configure the integration settings, such as default project and issue type, to streamline ticket creation.
-
-3. Create a Ticket:
-   * **Manually Creating a Ticket**:
-     * Click on the **Create Issue** button in the alert details view.
-     * Select **Jira** as the integration.
-     * Fill in the ticket details, including the summary, description, and priority. Include all relevant information provided by Sentry to ensure the issue is well-documented.
-     * Submit the ticket, which will then appear in your Jira project.
-   * **Automatically Creating Tickets**:
-     * Configure Sentry to automatically create Jira tickets for certain types of alerts. This can be done by setting up alert rules to trigger ticket creation.
-     * In **Project Settings** > **Alerts**, create a new alert rule and specify the conditions (e.g., error type, frequency) and actions (create a Jira ticket).
-     * Define the default project, issue type, and other ticket fields to ensure consistency and streamline the process.
-
-4. Managing Tickets in Jira:
-   * Once a ticket is created, ensure it is assigned to the appropriate team or individual. Jira’s workflow management tools can help track the progress of the ticket from creation to resolution.
-   * **Tracking and Reporting**: Use Jira’s reporting features to track the status of logged issues. Generate reports to identify trends, recurring issues, and areas for improvement.
-   * **Comments and Updates**: Utilize Jira’s commenting system to add updates, discuss potential solutions, and collaborate with team members directly within the ticket.
+We perform our routine monitoring in Sentry involves regularly reviewing error logs and configuring alert rules to ensure timely notifications of critical issues. Developers can access detailed error reports through Sentry's Issues dashboard, set up alerts based on specific criteria like error severity and frequency, and customize notification settings to receive alerts via Slack, email, or other channels. Read more details [here]({{< relref "logging-details.md" >}}).
 
 ### Best Practices
 
-* Ensure Comprehensive Logging:
-  * Ensure all critical parts of your Drupal application are covered by logging. This includes user interactions, database queries, API calls, and third-party integrations.
-  * **Error Levels**: Use appropriate error levels (debug, info, warning, error, critical) to categorize logs. This helps in filtering and prioritizing issues effectively.
-
-* Regularly Review Logs:
-  * Periodically review logs to identify and address recurring issues. Schedule regular log review sessions as part of your development and maintenance processes.
-  * **Log Retention Policies**: Implement log retention policies to manage log storage efficiently. Ensure that logs are archived and accessible for future reference.
-
-* Optimize Alert Rules:
-  * Fine-tune alert rules to minimize noise and focus on critical issues. Avoid over-alerting by setting appropriate thresholds and conditions for alerts.
-  * **Alert Tuning**: Continuously monitor and adjust alert rules based on feedback and changing application behavior. Engage with the team to refine alert settings.
-
-* Automate Ticket Creation:
-  * Automate the ticket creation process to streamline incident management. Use Sentry’s integration capabilities to automatically create tickets for high-priority issues.
-  * **Automation Tools**: Explore automation tools and scripts that can help in managing alerts and tickets more efficiently. This can include auto-assigning tickets, updating statuses, and notifying relevant stakeholders.
-
-* Collaborate and Communicate:
-  * Foster collaboration between development, operations, and support teams. Use Sentry’s collaboration features, such as comments and mentions, to communicate within the context of an alert.
-  * **Incident Response Plans**: Develop and maintain incident response plans. Conduct regular drills and reviews to ensure the team is prepared to handle incidents effectively.
+Adopting best practices with Sentry includes ensuring comprehensive logging across critical areas of Drupal applications and using appropriate error levels (such as warning, error, and critical) for effective issue prioritization. It's crucial to regularly review logs to identify recurring issues, implement log retention policies for efficient storage management, and optimize alert rules to minimize alert fatigue. Read more details here.
 
 ## Functional Testing
 
