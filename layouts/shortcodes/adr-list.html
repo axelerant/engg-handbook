@@ -2,8 +2,8 @@
 {{ $adrCSS := resources.Get "adr.scss" | resources.ToCSS | resources.Minify | fingerprint }}
 <link rel="stylesheet" href="{{ $adrCSS.Permalink }}" />
 
-{{/* Retrieve all ADR pages from the "adr" section */}}
-{{ $adrPages := where $.Site.RegularPages "Section" "adr" }}
+{{/* Retrieve all ADR pages from the "adr" section and sort them with latest showing on top */}}
+{{ $adrPages := sort (where $.Site.RegularPages "Section" "adr") ".Params.date" "desc" }}
 <section class="adr-list">
   {{/* Check if there are any ADR pages available */}}
   {{ if gt (len $adrPages) 0 }}
