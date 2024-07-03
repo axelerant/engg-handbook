@@ -1,8 +1,14 @@
+{{/* Load and minify the adr.scss stylesheet */}}
+{{ $adrCSS := resources.Get "adr.scss" | resources.ToCSS | resources.Minify | fingerprint }}
+<link rel="stylesheet" href="{{ $adrCSS.Permalink }}" />
+
+{{/* Retrieve all ADR pages from the "adr" section */}}
+{{ $adrPages := where $.Site.RegularPages "Section" "adr" }}
 <section class="adr-list">
-  <!--pass the parameter dynamically without passing it in the shortcode call-->
-  {{ $category := index .Page.Params.categories 0 }}
-  {{ range where .Site.RegularPages "Type" "adrs" }}
-    {{ if in .Params.categories $category }}
+  {{/* Check if there are any ADR pages available */}}
+  {{ if gt (len $adrPages) 0 }}
+    {{/* Loop through each ADR page */}}
+    {{ range $adrPages }}
       <article class="adr-card">
         <section class="adr-meta">
           <span class="adr-status">{{ .Params.status }}</span>
@@ -14,10 +20,13 @@
         <section class="adr-meta">
           <span class="adr-date">
             <img src="/svg/calendar.svg" width="20px" alt="" />
-            <span>{{ .Params.date }}</span>
+            <span>{{ .Params.date.Format "2006-01-02" }}</span>
           </span>
         </section>
       </article>
+    {{ else }}
+      {{/* Display a message if no ADR pages are found */}}
+      <p>No ADR pages found.</p>
     {{ end }}
   {{ end }}
 </section>
