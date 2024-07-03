@@ -9,21 +9,23 @@
   {{ if gt (len $adrPages) 0 }}
     {{/* Loop through each ADR page */}}
     {{ range $adrPages }}
-      <article class="adr-card">
-        <section class="adr-meta">
-          <span class="adr-status">{{ .Params.status }}</span>
-        </section>
-        <h2>{{ .Title }}</h2>
-        <section class="adr-section">
-          <p>{{ .Params.decision }}</p>
-        </section>
-        <section class="adr-meta">
-          <span class="adr-date">
-            <img src="/svg/calendar.svg" width="20px" alt="" />
-            <span>{{ .Params.date.Format "2006-01-02" }}</span>
-          </span>
-        </section>
-      </article>
+      <a href="{{ .RelPermalink }}">
+        <article class="adr-card">
+          <section class="adr-meta">
+            <span class="adr-status">{{ .Params.status }}</span>
+          </section>
+          <h2>{{ .Title }}</h2>
+          <section class="adr-section">
+            <p>{{ .Params.decision }}</p>
+          </section>
+          <section class="adr-meta">
+            <span class="adr-date">
+              <img src="/svg/calendar.svg" width="20px" alt="" />
+              <span>{{ .Params.date.Format "2006-01-02" }}</span>
+            </span>
+          </section>
+        </article>
+      </a>
     {{ else }}
       {{/* Display a message if no ADR pages are found */}}
       <p>No ADR pages found.</p>
