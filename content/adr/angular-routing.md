@@ -1,6 +1,6 @@
 ---
-title: 'Implement Angular Routing'
-date: "2024-07-12"
+title: "Implement Angular Routing"
+date: "2024-06-12"
 decision: "We will implement Angular routing to manage navigation and enable lazy loading for improved performance."
 status: "accepted"
 categories:
