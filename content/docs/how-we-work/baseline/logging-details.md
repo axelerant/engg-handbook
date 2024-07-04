@@ -102,7 +102,7 @@ For more details, refer to the [Sentry Alert Rules Documentation](https://docs.s
    - Utilize existing logging features provided by third-party modules and extend them as needed to capture additional details.
 
 5. **Error Levels:**
-   - Use appropriate error levels to categorize logs, but avoid sending debug and info logs to Sentry as they are not suitable for these log types.
+   - Sentry is an issue detection and reporting tool and does not need `debug` and `info` log messages. While you should log all messages to logging systems like `syslog` or external ones such as New Relic, only errors are relevant to Sentry.
    - Set the logging threshold to `Warning`, `Error`, or `Critical` to filter and prioritize issues effectively.
    - Explicitly configure your logging settings to exclude debug and info logs by adjusting the `severity level` in your Raven module settings or custom logging configuration.
 
