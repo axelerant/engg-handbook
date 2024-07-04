@@ -10,12 +10,12 @@ We can't fix what we can't see. Logging is the most fundamental aspect of observ
 
 Any application that you build must be configured to write logs to Sentry. This is fairly straightforward as Sentry has SDKs in a number of languages and frameworks. For Drupal, use the [Raven](https://www.drupal.org/project/raven) module to pull in the integration and also configure what should be logged.
 
+## Sentry Setup
+
 We need to create a project on Sentry and then use the details to set up the integration.
 
 {{< tabs "sentry" >}}
 {{< tab "Sentry Project" >}}
-
-## Sentry Setup
 
 ### Creating a project on Sentry
 
@@ -70,7 +70,7 @@ For more details, refer to the [Sentry Alert Rules Documentation](https://docs.s
 
 3. **Create a Ticket:**
    - **Manually Creating a Ticket:**
-     - Create an Issue** in the alert details view to manually create a ticket by writing all relevant information provided by Sentry to ensure the issue is well-documented.
+     - **Create an Issue** in the alert details view to manually create a ticket by writing all relevant information provided by Sentry to ensure the issue is well-documented.
 
    - **Automatically Creating Tickets:**
      - Configure automatic ticket creation in **Project Settings** > **Alerts** by setting up alert rules to trigger ticket creation by specifying the conditions (e.g., error type, frequency) and actions (create a Jira ticket) for automatic ticket creation.
@@ -82,64 +82,17 @@ For more details, refer to the [Sentry Alert Rules Documentation](https://docs.s
 
 ## Best Practices
 
-### Ensure Comprehensive Logging
+We apply these best practices to ensure effective logging, monitoring, and incident management in our Drupal applications:
 
-1. **User Interactions:**
-   - Use Drupal's built-in logging functions such as `watchdog` to log significant user actions and interactions.
-   - Implement custom logging in custom modules using the `\Drupal::logger('custom_module')->info($message);` syntax to capture specific user events.
-
-2. **Database Queries:**
-   - Enable query logging in Drupal by configuring the database logging settings in `settings.php`.
-   - Use the Database Logging module (`dblog`) to log and review database queries within the Drupal admin interface.
-   - Implement custom logging for complex or critical database operations using hooks and custom logging functions.
-
-3. **API Calls:**
-   - Log all outgoing and incoming API requests and responses. Use the Guzzle middleware to log API requests made through Guzzle HTTP client.
-   - Implement logging in custom API integrations by capturing request and response data and logging it using `\Drupal::logger`.
-
-4. **Third-Party Integrations:**
-   - Ensure that all third-party services and integrations have appropriate logging in place. This can include logging successful and failed requests, responses, and any relevant data exchanges.
-   - Utilize existing logging features provided by third-party modules and extend them as needed to capture additional details.
-
-5. **Error Levels:**
-   - Sentry is an issue detection and reporting tool and does not need `debug` and `info` log messages. While you should log all messages to logging systems like `syslog` or external ones such as New Relic, only errors are relevant to Sentry.
-   - Set the logging threshold to `Error` or `Critical` to filter and prioritize issues effectively.
-   - Explicitly configure your logging settings to exclude debug and info logs by adjusting the `severity level` in your Raven module settings or custom logging configuration.
-
-6. **Monitoring and Review:**
-   - Regularly review and monitor logs using the Drupal logging interface or integrate with external monitoring tools like Sentry to ensure comprehensive coverage.
-   - Set up automated log review and alerting processes to quickly identify and address any logging gaps or issues.
-
-### Regularly Review Logs
-
-1. **Log Review Sessions:**
-   - Schedule regular log review sessions to periodically review logs and identify recurring issues as part of your development and maintenance processes.
-
-2. **Log Retention Policies:**
-
-   - Implement log retention policies to manage log storage efficiently. Ensure that logs are archived and accessible for future reference.
-   - Define log retention periods and configure log rotation to prevent excessive log storage and maintain performance.
-
-### Optimize Alert Rules
-
-1. **Alert Configuration:**
-   - Fine-tune alert rules to minimize noise and focus on critical issues by setting appropriate thresholds and conditions for alerts.
-
-2. **Alert Tuning:**
-   - Continuously monitor and adjust alert rules based on feedback and changing application behavior. Engage with the team to refine alert settings.
-
-### Automate Ticket Creation
-
-1. **Integration:**
-   - Automate the ticket creation process to streamline incident management. Use Sentry’s integration capabilities to automatically create tickets for high-priority issues.
-
-2. **Automation Tools:**
-   - Explore automation tools and scripts that can help manage alerts and tickets more efficiently. This can include auto-assigning tickets, updating statuses, and notifying relevant stakeholders.
-
-### Collaborate and Communicate
-
-1. **Collaboration Features:**
-   - Foster collaboration between development, operations, and support teams. Use Sentry’s collaboration features, such as comments and mentions, to communicate within the context of an alert.
-
-2. **Incident Response Plans:**
-   - Develop and maintain incident response plans. Conduct regular drills and reviews to ensure the team is prepared to handle incidents effectively.
+- Log significant user actions and interactions using Drupal's built-in functions and custom modules.
+- Enable and review database query logging using `settings.php` and the Database Logging module (`dblog`).
+- Log all API requests, responses, and third-party service interactions using `Guzzle` middleware and capturing successful and failed requests.
+- Set the logging threshold to Error or Critical to filter and prioritize issues effectively and avoid logging debug and info logs to Sentry.
+- Schedule regular log review sessions to identify and address recurring issues.
+- Implement log retention policies and configure log rotation for efficient log storage and performance.
+- Fine-tune alert rules to minimize noise and focus on critical issues.
+- Continuously monitor and adjust alert rules based on feedback and changing application behavior.
+- Use Sentry’s integration capabilities to automatically create tickets for high-priority issues.
+- Explore automation tools to manage alerts and tickets, including auto-assigning and status updates.
+- Foster collaboration between development, operations, and support teams using Sentry’s collaboration features.
+- Develop and maintain incident response plans, conducting regular drills and reviews.
