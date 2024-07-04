@@ -103,7 +103,7 @@ For more details, refer to the [Sentry Alert Rules Documentation](https://docs.s
 
 5. **Error Levels:**
    - Sentry is an issue detection and reporting tool and does not need `debug` and `info` log messages. While you should log all messages to logging systems like `syslog` or external ones such as New Relic, only errors are relevant to Sentry.
-   - Set the logging threshold to `Warning`, `Error`, or `Critical` to filter and prioritize issues effectively.
+   - Set the logging threshold to `Error` or `Critical` to filter and prioritize issues effectively.
    - Explicitly configure your logging settings to exclude debug and info logs by adjusting the `severity level` in your Raven module settings or custom logging configuration.
 
 6. **Monitoring and Review:**
