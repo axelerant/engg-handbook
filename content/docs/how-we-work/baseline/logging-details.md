@@ -1,6 +1,6 @@
 ---
 title: Logging
-weight: 2
+weight: 13
 description: We can't fix what we can't see. Logging is the most fundamental aspect of observability in how our applications run so that we fix a problem, even proactively. For this, we rely on something more sophisticated than simply logging into the database or syslog. Our tool of choice for this purpose is Sentry.
 ---
 
