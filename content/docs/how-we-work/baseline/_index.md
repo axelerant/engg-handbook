@@ -64,7 +64,8 @@ With CMSes like Drupal, we always use an application cache like [Redis](https://
 
 We default to Redis unless there is a good reason to use Memcached. Often the reason is that the hosting provider may only support Memcached. Given the [recent Redis announcement](https://redis.io/blog/redis-adopts-dual-source-available-licensing/), we may change this recommendation based on the hosting landscape and performance considerations.
 
-{{< details "Configure Redis on a project" >}}
+{{< tabs "caches" >}}
+{{< tab "Redis" >}}
 Once DDEV is configured for a project, follow these steps:
 
 1. Run `ddev get ddev/ddev-redis` (for Redis 7, run use `ddev/ddev-redis-7`).
@@ -72,8 +73,18 @@ Once DDEV is configured for a project, follow these steps:
 3. These add-ons will typically add a `settings.ddev.redis.php`. Verify it exists.
 4. Update `settings.php` to configure Redis for the hosting provider. You can copy the settings from `setting.ddev.redis.php` and update the values to use the hosting provider's mechanism to set Redis.
 5. Commit the files in the `.ddev` directory and the settings files mentioned above. Push the changes.
+{{< /tab >}}
+{{< tab "Memcached" >}}
 
-{{< /details >}}
+Once DDEV is set up for a project, follow these steps:
+
+1. Run `ddev get ddev/ddev-memcached` to install Memcached support.
+2. Restart DDEV with `ddev restart` to apply the changes.
+3. Verify the addition of `settings.ddev.memcached.php`.
+4. Update `settings.php` to configure Memcached for your hosting provider. Use `settings.ddev.memcached.php` as a reference and adjust the configuration for your hosting environment.
+5. Commit the changes in the `.ddev` directory and the updated settings files.
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Database
 
