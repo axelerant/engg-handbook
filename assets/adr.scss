@@ -26,24 +26,29 @@
         display: flex;
         gap: 10px;
       }
-    }
+      .adr-status {
+        padding: 5px 10px;
+        border-radius: 3px;
+        font-size: 0.9em;
+        margin-bottom: 10px;
+        float: right;
+        border-radius: 30px;
+        color: $white;
+        &.status-accepted {
+          background-color: $green; /* Green */
+        }
 
-    .adr-status {
-      padding: 5px 10px;
-      border-radius: 3px;
-      font-size: 0.9em;
-      margin-bottom: 10px;
-      float: right;
-      .status-accepted {
-        background-color: #4caf50; /* Green */
-      }
+        &.status-proposed {
+          background-color: $blue; /* Blue */
+        }
 
-      .status-proposed {
-        background-color: #2196f3; /* Blue */
-      }
+        &.status-declined {
+          background-color: $red; /* Red */
+        }
 
-      .status-denied {
-        background-color: #f44336; /* Red */
+        &.status-deprecated {
+          background-color: $gray;
+        }
       }
     }
 
