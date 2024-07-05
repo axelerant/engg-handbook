@@ -4,21 +4,15 @@ function filterADR(category) {
 
   adrCards.forEach(function (card) {
     var categories = card.getAttribute('data-categories').split(' ');
-    if (category === 'All' || categories.includes(category)) {
-      card.style.display = 'block';
-    } else {
-      card.style.display = 'none';
-    }
+    card.style.display =
+      category === 'All' || categories.includes(category) ? 'block' : 'none';
   });
 
   filterButtons.forEach(function (button) {
     var buttonText = button.textContent.trim(); // Trim whitespace
+    button.classList.remove('active');
     if (buttonText === category) {
       button.classList.add('active');
-    } else if (category === 'All' && buttonText === 'All') {
-      button.classList.add('active');
-    } else {
-      button.classList.remove('active');
     }
   });
 }
