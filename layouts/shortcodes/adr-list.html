@@ -31,7 +31,9 @@
         data-categories="{{ delimit .Params.categories " " }}"
       >
         <section class="adr-meta">
-          <span class="adr-status">{{ .Params.status }}</span>
+          <span class="adr-status status-{{ .Params.status | lower }}">
+            {{ .Params.status }}
+          </span>
         </section>
         <h2>{{ .Title }}</h2>
         <section class="adr-section">
