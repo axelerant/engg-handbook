@@ -1,0 +1,24 @@
+{{ define "main" }}
+  {{/* Load and minify the adr-single.scss stylesheet */}}
+  {{ $scss := resources.Get "adr-single.scss" | resources.ToCSS | resources.Minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $scss.Permalink }}" />
+
+  <article class="markdown">
+    <h1>{{ .Title }}</h1>
+    <header>
+      <div class="metadata">
+        <p><strong>Date:</strong> {{ .Date.Format "2006-01-02" }}</p>
+        <p><strong>Decision:</strong> {{ .Params.decision }}</p>
+        <p><strong>Status:</strong> {{ .Params.status }}</p>
+        {{ if .Params.categories }}
+          <p>
+            <strong>Categories:</strong> {{ delimit .Params.categories ", " }}
+          </p>
+        {{ end }}
+      </div>
+    </header>
+    <section class="content">
+      {{ .Content }}
+    </section>
+  </article>
+{{ end }}

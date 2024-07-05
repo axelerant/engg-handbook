@@ -2,14 +2,34 @@
 {{ $adrCSS := resources.Get "adr.scss" | resources.ToCSS | resources.Minify | fingerprint }}
 <link rel="stylesheet" href="{{ $adrCSS.Permalink }}" />
 
-{{/* Retrieve all ADR pages from the "adr" section */}}
-{{ $adrPages := where $.Site.RegularPages "Section" "adr" }}
+{{/* Retrieve all ADR pages from the "adr" section and sort them with latest showing on top */}}
+{{ $adrPages := sort (where $.Site.RegularPages "Section" "adr") ".Params.date" "desc" }}
 <section class="adr-list">
-  {{/* Check if there are any ADR pages available */}}
-  {{ if gt (len $adrPages) 0 }}
-    {{/* Loop through each ADR page */}}
-    {{ range $adrPages }}
-      <article class="adr-card">
+  <!-- Filter section -->
+  <nav class="filter-section" aria-label="ADR Categories">
+    <ul class="filter-list">
+      <li class="filter-item">
+        <button class="filter-button active" onclick="filterADR('All')">
+          All
+        </button>
+      </li>
+      {{ range $category := .Page.Params.categories }}
+        <li class="filter-item">
+          <button class="filter-button" onclick="filterADR('{{ $category }}')">
+            {{ $category }}
+          </button>
+        </li>
+      {{ end }}
+    </ul>
+  </nav>
+
+  {{/* Loop through each ADR page */}}
+  {{ range $adrPages }}
+    <a href="{{ .RelPermalink }}">
+      <article
+        class="adr-card"
+        data-categories="{{ delimit .Params.categories " " }}"
+      >
         <section class="adr-meta">
           <span class="adr-status">{{ .Params.status }}</span>
         </section>
@@ -24,9 +44,13 @@
           </span>
         </section>
       </article>
-    {{ else }}
-      {{/* Display a message if no ADR pages are found */}}
-      <p>No ADR pages found.</p>
-    {{ end }}
+    </a>
+  {{ else }}
+    {{/* Display a message if no ADR pages are found */}}
+    <p>No ADR pages found.</p>
   {{ end }}
 </section>
+
+<!-- Include the separate script file -->
+{{ $js := resources.Get "js/filter-adr.js" | resources.Minify | fingerprint }}
+<script src="{{ $js.Permalink }}" defer></script>
