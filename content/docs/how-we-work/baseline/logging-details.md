@@ -87,7 +87,7 @@ We apply these best practices to ensure effective logging, monitoring, and incid
 - Log significant user actions and interactions using Drupal's built-in functions and custom modules.
 - Enable and review database query logging using `settings.php` and the Database Logging module (`dblog`).
 - Log all API requests, responses, and third-party service interactions using `Guzzle` middleware and capturing successful and failed requests.
-- Set the logging threshold to Error or Critical to filter and prioritize issues effectively and avoid logging debug and info logs to Sentry.
+- For Sentry, set the logging threshold to Error or Critical to filter and prioritize issues effectively and avoid sending debug and info messages.
 - Schedule regular log review sessions to identify and address recurring issues.
 - Implement log retention policies and configure log rotation for efficient log storage and performance.
 - Fine-tune alert rules to minimize noise and focus on critical issues.
