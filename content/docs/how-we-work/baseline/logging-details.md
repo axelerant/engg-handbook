@@ -80,9 +80,9 @@ For more details, refer to the [Sentry Alert Rules Documentation](https://docs.s
    - **Tracking and Reporting:** Use Jira’s reporting features to track the status of logged issues. Generate reports to identify trends, recurring issues, and areas for improvement.
    - **Comments and Updates:** Utilize Jira’s commenting system to add updates, discuss potential solutions, and collaborate with team members directly within the ticket.
 
-## Best Practices
+## Things to Remember
 
-We apply these best practices to ensure effective logging, monitoring, and incident management in our Drupal applications:
+We apply these practices to ensure effective logging, monitoring, and incident management in our Drupal applications:
 
 - Log significant user actions and interactions using Drupal's built-in functions and custom modules.
 - Enable and review database query logging using `settings.php` and the Database Logging module (`dblog`).
