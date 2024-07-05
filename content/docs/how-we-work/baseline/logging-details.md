@@ -85,14 +85,12 @@ For more details, refer to the [Sentry Alert Rules Documentation](https://docs.s
 We apply these practices to ensure effective logging, monitoring, and incident management in our Drupal applications:
 
 - Log significant user actions and interactions using Drupal's built-in functions and custom modules.
-- Enable and review database query logging using `settings.php` and the Database Logging module (`dblog`).
-- Log all API requests, responses, and third-party service interactions using `Guzzle` middleware and capturing successful and failed requests.
+- Disable the Database Logging module (`dblog`) and enable the `syslog` module in `settings.php` for efficient logging.
+- Log critical API requests, responses, and third-party service interactions using techniques such as middleware to capture failed requests and significant events.
 - For Sentry, set the logging threshold to Error or Critical to filter and prioritize issues effectively and avoid sending debug and info messages.
 - Schedule regular log review sessions with the team to identify and address recurring issues.
-- Implement log retention policies and configure log rotation for efficient log storage and performance.
 - Fine-tune alert rules to minimize noise and focus on critical issues.
 - Continuously monitor and adjust alert rules based on feedback and changing application behavior.
 - Use Sentry’s integration capabilities to automatically create tickets for high-priority issues.
 - Explore automation tools to manage alerts and tickets, including auto-assigning and status updates.
-- Foster collaboration between development, operations, and support teams using Sentry’s collaboration features.
 - Develop and maintain incident response plans, conducting regular drills and reviews.
