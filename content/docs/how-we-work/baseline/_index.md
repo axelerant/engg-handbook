@@ -76,13 +76,14 @@ Once DDEV is configured for a project, follow these steps:
 {{< /tab >}}
 {{< tab "Memcached" >}}
 
-Once DDEV is set up for a project, follow these steps:
+Once DDEV is set up for a project, follow [these steps](https://github.com/ddev/ddev-memcached):
 
 1. Run `ddev get ddev/ddev-memcached` to install Memcached support.
 2. Restart DDEV with `ddev restart` to apply the changes.
-3. Verify the addition of `settings.ddev.memcached.php`.
-4. Update `settings.php` to configure Memcached for your hosting provider. Use `settings.ddev.memcached.php` as a reference and adjust the configuration for your hosting environment.
-5. Commit the changes in the `.ddev` directory and the updated settings files.
+3. Verify the addition of `.ddev/docker-compose.memcached.yaml`.
+4. Update `settings.php` to configure Memcached for your hosting provider. Use `docker-compose.memcached.yaml` as a reference and adjust the configuration for your hosting environment.
+5. Configure your project to access Memcached on the host:port `memcached:11211`
+6. Commit the changes in the `.ddev` directory and the updated settings files.
 {{< /tab >}}
 {{< /tabs >}}
 
