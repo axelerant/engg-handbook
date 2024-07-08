@@ -67,14 +67,39 @@
   }
 
   /* Styling for the filter buttons */
-  .filter-section {
-    .filter-list {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      column-gap: 10px;
-      padding: 0;
-      .filter-button {
+  .adr-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .filter-section,
+    .sort-section {
+      .filter-list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        padding: 0;
+      }
+      .sort-list {
+        list-style: none;
+        border: 1px solid $white-smoke;
+        position: absolute;
+        background-color: $white;
+        border-radius: 4px;
+        margin-top: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        width: 40%;
+        z-index: 1;
+        .sort-item {
+          cursor: pointer;
+          &.active {
+            font-weight: bold;
+          }
+        }
+      }
+      .filter-button,
+      .sort-button {
         background-color: $white;
         border: 1px solid $silver;
         color: $black;
@@ -93,6 +118,9 @@
           color: #fff;
         }
       }
+    }
+    .hidden {
+      display: none;
     }
   }
 }
