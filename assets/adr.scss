@@ -19,21 +19,24 @@
     .adr-meta {
       font-size: 0.9em;
       color: $dark-gray;
+
       span {
         margin-top: 2px;
       }
+
       .adr-date {
         display: flex;
         gap: 10px;
       }
+
       .adr-status {
         padding: 5px 10px;
-        border-radius: 3px;
         font-size: 0.9em;
         margin-bottom: 10px;
         float: right;
         border-radius: 30px;
         color: $white;
+
         &.status-accepted {
           background-color: $green; /* Green */
         }
@@ -54,6 +57,7 @@
 
     .adr-section {
       margin-bottom: 15px;
+
       p {
         margin: 0;
         font-size: 0.8em;
@@ -61,6 +65,7 @@
       }
     }
   }
+
   a,
   a:visited {
     color: $black;
@@ -71,6 +76,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     .filter-section,
     .sort-section {
       .filter-list {
@@ -79,10 +85,12 @@
         flex-wrap: wrap;
         column-gap: 10px;
         padding: 0;
+
         .filter-item {
           margin: 0;
         }
       }
+
       .sort-list,
       .status-filter-list {
         list-style: none;
@@ -95,17 +103,21 @@
         padding: 10px;
         width: 40%;
         z-index: 1;
+
         .sort-item,
         .status-filter-item {
           cursor: pointer;
+
           &.active {
             font-weight: bold;
           }
         }
       }
+
       .status-filter-list {
         list-style: none;
       }
+
       .filter-button,
       .sort-button {
         background-color: $white;
@@ -118,9 +130,11 @@
         transition: background-color 0.5s;
         outline: none;
         text-wrap: nowrap;
+
         &:hover {
           background-color: $silver;
         }
+
         &.active {
           background-color: $orange;
           border: 1px solid $orange;
@@ -128,6 +142,7 @@
         }
       }
     }
+
     .hidden {
       display: none;
     }
