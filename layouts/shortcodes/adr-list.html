@@ -34,7 +34,7 @@
       <button class="sort-button" onclick="onToggle('sort-list')">
         Sort By
       </button>
-      <ul id="sort-list" class="sort-list hidden">
+      <ul id="sort-list" class="sort-list dropdown-menu hidden">
         <li
           class="sort-item"
           data-sort="title-asc"
@@ -63,7 +63,10 @@
       <button class="filter-button" onclick="onToggle('status-filter-list')">
         Filter By
       </button>
-      <ul id="status-filter-list" class="status-filter-list hidden">
+      <ul
+        id="status-filter-list"
+        class="status-filter-list dropdown-menu hidden"
+      >
         <li
           class="status-filter-item active"
           data-status="accepted"

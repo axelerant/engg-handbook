@@ -1,12 +1,17 @@
 function onToggle(elementId) {
+  const dropdowns = document.querySelectorAll('.dropdown-menu');
+  dropdowns.forEach((dropdown) => {
+    if (dropdown.id !== elementId) {
+      dropdown.classList.add('hidden');
+    }
+  });
   document.getElementById(elementId).classList.toggle('hidden');
 }
 
 function sortBy(sortType) {
+  let adrLinks = document.getElementById('adr-links');
   // Select all elements with class 'adr-links' and convert NodeList to array
-  let adrEntries = Array.from(
-    document.getElementById('adr-links').querySelectorAll('a'),
-  );
+  let adrEntries = Array.from(adrLinks.querySelectorAll('a'));
   // Remove 'active' class from all sort items
   let sortItems = document.querySelectorAll('.sort-item');
   sortItems.forEach((item) => {
@@ -53,10 +58,10 @@ function sortBy(sortType) {
   }
 
   // Clear existing cards
-  document.getElementById('adr-links').innerHTML = '';
+  adrLinks.innerHTML = '';
 
   // Append sorted cards back to the list
   adrEntries.forEach((card) => {
-    document.getElementById('adr-links').appendChild(card);
+    adrLinks.appendChild(card);
   });
 }

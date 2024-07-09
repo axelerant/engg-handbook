@@ -91,8 +91,7 @@
         }
       }
 
-      .sort-list,
-      .status-filter-list {
+      .dropdown-menu {
         list-style: none;
         border: 1px solid $white-smoke;
         position: absolute;
@@ -112,10 +111,6 @@
             font-weight: bold;
           }
         }
-      }
-
-      .status-filter-list {
-        list-style: none;
       }
 
       .filter-button,
