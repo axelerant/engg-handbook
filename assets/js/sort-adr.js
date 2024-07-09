@@ -1,6 +1,5 @@
-function onToggle() {
-  const sortMenu = document.getElementById('sort-list');
-  sortMenu.classList.toggle('hidden');
+function onToggle(elementId) {
+  document.getElementById(elementId).classList.toggle('hidden');
 }
 
 function sortBy(sortType) {

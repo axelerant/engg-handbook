@@ -10,7 +10,10 @@
     <nav class="filter-section" aria-label="ADR Categories">
       <ul class="filter-list">
         <li class="filter-item">
-          <button class="filter-button active" onclick="filterADR('All')">
+          <button
+            class="filter-button active"
+            onclick="filterADR('All', 'accepted')"
+          >
             All
           </button>
         </li>
@@ -18,7 +21,7 @@
           <li class="filter-item">
             <button
               class="filter-button"
-              onclick="filterADR('{{ $category }}')"
+              onclick="filterADR('{{ $category }}', 'accepted')"
             >
               {{ $category }}
             </button>
@@ -26,8 +29,11 @@
         {{ end }}
       </ul>
     </nav>
+    <!-- Filter section -->
     <nav class="sort-section" aria-label="Sort ADR list">
-      <button class="sort-button" onclick="onToggle()">Sort By</button>
+      <button class="sort-button" onclick="onToggle('sort-list')">
+        Sort By
+      </button>
       <ul id="sort-list" class="sort-list hidden">
         <li
           class="sort-item"
@@ -52,6 +58,39 @@
         </li>
         <li class="sort-item" data-sort="date-asc" onclick="sortBy('date-asc')">
           Date Oldest -> Latest
+        </li>
+      </ul>
+      <button class="filter-button" onclick="onToggle('status-filter-list')">
+        Filter By
+      </button>
+      <ul id="status-filter-list" class="status-filter-list hidden">
+        <li
+          class="status-filter-item active"
+          data-status="accepted"
+          onclick="filterADR('All', 'accepted')"
+        >
+          Accepted
+        </li>
+        <li
+          class="status-filter-item"
+          data-status="declined"
+          onclick="filterADR('All', 'declined')"
+        >
+          Declined
+        </li>
+        <li
+          class="status-filter-item"
+          data-status="proposed"
+          onclick="filterADR('All', 'proposed')"
+        >
+          Proposed
+        </li>
+        <li
+          class="status-filter-item"
+          data-status="deprecated"
+          onclick="filterADR('All', 'deprecated')"
+        >
+          Deprecated
         </li>
       </ul>
     </nav>
