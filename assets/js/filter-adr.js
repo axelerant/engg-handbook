@@ -1,6 +1,8 @@
 function filterADR(category, status) {
   var adrCards = document.querySelectorAll('.adr-card');
   var filterButtons = document.querySelectorAll('.filter-button');
+  let hasVisibleCards = false;
+  let adrLinks = document.getElementById('adr-links');
 
   // Remove 'active' class from all status filter items
   let statusFilterItems = document.querySelectorAll('.status-filter-item');
@@ -17,11 +19,15 @@ function filterADR(category, status) {
   adrCards.forEach(function (card) {
     var categories = card.getAttribute('data-categories').split(' ');
     var cardStatus = card.querySelectorAll('.adr-status')[0].outerText.trim();
-    card.style.display =
+    if (
       (category === 'All' || categories.includes(category)) &&
       cardStatus === status
-        ? 'block'
-        : 'none';
+    ) {
+      card.style.display = 'block';
+      hasVisibleCards = true;
+    } else {
+      card.style.display = 'none';
+    }
   });
 
   filterButtons.forEach(function (button) {
@@ -31,6 +37,29 @@ function filterADR(category, status) {
       button.classList.add('active');
     }
   });
+
+  // Disable or enable sort functionality based on visibility of cards
+  let sortList = document.getElementById('sort-list');
+  if (hasVisibleCards) {
+    sortList.classList.remove('disabled');
+  } else {
+    sortList.classList.add('disabled');
+  }
+
+  // Display a message if no ADR pages match the filter criteria
+  let noAdrMessage = adrLinks.querySelector('.no-adr-message');
+  if (!hasVisibleCards) {
+    if (noAdrMessage) {
+      noAdrMessage.remove();
+    }
+    adrLinks.innerHTML +=
+      '<p class="no-adr-message">No ADR pages match the filter criteria.</p>';
+  } else {
+    // Remove the no ADR message if visible cards exist
+    if (noAdrMessage) {
+      noAdrMessage.remove();
+    }
+  }
 }
 
 // Ensure the filter function is called on page load with default category and status
