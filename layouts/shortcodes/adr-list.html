@@ -50,7 +50,7 @@
           Title Z -> A
         </li>
         <li
-          class="sort-item"
+          class="sort-item active"
           data-sort="date-desc"
           onclick="sortBy('date-desc')"
         >
@@ -131,8 +131,10 @@
   </section>
 </section>
 
-<!-- Include the separate script file -->
-{{ $filterJS := resources.Get "js/filter-adr.js" | resources.Minify | fingerprint }}
-{{ $sortJS := resources.Get "js/sort-adr.js" | resources.Minify | fingerprint }}
-<script src="{{ $filterJS.Permalink }}" defer></script>
-<script src="{{ $sortJS.Permalink }}" defer></script>
+{{/* Include the separate script file only if there are ADR pages to filter */}}
+{{ if gt (len $adrPages) 0 }}
+  {{ $filterJS := resources.Get "js/filter-adr.js" | resources.Minify | fingerprint }}
+  {{ $sortJS := resources.Get "js/sort-adr.js" | resources.Minify | fingerprint }}
+  <script src="{{ $filterJS.Permalink }}" defer></script>
+  <script src="{{ $sortJS.Permalink }}" defer></script>
+{{ end }}
