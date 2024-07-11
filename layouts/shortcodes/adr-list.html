@@ -1,6 +1,8 @@
 {{/* Load and minify the adr.scss stylesheet */}}
 {{ $adrCSS := resources.Get "adr.scss" | resources.ToCSS | resources.Minify | fingerprint }}
+{{ $loaderCSS := resources.Get "loader.scss" | resources.ToCSS | resources.Minify | fingerprint }}
 <link rel="stylesheet" href="{{ $adrCSS.Permalink }}" />
+<link rel="stylesheet" href="{{ $loaderCSS.Permalink }}" />
 
 {{/* Retrieve all ADR pages from the "adr" section and sort them with latest showing on top */}}
 {{ $adrPages := sort (where $.Site.RegularPages "Section" "adr") ".Params.date" "desc" }}
@@ -99,8 +101,9 @@
     </nav>
   </section>
 
+  <div id="loader" class="loader"></div>
   {{/* Loop through each ADR page */}}
-  <section id="adr-links">
+  <section id="adr-links" style="display: none;">
     {{ range $adrPages }}
       <a href="{{ .RelPermalink }}">
         <article
@@ -135,6 +138,8 @@
 {{ if gt (len $adrPages) 0 }}
   {{ $filterJS := resources.Get "js/filter-adr.js" | resources.Minify | fingerprint }}
   {{ $sortJS := resources.Get "js/sort-adr.js" | resources.Minify | fingerprint }}
+  {{ $loaderJS := resources.Get "js/loader.js" | resources.Minify | fingerprint }}
   <script src="{{ $filterJS.Permalink }}" defer></script>
   <script src="{{ $sortJS.Permalink }}" defer></script>
+  <script src="{{ $loaderJS.Permalink }}" defer></script>
 {{ end }}

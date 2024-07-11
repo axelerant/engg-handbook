@@ -3,6 +3,8 @@ function filterADR(category, status) {
   var filterButtons = document.querySelectorAll('.filter-button');
   let hasVisibleCards = false;
   let adrLinks = document.getElementById('adr-links');
+  // Hide the ADR links and show the loader
+  adrLinks.style.display = 'none';
 
   // Remove 'active' class from all status filter items
   let statusFilterItems = document.querySelectorAll('.status-filter-item');
@@ -60,6 +62,9 @@ function filterADR(category, status) {
       noAdrMessage.remove();
     }
   }
+  // Show the ADR links and hide the loader
+  hideLoading();
+  adrLinks.style.display = 'block';
 }
 
 // Ensure the filter function is called on page load with default category and status

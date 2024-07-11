@@ -10,6 +10,8 @@ function onToggle(elementId) {
 
 function sortBy(sortType) {
   let adrLinks = document.getElementById('adr-links');
+  // Hide the ADR links and show the loader
+  adrLinks.style.display = 'none';
   // Select all visible <a> elements within adr-links
   let visibleCards = Array.from(adrLinks.querySelectorAll('a')).filter(
     (card) => card.style.display !== 'none',
@@ -17,6 +19,8 @@ function sortBy(sortType) {
   // If sort functionality is disabled, return early
   let sortList = document.getElementById('sort-list');
   if (sortList.classList.contains('disabled')) {
+    hideLoading();
+    adrLinks.style.display = 'block';
     return;
   }
   // Remove 'active' class from all sort items
@@ -71,4 +75,7 @@ function sortBy(sortType) {
   visibleCards.forEach((card) => {
     adrLinks.appendChild(card);
   });
+  // Show the ADR links and and hide the loader
+  hideLoading();
+  adrLinks.style.display = 'block';
 }
