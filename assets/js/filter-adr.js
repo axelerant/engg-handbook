@@ -1,10 +1,18 @@
-function filterADR(category, status) {
+let currentCategory = 'All'; // Initialize the current category to 'All'
+
+function filterADR(category, status, isCategoryChange = false) {
   var adrCards = document.querySelectorAll('.adr-card');
   var filterButtons = document.querySelectorAll('.filter-button');
   let hasVisibleCards = false;
   let adrLinks = document.getElementById('adr-links');
   // Hide the ADR links and show the loader
   adrLinks.style.display = 'none';
+
+  if (isCategoryChange) {
+    currentCategory = category; // Update the current category if a category change occurs
+  } else {
+    category = currentCategory; // Use the current category if no category change
+  }
 
   // Remove 'active' class from all status filter items
   let statusFilterItems = document.querySelectorAll('.status-filter-item');
@@ -63,7 +71,9 @@ function filterADR(category, status) {
     }
   }
   //Hide dropdown on click of an option
-  onToggle('status-filter-list');
+  if (!isCategoryChange) {
+    onToggle('status-filter-list');
+  }
   // Show the ADR links and hide the loader
   hideLoading();
   adrLinks.style.display = 'block';

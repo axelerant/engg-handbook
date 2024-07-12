@@ -14,7 +14,7 @@
         <li class="filter-item">
           <button
             class="filter-button active"
-            onclick="filterADR('All', 'accepted')"
+            onclick="filterADR('All', 'accepted', true)"
           >
             All
           </button>
@@ -23,7 +23,7 @@
           <li class="filter-item">
             <button
               class="filter-button"
-              onclick="filterADR('{{ $category }}', 'accepted')"
+              onclick="filterADR('{{ $category }}', 'accepted', true)"
             >
               {{ $category }}
             </button>
@@ -72,28 +72,28 @@
         <li
           class="status-filter-item active"
           data-status="accepted"
-          onclick="filterADR('All', 'accepted')"
+          onclick="filterADR(currentCategory, 'accepted')"
         >
           Accepted
         </li>
         <li
           class="status-filter-item"
           data-status="declined"
-          onclick="filterADR('All', 'declined')"
+          onclick="filterADR(currentCategory, 'declined')"
         >
           Declined
         </li>
         <li
           class="status-filter-item"
           data-status="proposed"
-          onclick="filterADR('All', 'proposed')"
+          onclick="filterADR(currentCategory, 'proposed')"
         >
           Proposed
         </li>
         <li
           class="status-filter-item"
           data-status="deprecated"
-          onclick="filterADR('All', 'deprecated')"
+          onclick="filterADR(currentCategory, 'deprecated')"
         >
           Deprecated
         </li>
