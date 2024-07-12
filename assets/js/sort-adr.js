@@ -9,6 +9,9 @@ function onToggle(elementId) {
 }
 
 function sortBy(sortType) {
+  //Hide dropdown on click of an option
+  onToggle('sort-list');
+
   let adrLinks = document.getElementById('adr-links');
   // Hide the ADR links and show the loader
   adrLinks.style.display = 'none';

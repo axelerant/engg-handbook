@@ -62,6 +62,8 @@ function filterADR(category, status) {
       noAdrMessage.remove();
     }
   }
+  //Hide dropdown on click of an option
+  onToggle('status-filter-list');
   // Show the ADR links and hide the loader
   hideLoading();
   adrLinks.style.display = 'block';
@@ -69,5 +71,7 @@ function filterADR(category, status) {
 
 // Ensure the filter function is called on page load with default category and status
 document.addEventListener('DOMContentLoaded', () => {
+  //Show the dropdown on page load
+  onToggle('status-filter-list');
   filterADR('All', 'accepted');
 });
