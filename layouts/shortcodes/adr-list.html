@@ -1,58 +1,145 @@
 {{/* Load and minify the adr.scss stylesheet */}}
 {{ $adrCSS := resources.Get "adr.scss" | resources.ToCSS | resources.Minify | fingerprint }}
+{{ $loaderCSS := resources.Get "loader.scss" | resources.ToCSS | resources.Minify | fingerprint }}
 <link rel="stylesheet" href="{{ $adrCSS.Permalink }}" />
+<link rel="stylesheet" href="{{ $loaderCSS.Permalink }}" />
 
 {{/* Retrieve all ADR pages from the "adr" section and sort them with latest showing on top */}}
 {{ $adrPages := sort (where $.Site.RegularPages "Section" "adr") ".Params.date" "desc" }}
-<section class="adr-list">
-  <!-- Filter section -->
-  <nav class="filter-section" aria-label="ADR Categories">
-    <ul class="filter-list">
-      <li class="filter-item">
-        <button class="filter-button active" onclick="filterADR('All')">
-          All
-        </button>
-      </li>
-      {{ range $category := .Page.Params.categories }}
+<section id="adr-list" class="adr-list">
+  <section class="adr-controls">
+    <!-- Filter section -->
+    <nav class="filter-section" aria-label="ADR Categories">
+      <ul class="filter-list">
         <li class="filter-item">
-          <button class="filter-button" onclick="filterADR('{{ $category }}')">
-            {{ $category }}
+          <button
+            class="filter-button active"
+            onclick="filterADR('All', 'accepted', true)"
+          >
+            All
           </button>
         </li>
-      {{ end }}
-    </ul>
-  </nav>
-
-  {{/* Loop through each ADR page */}}
-  {{ range $adrPages }}
-    <a href="{{ .RelPermalink }}">
-      <article
-        class="adr-card"
-        data-categories="{{ delimit .Params.categories " " }}"
+        {{ range $category := .Page.Params.categories }}
+          <li class="filter-item">
+            <button
+              class="filter-button"
+              onclick="filterADR('{{ $category }}', 'accepted', true)"
+            >
+              {{ $category }}
+            </button>
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
+    <!-- Filter section -->
+    <nav class="sort-section" aria-label="Sort ADR list">
+      <button class="sort-button" onclick="onToggle('sort-list')">
+        Sort By
+      </button>
+      <ul id="sort-list" class="sort-list dropdown-menu hidden">
+        <li
+          class="sort-item"
+          data-sort="title-asc"
+          onclick="sortBy('title-asc')"
+        >
+          Title A -> Z
+        </li>
+        <li
+          class="sort-item"
+          data-sort="title-desc"
+          onclick="sortBy('title-desc')"
+        >
+          Title Z -> A
+        </li>
+        <li
+          class="sort-item active"
+          data-sort="date-desc"
+          onclick="sortBy('date-desc')"
+        >
+          Date Latest -> Oldest
+        </li>
+        <li class="sort-item" data-sort="date-asc" onclick="sortBy('date-asc')">
+          Date Oldest -> Latest
+        </li>
+      </ul>
+      <button class="filter-button" onclick="onToggle('status-filter-list')">
+        Filter By
+      </button>
+      <ul
+        id="status-filter-list"
+        class="status-filter-list dropdown-menu hidden"
       >
-        <section class="adr-meta">
-          <span class="adr-status status-{{ .Params.status | lower }}">
-            {{ .Params.status }}
-          </span>
-        </section>
-        <h2>{{ .Title }}</h2>
-        <section class="adr-section">
-          <p>{{ .Params.decision }}</p>
-        </section>
-        <section class="adr-meta">
-          <span class="adr-date">
-            <img src="/svg/calendar.svg" width="20px" alt="" />
-            <span>{{ .Params.date.Format "2006-01-02" }}</span>
-          </span>
-        </section>
-      </article>
-    </a>
-  {{ else }}
-    {{/* Display a message if no ADR pages are found */}}
-    <p>No ADR pages found.</p>
-  {{ end }}
+        <li
+          class="status-filter-item active"
+          data-status="accepted"
+          onclick="filterADR(currentCategory, 'accepted')"
+        >
+          Accepted
+        </li>
+        <li
+          class="status-filter-item"
+          data-status="declined"
+          onclick="filterADR(currentCategory, 'declined')"
+        >
+          Declined
+        </li>
+        <li
+          class="status-filter-item"
+          data-status="proposed"
+          onclick="filterADR(currentCategory, 'proposed')"
+        >
+          Proposed
+        </li>
+        <li
+          class="status-filter-item"
+          data-status="deprecated"
+          onclick="filterADR(currentCategory, 'deprecated')"
+        >
+          Deprecated
+        </li>
+      </ul>
+    </nav>
+  </section>
+
+  <div id="loader" class="loader"></div>
+  {{/* Loop through each ADR page */}}
+  <section id="adr-links" style="display: none;">
+    {{ range $adrPages }}
+      <a href="{{ .RelPermalink }}">
+        <article
+          class="adr-card"
+          data-categories="{{ delimit .Params.categories " " }}"
+        >
+          <section class="adr-meta">
+            <span class="adr-status status-{{ .Params.status | lower }}">
+              {{ .Params.status }}
+            </span>
+          </section>
+          <h2>{{ .Title }}</h2>
+          <section class="adr-section">
+            <p>{{ .Params.decision }}</p>
+          </section>
+          <section class="adr-meta">
+            <span class="adr-date">
+              <img src="/svg/calendar.svg" width="20px" alt="" />
+              <span>{{ .Params.date.Format "2006-01-02" }}</span>
+            </span>
+          </section>
+        </article>
+      </a>
+    {{ else }}
+      {{/* Display a message if no ADR pages are found */}}
+      <p>No ADR pages found.</p>
+    {{ end }}
+  </section>
 </section>
 
-<!-- Include the separate script file -->
-{{ $js := resources.Get "js/filter-adr.js" | resources.Minify | fingerprint }}
-<script src="{{ $js.Permalink }}" defer></script>
+{{/* Include the separate script file only if there are ADR pages to filter */}}
+{{ if gt (len $adrPages) 0 }}
+  {{ $filterJS := resources.Get "js/filter-adr.js" | resources.Minify | fingerprint }}
+  {{ $sortJS := resources.Get "js/sort-adr.js" | resources.Minify | fingerprint }}
+  {{ $loaderJS := resources.Get "js/loader.js" | resources.Minify | fingerprint }}
+  <script src="{{ $filterJS.Permalink }}" defer></script>
+  <script src="{{ $sortJS.Permalink }}" defer></script>
+  <script src="{{ $loaderJS.Permalink }}" defer></script>
+{{ end }}
