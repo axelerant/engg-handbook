@@ -33,16 +33,12 @@ Consider the following:
 
 ## Acceptance Criteria
 
-Collaborate with QA to add Acceptance Criteria (AC) in each ticket in the Acceptance Criteria ticket field, along with the snapshot of the estimates grid. Collaborate with QA on the estimates (TA can be consulted only if required for a review) and then assign them for the client’s approval. If the Developer/QA doesn’t have Supp comment access, assign the ticket to the PM.
+Collaborate with QA to add Acceptance Criteria (AC) in each ticket in the Acceptance Criteria ticket field, along with a snapshot of the estimates grid. This snapshot helps track the original estimates even if the estimation sheet is updated. Work with QA on the estimates (consult the TL if needed) and then assign the ticket for the client’s approval. If the Developer/QA doesn’t have Supp comment access, assign the ticket to the PM.
 
-The ticket status should be set to Customer Approval and assigned to the client with a comment mentioning the client, cc’ing PM, TA, and QA. In the case of a Supp ticket, there is no need to tag TA, QA, or developer.
-
-If AC is changed at any point in time, re-validate the grooming and estimates.
+If AC changes at any point, re-validate the grooming and estimates.
 
 ## Approval
 
-Whenever any estimates are approved, add the total approved high hours in the 'Original estimate' field of the ticket, and in the 'Remaining hours' field, add the 'Original estimate' minus the logged hours.
-
-The primary responsibility for grooming and estimation falls on the assignee. It will then be reviewed by the TA, QA, or any other team members on a project-need basis.
+The primary responsibility for grooming and estimation falls on the assignee. It will then be reviewed by the TL, QA, or any other team members on a project-need basis.
 
 Estimate the last level of a ticket ready for execution. If a ticket has any sub-tasks, then estimate those; otherwise, estimate the ticket itself (Check with PM, as based on projects, we either create a sub-task or a Task).
