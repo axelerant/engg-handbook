@@ -16,15 +16,10 @@ GitHub Actions tout themselves as an automation platform, not just CI/CD. In our
 
 To set up GitHub Actions for your project, follow these steps:
 
-- In the branch, you would like to work (usually a feature branch out of the `main` branch), create a folder named `.github` in the root of your project directory.
-- Create a folder named `workflows` in the `.github` directory. This is where you'll create all your YAML files.
-- Create a YAML file (e.g., ci.yml) in the workflows directory and add your workflow configuration.
+Create .github/workflows directory in your project root. You can add your workflow files here. Refer to our templates and GitHub Actions Manual for more details on what the workflow files look like.
+
 For detailed information on GitHub Actions, refer to the [GitHub Actions Manual](https://docs.github.com/en/actions).
 
 ## Other platforms
 
 It is possible that you may be on a project where the customer has picked a different CI platform. Common ones we have seen are [CircleCI](https://circleci.com/docs), [Gitlab CI](https://docs.gitlab.com/ee/ci/quick_start/), and [Jenkins](https://jenkins.io/doc). While these tools have different semantics and capabilities, the core principle is the same: with every commit or at other events, it would initiate one or more workflows that perform some action. Most commonly, these work in response to a commit or a pull request and run linting, unit, and functional tests on the overall codebase.
-
-## Best Practices
-
-Implementing CI/CD effectively involves frequent commits, automating processes, optimizing pipeline speed, using secure version control, streamlining tests, securing environments, monitoring performance, and fostering team collaboration. These practices help maintain a releasable code state, ensure rapid feedback, and continuously improve the development process.
