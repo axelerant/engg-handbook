@@ -10,17 +10,17 @@ Security is an everlasting concern in software engineering. Understanding securi
 
 ## Credentials Management
 
-Applications rely on database credentials and API keys to communicate with third-party services. These must not be kept in the repository or committed in Git history as they can be misused if exposed. Use environment variables or a vault for storing and retrieving them.
+For example, applications rely on database credentials to connect to the database. There can be API keys with which the application communicates with third-party services. These must not be kept in the repository or committed in Git history as they can be misused if exposed. Use environment variables or a vault for storing and retrieving them.
 
 ## Server and Website Security
 
 We ensure server and site security through several practices. Sanitized databases are used to protect data privacy and security by removing sensitive information. Additionally, we routinely scrub unneeded data from development environments, ensuring only necessary data is securely stored.
 
-To enhance security, we establish separate accounts for each user on production and implement two-factor authentication wherever feasible. Test accounts on production are avoided or removed promptly after testing.
+To enhance security, we create separate accounts for each user on production and use two-factor authentication whenever possible. We avoid creating test accounts on production, but if they are needed, we remove them promptly after testing.
 
 ## Coding Standards and Best Practices
 
-Developers follow technology-specific coding standards and best practices, writing secure code as per community guidelines. Custom code is minimized, favoring community-maintained modules and stable versions of third-party libraries. Alpha, beta, dev, and RC versions are generally avoided unless necessary. Regular updates are crucial when using dev releases to maintain security.
+As developers, we follow technology-specific coding standards and best practices, writing secure code as per community guidelines. Custom code is minimized, favoring community-maintained modules and stable versions of third-party libraries. Alpha, beta, dev, and RC versions are generally avoided unless necessary. Regular updates are crucial when using dev releases to maintain security.
 
 When selecting a contributed module, we consider the number of maintainers, issue queue activity, and the number of downloads. Multiple active maintainers ensure prompt issue resolution and a high download count indicates reliability. Check the last release date to ensure compatibility with the latest software version.
 
