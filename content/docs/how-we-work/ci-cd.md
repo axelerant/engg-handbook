@@ -14,11 +14,7 @@ Like most errors we see when dealing with computers, errors reported by CI are n
 
 GitHub Actions tout themselves as an automation platform, not just CI/CD. In our projects, these are mostly used for CI/CD tasks. It is useful to know how you could run other forms of automation to manage a project on GitHub but we won't focus on that here.
 
-To set up GitHub Actions for your project, follow these steps:
-
-Create .github/workflows directory in your project root. You can add your workflow files here. Refer to our templates and GitHub Actions Manual for more details on what the workflow files look like.
-
-For detailed information on GitHub Actions, refer to the [GitHub Actions Manual](https://docs.github.com/en/actions).
+To set up GitHub Actions for your project, create a .github/workflows directory in your project root. You can add your workflow files in this directory. For the workflow files to be picked up by GitHub, they need to be in the default branch (e.g., main). For more details on what the workflow files should look like, refer to [our templates](https://github.com/contrib-tracker/backend/actions) and the [GitHub Actions Manual](https://docs.github.com/en/actions).
 
 ## Other platforms
 
