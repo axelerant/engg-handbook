@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/28d1a735-29fb-49d0-9cc3-6f9d6dab8470/deploy-status)](https://app.netlify.com/sites/axelerant-engg-handbook/deploys)
 
-This handbook for Axelerant Engineering is written using [Hugo](https://gohugo.io/getting-started/quick-start/). If you want to just get to the content, go straight to the [hosted site](https://axelerant.github.io/engg-handbook). If you want to edit the content, go to the [content](content/) directory and edit the post you want. You can also [open this repository in Gitpod](https://gitpod.io/#https://github.com/axelerant/engg-handbook).
+This handbook for Axelerant Engineering is written using [Hugo](https://gohugo.io/getting-started/quick-start/). If you want to just get to the content, go straight to the [hosted site](https://engg-handbook.axelerant.com/). If you want to edit the content, go to the [content](content/) directory and edit the post you want. You can also [open this repository in Gitpod](https://gitpod.io/#https://github.com/axelerant/engg-handbook).
 
 ## Contributing
 
