@@ -12,7 +12,11 @@ We use New Relic for comprehensive performance monitoring and Sentry for error t
 
 ## Logging
 
-Logs are time-stamped records of discrete events within a system, providing valuable information for debugging and understanding system behavior. Effective logging involves understanding:
+Logs are time-stamped records of discrete events within a system, providing valuable information for debugging and understanding system behavior including error messages, system status updates, transaction records, and operational events. Logging in web applications refers to keeping a log of all the operational events such as content creation, deletion, cron runs, and error reporting. These log messages can be recorded and kept in a log file (text format), in the database, or sent to an external service.
+
+### Effective Logging
+
+Effective logging involves understanding:
 
 - What data should be logged?
 - When to log?
@@ -20,8 +24,6 @@ Logs are time-stamped records of discrete events within a system, providing valu
 - How long to preserve logged data?
 
 Automated tools like log analyzers and dashboards enhance visibility and reduce manual effort.
-
-### Effective Logging
 
 Logs can be categorized into:
 
@@ -48,7 +50,7 @@ Traces provide a detailed view of function calls and requests during a single tr
 ## APM (Application Performance Monitoring)
 
 APM involves monitoring and tracking software application performance using tools like New Relic, Elastic APM, and Sentry.
-Performance Monitoring Tools
+
 APM tools can monitor:
 
 - Uptime: Tracking application uptime and alerting if the application is down.
