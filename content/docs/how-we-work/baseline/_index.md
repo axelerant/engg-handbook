@@ -15,7 +15,7 @@ Establishing a reference baseline for our projects is crucial for enhancing the 
 
 * For Axelerant, it supports scalability by establishing a robust foundation, ensures compliance and security by adhering to regulatory and security requirements, and promotes continuous improvement through ongoing evaluation and optimization.
 
-At this time, this baseline is standardized for our support projects but will eventually also apply to our managed projects.
+At this time, this baseline is standardized for our projects in CDM but will eventually also apply to our managed projects.
 
 ## Git Workflow and Health
 
