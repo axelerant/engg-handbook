@@ -2,18 +2,20 @@
 title: Our Reference Baseline
 weight: 1
 bookCollapseSection: true
-description: This is our reference baseline of technologies and techniques we use on a project.
+description: Establishing a reference baseline for our projects is crucial for enhancing the overall efficiency and effectiveness of our operations.
 ---
 
 # Our Reference Baseline
 
-Establishing a reference baseline for our projects is crucial for enhancing the overall efficiency and effectiveness of our operations. This initiative aims to standardize processes, reduce decision fatigue, and improve productivity by ensuring all projects adhere to a consistent set of standards and practices.
+Establishing a reference baseline for our projects is crucial for enhancing the overall efficiency and effectiveness of our operations. This initiative benefits multiple stakeholders in various ways:
 
-By minimizing variability and providing a common framework, we enhance communication, streamline workflows, and maintain high-quality deliverables. This baseline also facilitates better training and onboarding, ensures compliance with regulatory and security requirements, and allows for easier scaling of projects and teams.
+* For customers, it ensures improved quality and consistency in deliverables, faster response times through streamlined processes, and clear communication due to standardized practices.
 
-Additionally, it encourages continuous improvement by providing a foundation for ongoing evaluation and optimization. Ultimately, the reference baseline sets us up for sustained success and growth, addressing current challenges while paving the way for future scalability.
+* For the team, it reduces decision fatigue by minimizing the number of decisions required, enhances productivity through streamlined workflows and standardized tools, and fosters better collaboration by providing a common framework.
 
-At this time, this baseline is standardized for our projects in CDM but will eventually also apply to our managed projects.
+* For Axelerant, it supports scalability by establishing a robust foundation, ensures compliance and security by adhering to regulatory and security requirements, and promotes continuous improvement through ongoing evaluation and optimization.
+
+At this time, this baseline is standardized for our support projects but will eventually also apply to our managed projects.
 
 ## Git Workflow and Health
 
