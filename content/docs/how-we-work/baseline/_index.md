@@ -7,13 +7,7 @@ description: Establishing a reference baseline for our projects is crucial for e
 
 # Our Reference Baseline
 
-Establishing a reference baseline for our projects is crucial for enhancing the overall efficiency and effectiveness of our operations. This initiative benefits multiple stakeholders in various ways:
-
-* For customers, it ensures improved quality and consistency in deliverables, faster response times through streamlined processes, and clear communication due to standardized practices.
-
-* For the team, it reduces decision fatigue by minimizing the number of decisions required, enhances productivity through streamlined workflows and standardized tools, and fosters better collaboration by providing a common framework.
-
-* For Axelerant, it supports scalability by establishing a robust foundation, ensures compliance and security by adhering to regulatory and security requirements, and promotes continuous improvement through ongoing evaluation and optimization.
+Establishing a reference baseline enhances operational efficiency. It ensures quality, consistency, and clear communication for customers; reduces decision fatigue, boosts productivity, and fosters collaboration for our team; and supports scalability, compliance, and continuous improvement for Axelerant. This comprehensive approach addresses current challenges and prepares us for future growth.
 
 At this time, this baseline is standardized for our projects in CDM but will eventually also apply to our managed projects.
 
