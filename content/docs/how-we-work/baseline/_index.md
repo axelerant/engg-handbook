@@ -13,7 +13,7 @@ By minimizing variability and providing a common framework, we enhance communica
 
 Additionally, it encourages continuous improvement by providing a foundation for ongoing evaluation and optimization. Ultimately, the reference baseline sets us up for sustained success and growth, addressing current challenges while paving the way for future scalability.
 
-At this time, this baseline is standardized for our support projects but will eventually also apply to our managed projects.
+At this time, this baseline is standardized for our projects in CDM but will eventually also apply to our managed projects.
 
 ## Git Workflow and Health
 
