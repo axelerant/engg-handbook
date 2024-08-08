@@ -1,6 +1,6 @@
 ---
 title: Git Workflow and Health
-weight: 1
+weight: 2
 description: We must aim for certain elements of consistency based on our (industry) collective experience. Many of these are defined so because they are obvious to the developer community in general.
 ---
 
