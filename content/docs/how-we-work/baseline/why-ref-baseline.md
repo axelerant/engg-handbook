@@ -14,7 +14,7 @@ Implementing a reference baseline for our projects significantly boosts our oper
 
 * **Faster Response Times through Streamlined Processes**: By standardizing processes, we can streamline our workflows, enabling faster response times to customer needs and inquiries. This agility helps us to address issues promptly and deliver solutions more quickly.
 
-* **Clear Communication due to Standardized Practices**: Standardized practices and processes foster clearer communication between our team and customers. Customers receive consistent information and updates, enhancing transparency and trust.
+* **Transparency through Standardized Practices**: Standardized practices help maintain a transparent approach to project management, where customers are always aware of what to expect in terms of quality and timelines.
 
 ## Benefits for Our Team
 
@@ -22,7 +22,7 @@ Implementing a reference baseline for our projects significantly boosts our oper
 
 * **Enhanced Productivity through Streamlined Workflows and Standardized Tools**: With standardized workflows and tools, our team can work more efficiently and effectively. This consistency reduces the learning curve for new projects and improves overall productivity.
 
-* **Fosters Better Collaboration with a Common Framework**: A common framework promotes better collaboration among team members by providing a shared understanding of processes and standards. This shared understanding reduces misunderstandings and enhances teamwork.
+* **Faster Onboarding**: Standardized processes and tools make it easier to onboard new team members quickly, ensuring they can contribute effectively sooner.
 
 ## Benefits for Axelerant
 
