@@ -7,9 +7,9 @@ description: Adopting the baseline on a project is crucial for enhancing the ove
 
 # Our Reference Baseline
 
-Adopting the baseline on a project enhances operational efficiency. It ensures quality, consistency, and clear communication for customers; reduces decision fatigue, boosts productivity, and fosters collaboration for our team; and supports scalability, compliance, and continuous improvement for Axelerant. This comprehensive approach addresses current challenges and prepares us for future growth. [Read more...](why-ref-baseline.md)
+Adopting the baseline on a project enhances operational efficiency. It ensures quality, consistency, and clear communication for customers; reduces decision fatigue, boosts productivity, and fosters collaboration for our team; and supports scalability, compliance, and continuous improvement for Axelerant. This comprehensive approach addresses current challenges and prepares us for future growth. [Read more...]({{< relref "why-ref-baseline" >}})
 
-At this time, this baseline is standardized for our projects in CDM but will eventually also apply to our managed projects.
+At this time, this baseline is standardized for our projects in [CDM](https://www.axelerant.com/delivery-engagement-models/continuous-development-and-maintenance) but will eventually also apply to our [managed projects](https://www.axelerant.com/delivery-engagement-models/managed-projects).
 
 ## Git Workflow and Health
 
