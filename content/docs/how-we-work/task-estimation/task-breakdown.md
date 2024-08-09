@@ -16,7 +16,7 @@ Breaking tasks into smaller chunks helps plan work better, identify dependencies
 
 A step-wise approach makes it easier to isolate and address issues. Discussing with the TL can reveal missed scenarios or requirements. This method helps isolate blockers and allows team members to pick up incomplete tasks in emergencies, with clear progress and pending work. Creating a Work-in-Progress (WIP) Pull Request (PR) enables easier review and tracking.
 
-### Example Scenario
+{{< details "Example Scenario" >}}
 
 (Note the important questions that have come up while breaking down the task which might not be directly captured in the ticket)
 
@@ -77,3 +77,5 @@ A step-wise approach makes it easier to isolate and address issues. Discussing w
   - Write the JS and markup changes for the mobile filter screen, if not done via BE.
 
   - Style the filter screen on mobile.
+
+{{< /details >}}
