@@ -35,15 +35,13 @@ Drupal's [Cache API](https://api.drupal.org/api/drupal/core%21core.api.php/group
 
 ### Cache Bins
 
-In Drupal, cache storage is organized into bins, each storing different data types. Common bins include **bootstrap**, **render**, **data**, and **discovery**.
+In Drupal, cache storage is organized into bins, each storing different data types. Common bins include `bootstrap`, `render`, `data`, and `discovery`. Modules can also create custom cache bins.
 
-Custom cache bins can be created by defining them in the `modulename.services.yml` file.
-
-Read more about [cache bins](https://api.drupal.org/api/drupal/core%21core.api.php/group/cache/).
+Read more about [cache bins](https://api.drupal.org/api/drupal/core%21core.api.php/group/cache/11.x#:~:text=via%20%24cache%2D%3Edata.-,Cache%20bins,-Cache%20storage%20is).
 
 ## Cache Systems
 
-Drupal's default cache storage is in the database, which is convenient but can hinder performance. To boost application performance, Drupal is typically configured to use external cache stores like **Memcache** or **Redis**. These tools can cache database data, API calls, or page rendering chunks in RAM, enhancing overall efficiency.
+Drupal's default cache storage is in the database, which may be convenient but results in poor performance. To address this, Drupal is typically configured to store cached data in external stores like **Memcache** or **Redis**. These stores can be used to cache database data, API calls, or page rendering chunks in RAM, thereby increasing application performance.
 
 ### Memcache
 
@@ -51,7 +49,7 @@ Drupal's default cache storage is in the database, which is convenient but can h
 
 ### Redis
 
-[Redis](https://redis.io/docs/about/) is a versatile, open-source (BSD licensed) in-memory data structure store used as a database, cache, message broker, and streaming engine. It can be configured on a Drupal website with the [Redis module](https://www.drupal.org/project/redis).
+[Redis](https://redis.io/docs/about/) is a versatile in-memory data structure store used as a database, cache, message broker, and streaming engine. It can be configured on a Drupal website using the [Redis module](https://www.drupal.org/project/redis).
 
 Both Memcache and Redis can enhance website performance by adding another layer of caching, with the choice between them depending on specific requirements and available features.
 
