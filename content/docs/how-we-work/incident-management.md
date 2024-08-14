@@ -20,7 +20,7 @@ Proactive actions involve steps taken before incidents occur to minimize the lik
 
 3. **Keeping the hosting provider informed**: In case of any major events where we expect more traffic we must keep the hosting provider informed so that they can provide necessary support in case of any failures. It is also important to document the various ways by which we get support from managed hosting providers.
 
-4. **Fixing Errors in logs**: Review the error logs and fix them before they cause any issues in Production. This is where [Logging] ({{< relref "logging-details.md" >}}) plays a crucial role in collating and pointing out errors that are important from a large set of errors in log files.
+4. **Fixing Errors in logs**: Review the error logs and fix them before they cause any issues in Production. This is where [Logging](baseline/logging-details.md) plays a crucial role in collating and pointing out errors that are important from a large set of errors in log files.
 
 ## Corrective Actions
 
