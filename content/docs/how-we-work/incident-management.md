@@ -1,9 +1,10 @@
 ---
 title: Incident Management
 weight: 15
-bookCollapseSection: true
 description: Managing incidents in production systems is a critical aspect of maintaining system reliability and ensuring continuous service availability. Effective incident management not only focuses on resolving issues as they arise but also on taking steps to prevent future occurrences. Below, we explore the key areas of incident management: Proactive Actions, Corrective Actions, and Preventive Actions.
 ---
+
+# Incident Management
 
 ## Proactive Actions
 
