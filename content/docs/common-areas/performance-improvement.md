@@ -57,4 +57,6 @@ Widely adopted tools for performance analysis include:
 
 ## Compressed CSS/JS
 
-Compressed CSS and JavaScript refer to techniques that reduce the size of these files, optimizing website performance. Compression leads to faster load times, reduced bandwidth usage, and less server strain by minimizing file size and HTTP requests. Additionally, compressed code can be more challenging to interpret, which may protect intellectual property. However, it’s advisable to keep original files for development, as compressed versions can complicate debugging.
+Compressed CSS/JavaScript refer to techniques that reduce the size of CSS and JavaScript files, optimizing website performance. Compression leads to faster load times, reduced bandwidth usage, and less server strain by minimizing file size and HTTP requests.
+
+Additionally, using source maps allows developers to retain original, uncompressed code during development, making debugging more manageable even when deploying compressed versions to production.
