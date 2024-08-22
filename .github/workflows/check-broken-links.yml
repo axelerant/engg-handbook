@@ -1,0 +1,22 @@
+name: Check for Broken Links
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  linkChecker:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Run lychee link checker
+      uses: lycheeverse/lychee-action@v1.1.0
+      with:
+        args: --verbose --exclude mailto --timeout 30000 'content/_/_'
+        github-token: ${{ secrets.GITHUB_TOKEN }}
