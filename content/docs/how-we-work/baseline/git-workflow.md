@@ -30,3 +30,25 @@ The branches can be deleted immediately and [automatically](https://docs.github.
 [GitHub provides a variety of protection mechanism](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches) for different branches. It especially recommends that the main branch (often called `main` or `master`) is protected from accidental pushes.
 
 We recommend that the default branch is always protected. At a minimum, a PR should be required before merging to the main branch. You can also enforce conditions such as the PR must have approvals and requiring reviews from code owners. More rules can be found in the [documentation](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches).
+
+### Number of branches
+
+It is recommended to have minimal number of branches as highlighted above. However below can be some scenarios based on which you can decide what works for your project.
+
+#### Scenario 1 (1 branch)
+
+This is the most ideal scenario where we have only 1 branch which is either `main` or `master`. Any other branches are temporary feature branches which would be deleted after the PR is closed. In case of any feature that needs to be reverted, raising a revert PR against the merged one would work.The `main` branch is linked to the Development environment where the next code for Production is pushed and QA is done followed by bug fixes.
+
+This method is effective for projects with few or no feature changes post User Acceptance Testing (UAT).However, we should withhold merging any tickets into the `main` or `master` branch if they are not planned current release. Instead, these tickets should remain on a feature branch until the appropriate tag is created for the planned deployment continuously rebased against `main` or `master`.
+
+After the QA is approved, we deploy the changes to Stage as mentioned in [deployments]({{< relref "baseline" >}}#deployment-prod) for UAT and regression testing.
+
+#### Scenario 2 (2 branches)
+
+In this case there are two branches one being either `main` or `master` and another being `develop`. Any other branches are temporary feature branches which would be deleted after the PR is closed. While the purpose of `main` or `master` remains the same (i.e.) containing the production ready code, the `develop` branch acts as the placeholder for QA to test the features before sending to UAT.
+
+This method is effective for projects where there are last minute changes in features for the current release due to business reasons. The intention here is to avoid pushing features to `main` or `master` and then having to revert them entirely as it becomes complex when there are many and takes additional time and re-testing.
+
+In worst case scenario of the features being pushed to `main` or `master` and moved to next release, it's advisable to switch to an older tag (as of last Production deployment) and create a new tag that includes only the approved tickets rather than reverting each feature. This reduces the time required for reverts.
+
+In this scenario the `develop` branch is linked to the development environment and Stage is linked to `main` or `master` with new tag for Production after UAT approval.
