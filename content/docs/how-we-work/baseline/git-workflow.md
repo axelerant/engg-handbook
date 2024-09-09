@@ -37,7 +37,7 @@ It is recommended to have minimal number of branches as highlighted above. Howev
 
 #### Scenario 1 (1 branch)
 
-This is the most ideal scenario where we have only 1 branch which is either `main` or `master`. Any other branches are temporary feature branches which would be deleted after the PR is closed. In case of any feature that needs to be reverted, raising a revert PR against the merged one would work.The `main` branch is linked to the Development environment where the next code for Production is pushed and QA is done followed by bug fixes.
+This is the ideal scenario where we have only one branch (usually `main`). Any other branches are temporary feature branches which would be deleted after the PR is closed. The `main` branch is linked to the Development environment where the next code for Production is pushed and QA is done followed by bug fixes. Individual feature environments are created per branch as required.
 
 This method is effective for projects with few or no feature changes post User Acceptance Testing (UAT).However, we should withhold merging any tickets into the `main` or `master` branch if they are not planned current release. Instead, these tickets should remain on a feature branch until the appropriate tag is created for the planned deployment continuously rebased against `main` or `master`.
 
