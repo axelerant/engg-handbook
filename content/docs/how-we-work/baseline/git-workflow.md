@@ -33,22 +33,18 @@ We recommend that the default branch is always protected. At a minimum, a PR sho
 
 ### Number of branches
 
-It is recommended to have minimal number of branches as highlighted above. However below can be some scenarios based on which you can decide what works for your project.
+It is recommended to have minimal number of branches as highlighted above. Below is the recommended workflow.
 
-#### Scenario 1 (1 branch)
+* We have only 1 long lived branch (usually `main`) which is the trunk
 
-This is the ideal scenario where we have only one branch (usually `main`). Any other branches are temporary feature branches which would be deleted after the PR is closed. The `main` branch is linked to the Development environment where the next code for Production is pushed and QA is done followed by bug fixes. Individual feature environments are created per branch as required.
+* Any other branches (and corresponding environments) are short lived feature branches (and environments) that is deleted after merged with 'main'
 
-This method is effective for projects with few or no feature changes post User Acceptance Testing (UAT).
+* The 'main' branch is linked to Development environment where integration happens followed by QA, bug fixes
 
-After the QA is approved, we deploy the changes to Stage as mentioned in [deployments]({{< relref "baseline" >}}#deployment-prod) for UAT and regression testing.
+* Once QA is approved we deploy the changes to Stage as mentioned in [deployments]({{< relref "baseline" >}}#deployment-prod) for UAT and regression testing followed by Production deployment
 
-#### Scenario 2 (2 branches)
+There might be cases where you might need an additional long lived branch. Below is an example.
 
-In this case there are two branches one being either `main` or `master` and another being `develop`. Any other branches are temporary feature branches which would be deleted after the PR is closed. While the purpose of `main` or `master` remains the same (i.e.) containing the production ready code, the `develop` branch acts as the placeholder for QA to test the features before sending to UAT.
-
-This method is effective for projects where there are last minute changes in features for the current release due to business reasons. The intention here is to avoid pushing features to `main` or `master` and then having to revert them entirely as it becomes complex when there are many and takes additional time and re-testing.
-
-In worst case scenario of the features being pushed to `main` or `master` and moved to next release, it's advisable to switch to an older tag (as of last Production deployment) and create a new tag that includes only the approved tickets rather than reverting each feature. This reduces the time required for reverts.
-
-In this scenario the `develop` branch is linked to the development environment and Stage is linked to `main` or `master` with new tag for Production after UAT approval.
+* There is additional branch `develop` where QA happens instead of in `main'
+  * The major reason for doing this is when the team is working on a feature however that might be decided to be pushed in next release due to business reasons and to avoid reverting multiple features on `main' and re-testing.
+  * Please note that this approach comes with the risks like having the 'develop' branch outdated or diverged from the 'main' branch due to its long lived nature, additional efforts due to cognitive overload on which branch the feature needs to be pushed and the QA having to test on two branches initially 'develop' and then 'main'.
