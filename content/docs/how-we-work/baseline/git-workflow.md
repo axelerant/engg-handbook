@@ -45,6 +45,6 @@ It is recommended to have minimal number of branches as highlighted above. Below
 
 There might be cases where you might need an additional long lived branch. Below is an example.
 
-* There is additional branch `develop` where QA happens instead of in `main'
-  * The major reason for doing this is when the team is working on a feature however that might be decided to be pushed in next release due to business reasons and to avoid reverting multiple features on `main' and re-testing.
-  * Please note that this approach comes with the risks like having the 'develop' branch outdated or diverged from the 'main' branch due to its long lived nature, additional efforts due to cognitive overload on which branch the feature needs to be pushed and the QA having to test on two branches initially 'develop' and then 'main'.
+* There is additional branch `develop` where QA happens instead of in `main`
+  * The major reason for doing this is when the team is working on a feature however that might be decided to be pushed in next release due to business reasons and to avoid reverting multiple features on `main` and re-testing.
+  * Please note that this approach comes with the risks like having the `develop` branch outdated or diverged from the `main` branch due to its long lived nature, additional efforts due to cognitive overload on which branch the feature needs to be pushed and the QA having to test on two branches initially `develop` and then `main`.
