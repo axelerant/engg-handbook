@@ -30,3 +30,21 @@ The branches can be deleted immediately and [automatically](https://docs.github.
 [GitHub provides a variety of protection mechanism](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches) for different branches. It especially recommends that the main branch (often called `main` or `master`) is protected from accidental pushes.
 
 We recommend that the default branch is always protected. At a minimum, a PR should be required before merging to the main branch. You can also enforce conditions such as the PR must have approvals and requiring reviews from code owners. More rules can be found in the [documentation](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches).
+
+### Number of branches
+
+It is recommended to have minimal number of branches as highlighted above. Below is the recommended workflow.
+
+* We have only 1 long lived branch (usually `main`) which is the trunk
+
+* Any other branches (and corresponding environments) are short lived feature branches (and environments) that is deleted after merged with 'main'
+
+* The 'main' branch is linked to Development environment where integration happens followed by QA, bug fixes
+
+* Once QA is approved we deploy the changes to Stage as mentioned in [deployments]({{< relref "baseline" >}}#deployment-prod) for UAT and regression testing followed by Production deployment
+
+There might be cases where you might need an additional long lived branch. Below is an example.
+
+* There is additional branch `develop` where QA happens instead of in `main`
+  * The major reason for doing this is when the team is working on a feature however that might be decided to be pushed in next release due to business reasons and to avoid reverting multiple features on `main` and re-testing.
+  * Please note that this approach comes with the risks like having the `develop` branch outdated or diverged from the `main` branch due to its long lived nature, additional efforts due to cognitive overload on which branch the feature needs to be pushed and the QA having to test on two branches initially `develop` and then `main`.
