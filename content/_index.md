@@ -6,7 +6,7 @@ draft: false
 
 # Axelerant Engineering Handbook
 
-_Note: This handbook is close to release but not quite complete. Please edit the pages using the link at the bottom._
+_Note: This handbook is an evolving resource. We encourage you to contribute by editing the pages using the link at the bottom._
 
 ## What is this?
 
@@ -28,7 +28,7 @@ We will avoid diving too deep into specific technologies and instead link to res
 
 The handbook begins with the [principles that we follow]({{< relref "docs/principles" >}}) when working at Axelerant. We further elaborate on some of those principles in the next section which is to do with [behaviors we expect from each other]({{< relref "docs/behaviors" >}}). This is followed by a section on [being productive]({{< relref "docs/productivity" >}}). While the target audience for these sections is engineers (like the rest of the handbook), these three sections are probably suitable for all Axelerant team members.
 
-We then cover general guidelines on technical topics. We talk about generic technologies first: concepts that will likely be required regardless of what you work on. This is followed by re$$ferences on specific topics such as Drupal. We try not to replicate what's already out there. Instead, we link to those resources and give pointers on our standard practices. We also understand that software development largely depends on the requirements. That is why, all of this is prescriptive, not mandatory.
+We then cover general guidelines on technical topics. We talk about generic technologies first: concepts that will likely be required regardless of what you work on. This is followed by references on specific topics such as Drupal. We try not to replicate what's already out there. Instead, we link to those resources and give pointers on our standard practices. We also understand that software development largely depends on the requirements. That is why, all of this is prescriptive, not mandatory.
 
 ### Relationship to Onboarding
 
