@@ -7,7 +7,9 @@ bookCollapseSection: true
 
 {{< blockquote author="Ray Dalio" quote="Principles are ways of successfully dealing with reality to get what you want out of life." >}}
 
-As software engineers, we have to make a lot of decisions throughout the day. Defining and following certain _principles_ makes it easier for us to make many of the decisions for challenges that have been solved previously. These are not set in stone, but they have stood the test of time, and we would rarely, if ever, ignore a principle, and only if there’s a very good reason.
+As software engineers, we have to make many decisions throughout the day. Defining and following certain _principles_ makes it easier for us to make many of the decisions for challenges that have been solved previously. These are not set in stone, but they have stood the test of time. We would rarely, if ever, ignore a principle.
+
+{{< blockquote author="Steve Pereira, Flow Engineering" quote="Principles are supremely valuable in the context of engineering flow because they provide guidance to all people at all times. Principles guide effective action not only for individuals but for large groups of people. They are far more adaptive than any prescriptive method or playbook. Principles are generalizations that can readily be applied to many patterns." >}}
 
 ## Values
 
