@@ -1,5 +1,5 @@
 ---
-title: "Incremental updates to Drupal"
+title: "Adopting Incremental Updates for Efficient Drupal Site Maintenance"
 date: "2024-02-29"
 decision: "We will perform incremental updates to fix deprecated code in our custom modules, replacing deprecated contributed modules with latest versions or an alternative rather than one shot upgrade from one Drupal major version to another"
 status: "accepted"
@@ -32,6 +32,20 @@ We will perform incremental updates to our site to fix deprecated code as part o
   - There might be some issues since we are early adopters of the next major version. However these are not expected to be Critical or High priority as the community tests the code before releasing.
   - We might not be able to update all the contributed modules due to inputs needed from the maintainer of the module or any dependency on the community.
   - There might be some compatibility issues between modules that interact with each other and might need to be upgraded together. This might need additional decision making on when to do it.
+
+## Alternatives Considered
+
+Below alternatives were considered however incremental updates were decided due to long term benefits even though it might have a initial learning curve.
+
+- **Continue with Monolithic Upgrades:**
+  - **Pros:** Familiar processes, longer gaps between updates.
+  - **Cons:** High technical debt, major disruptions during upgrades, resource-intensive.
+- **Adopt Incremental Updates:**
+  - **Pros:** Streamlined maintenance, enhanced stability, easier technical debt management.
+  - **Cons:** Requires a mindset shift, possible initial learning curve for teams.
+- **Hybrid Approach (Selective Incremental Upgrades):**
+  - **Pros:** Flexibility in focusing updates on high-priority areas.
+  - **Cons:** May create inconsistency across the codebase, complicating future upgrades.
 
 ## Status
 
