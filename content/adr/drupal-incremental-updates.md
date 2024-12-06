@@ -27,6 +27,7 @@ We will perform incremental updates to our site to fix deprecated code as part o
   - This also reduces the re-work or issues since the deprecations are fixed in smaller chunks.
   - The site is more stable and is tested continually on Production with next major version code.
   - We can identify those contributed modules were there is less support for the next major version and contribute/make it compatible instead of waiting.
+  - We highlight this as part of our [CDM packages](https://www.axelerant.com/drupal-continuous-development-and-maintenance) as well setting up a cadence and expectations with client.
 - **Negative:**
   - There might be some issues since we are early adopters of the next major version. However these are not expected to be Critical or High priority as the community tests the code before releasing.
   - We might not be able to update all the contributed modules due to inputs needed from the maintainer of the module or any dependency on the community.
