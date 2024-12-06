@@ -11,7 +11,13 @@ categories:
 
 ## Context
 
-Currently, we focus on only doing major security updates to contributed modules and core as part of maintenance. However, this becomes a challenge when the end of life (EOL) arrives for our current Drupal major version as it results in one large estimation for fixing deprecated custom code, replacing contributed modules, and finally upgrading the core. This causes a huge one-time cost for the clients making it challenging to get budget approvals. It is also not in the spirit of smaller incremental development and hence impacts the stability of the application resulting in more efforts in each phase including QA and UAT.
+Currently, our maintenance approach focuses solely on applying major security updates to contributed modules and Drupal core. While this ensures basic security compliance, it creates significant challenges when a Drupal major version reaches its end of life (EOL). At that point, we face a large, time-consuming process that includes:
+
+- Fixing deprecated custom code.
+- Replacing incompatible contributed modules.
+- Upgrading the Drupal core.
+
+This results in a substantial one-time cost, making it difficult for clients to secure budget approvals. Additionally, this approach contradicts the principle of smaller, incremental updates. The resulting instability increases the effort required in every phase, from development to QA and UAT, leading to delays and inefficiencies.
 
 ## Decision
 
