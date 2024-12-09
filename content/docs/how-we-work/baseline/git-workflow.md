@@ -27,16 +27,16 @@ The branches can be deleted immediately and [automatically](https://docs.github.
 
 ### Protecting the default branch on GitHub
 
-[GitHub provides a variety of protection mechanism](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches) for different branches.
+GitHub provides a variety of protection mechanism for different branches.
 
 Below are our recommended branch protection settings.
 
-* trunk - main/master
+* trunk - main/master:
   * [Require pull request reviews before merging](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-pull-request-reviews-before-merging)
   * [Require status checks before merging](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-status-checks-before-merging)
   * [Restrict who can push to matching branches](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#restrict-who-can-push-to-matching-branches) which is usually restricted to Admin so they can push from CLI if needed in some cases.
-  * [Require conversation resolution before merging](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-conversation-resolution-before-merging)(Optional)
-  * [Do not allow bypassing the above settings](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#do-not-allow-bypassing-the-above-settings)(Optional)
+  * [Require conversation resolution before merging](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-conversation-resolution-before-merging) (Optional)
+  * [Do not allow bypassing the above settings](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#do-not-allow-bypassing-the-above-settings) (Optional)
 
 * other short-lived branches: A [wildcard](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule#about-branch-protection-rules) can be used to detect all short-lived branches provided they follow a naming convention. Typical examples are feature branches.
   * [Require pull request reviews before merging](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-pull-request-reviews-before-merging)
