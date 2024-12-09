@@ -27,9 +27,19 @@ The branches can be deleted immediately and [automatically](https://docs.github.
 
 ### Protecting the default branch on GitHub
 
-[GitHub provides a variety of protection mechanism](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches) for different branches. It especially recommends that the main branch (often called `main` or `master`) is protected from accidental pushes.
+GitHub provides a variety of protection mechanism for different branches.
 
-We recommend that the default branch is always protected. At a minimum, a PR should be required before merging to the main branch. You can also enforce conditions such as the PR must have approvals and requiring reviews from code owners. More rules can be found in the [documentation](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches).
+Below are our recommended branch protection settings.
+
+* trunk - main/master:
+  * [Require pull request reviews before merging](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-pull-request-reviews-before-merging)
+  * [Require status checks before merging](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-status-checks-before-merging)
+  * [Restrict who can push to matching branches](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#restrict-who-can-push-to-matching-branches) which is usually restricted to Admin so they can push from CLI if needed in some cases.
+  * [Require conversation resolution before merging](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-conversation-resolution-before-merging). This rule is optional and can highlight for the person merging (usually the reviewer themselves) to ensure all the comments mentioned by reviewer are at least responded if not resolved.
+
+* other short-lived branches: A [wildcard](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule#about-branch-protection-rules) can be used to detect all short-lived branches provided they follow a naming convention. For example `feature*` or `release*`can denote all feature and release branches.
+  * [Require pull request reviews before merging](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-pull-request-reviews-before-merging)
+  * [Require status checks before merging](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-status-checks-before-merging)
 
 ### Number of branches
 
