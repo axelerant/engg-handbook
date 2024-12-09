@@ -7,7 +7,7 @@ categories:
   - Drupal
 ---
 
-# A Continuous Approach to Module Updates and Deprecated API Handling in Drupal
+# Regularly Update Modules and Remove Deprecated APIs
 
 ## Context
 
