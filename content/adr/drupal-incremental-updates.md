@@ -7,7 +7,7 @@ categories:
   - Drupal
 ---
 
-# Drupal 9
+# A Continuous Approach to Module Updates and Deprecated API Handling in Drupal
 
 ## Context
 
