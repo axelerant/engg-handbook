@@ -1,5 +1,5 @@
 ---
-title: "Adopting Incremental Updates for Efficient Drupal Site Maintenance"
+title: "A Continuous Approach to Module Updates and Deprecated API Handling in Drupal"
 date: "2024-02-29"
 decision: "We will perform incremental updates to fix deprecated code in our custom modules, replacing deprecated contributed modules with latest versions or an alternative rather than one shot upgrade from one Drupal major version to another"
 status: "accepted"
