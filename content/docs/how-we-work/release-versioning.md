@@ -16,6 +16,4 @@ Release planning involves collaborative efforts between teams and product owners
 
 ## Release Notes
 
-We provide detailed release notes for each Release regardless of whether it's a major, minor or patch release. This provides clarity for all stakeholders on the changes made to the product in that release.
-
-Provide clarity on what has been added new, what has been improved to existing features, any bug fixes made to the product and any additional changes done in your Release notes.
+We provide detailed release notes for each Release regardless of whether it's a major, minor or patch release. This provides clarity for all stakeholders on the changes made to the product in that release on what has been added new, what has been improved to existing features, any bug fixes made to the product and any additional changes done in the Release.
