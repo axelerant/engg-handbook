@@ -44,7 +44,7 @@ To keep things simple, we will always host our projects on [one of our GitHub or
 
 ## Local Development with DDEV
 
-[DDEV](https://ddev.readthedocs.io/en/stable/) is our tool of choice for setting up local development environments across projects. You need Docker to run it and you can [provide the Docker engine](https://ddev.readthedocs.io/en/stable/users/install/docker-installation/) using the official [Orbstack](https://ddev.readthedocs.io/en/latest/users/install/docker-installation/#orbstack) or [Lima](https://ddev.readthedocs.io/en/latest/users/install/docker-installation/#lima).
+[DDEV](https://ddev.readthedocs.io/en/stable/) is our tool of choice for setting up local development environments across projects. You need Docker to run it and you can [provide the Docker engine](https://ddev.readthedocs.io/en/stable/users/install/docker-installation/) using the official [Orbstack](https://orbstack.dev/download) (`brew install orbstack`) or [Lima](https://github.com/lima-vm/lima) (`brew install lima`).
 
 Follow the [installation instructions](https://ddev.readthedocs.io/en/stable/users/install/ddev-installation/) to set up DDEV on your machine.
 
