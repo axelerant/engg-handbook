@@ -1,0 +1,32 @@
+---
+title: "Loading attribute in img and iframe HTML tags"
+date: "2025-15-01"
+decision: "Loading attribute should be added on all img and iframe tags and set to lazy"
+status: "accepted"
+categories:
+  - HTML
+---
+
+# Native LazyLoading for img and iframe
+
+## Context
+
+Images not only contribute to bandwidth and data usage but also slow down page loads, most images are often outside the viewport and cannot be viewed anyways on page load unless user scrolls to them. We can optimise this by using the native loading attribute.
+
+## Decision
+
+- We shall ensure every <img> and <iframe> tag has the `loading` attribute and it is set to `lazy` 
+- The `loading` attribute has a default value set to `eager` which loads immediately irrespective of whether they are in the viewport.
+
+## Consequences
+
+- **Positive:**
+  - Improved page loading performance due to lazy loading of images.
+  - Reduced data usage.
+- **Negative:**
+  - Changes to <img> and <iframe> component templates needed in the CMS, JS framework, and UX library kits whenever a new project is bootstrapped.
+  - Might not play well in case JS libraries are used to handle image lazy loading for a smoother / animated UX, like skeletons.
+
+## Status
+
+- **Accepted**
