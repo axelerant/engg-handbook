@@ -241,27 +241,36 @@ As mentioned before, a module is not strictly necessary to use Varnish. But it i
 5. Restart DDEV. `ddev restart`
 
 ### Host Specific Configurations
+
 #### 1. Acquia
-  * Install the Acquia Purge Module. `ddev composer require drupal/acquia_purge`.
-  * Enable the Acquia Purge Module. `ddev drush en -y acquia_purge`.
-  * Configure it by following the documentation: [Acquia Purge Installation Instruction](https://git.drupalcode.org/project/acquia_purge/raw/HEAD/INSTALL.md).
-  * Disable `adv_varnish` in the production `settings.php` file, as it is only used for local cache invalidation. In production, the `acquia_purge` module will handle the task.
-    ```php
-    // Disable Varnish
-    $config['adv_varnish.cache_settings']['general']['varnish_purger'] = FALSE;
-    $config['adv_varnish.cache_settings']['available']['enable_cache'] = FALSE;
-    ```
+
+* Install the Acquia Purge Module. `ddev composer require drupal/acquia_purge`.
+* Enable the Acquia Purge Module. `ddev drush en -y acquia_purge`.
+* Configure it by following the documentation: [Acquia Purge Installation Instruction](https://git.drupalcode.org/project/acquia_purge/raw/HEAD/INSTALL.md).
+* Disable `adv_varnish` in the production `settings.php` file, as it is only used for local cache invalidation. In production, the `acquia_purge` module will handle the task.
+
+  ```php
+  // Disable Varnish
+  $config['adv_varnish.cache_settings']['general']['varnish_purger'] = FALSE;
+  $config['adv_varnish.cache_settings']['available']['enable_cache'] = FALSE;
+  ```
+
 #### 2. Platform.sh
-  * Please refer to the [Platform.sh Varnish Documentation](https://docs.platform.sh/add-services/varnish.html) for detailed instructions on setting up the Varnish service in your project.
+
+* Please refer to the [Platform.sh Varnish Documentation](https://docs.platform.sh/add-services/varnish.html) for detailed instructions on setting up the Varnish service in your project.
+
 #### 3. Pantheon
-  * Install the Pantheon Advanced Page Cache Module. `ddev composer require drupal/pantheon_advanced_page_cache`.
-  * Enable the Acquia Purge Module. `ddev drush en -y pantheon_advanced_page_cache`.
-  * Disable `adv_varnish` in the production `settings.php` file, as it is only used for local cache invalidation. In production, the `pantheon_advanced_page_cache` module will handle the task.
-    ```php
-    // Disable Varnish
-    $config['adv_varnish.cache_settings']['general']['varnish_purger'] = FALSE;
-    $config['adv_varnish.cache_settings']['available']['enable_cache'] = FALSE;
-    ```
+
+* Install the Pantheon Advanced Page Cache Module. `ddev composer require drupal/pantheon_advanced_page_cache`.
+* Enable the Acquia Purge Module. `ddev drush en -y pantheon_advanced_page_cache`.
+* Disable `adv_varnish` in the production `settings.php` file, as it is only used for local cache invalidation. In production, the `pantheon_advanced_page_cache` module will handle the task.
+
+  ```php
+  // Disable Varnish
+  $config['adv_varnish.cache_settings']['general']['varnish_purger'] = FALSE;
+  $config['adv_varnish.cache_settings']['available']['enable_cache'] = FALSE;
+  ```
+
 {{< /tab >}}
 {{< /tabs >}}
 
