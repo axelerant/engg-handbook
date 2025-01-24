@@ -1,10 +1,10 @@
 ---
 title: "Adopt semantic versioning for releases"
 date: "2022-04-13"
-decision: "We will adopt semantic versioning for naming our releases for our projects"
+decision: "We will adopt semantic versioning for naming our releases"
 status: "accepted"
 categories:
-  - Release Management
+  - "Release Management"
 ---
 
 # Adopt semantic versioning for releases
@@ -35,7 +35,7 @@ We will name all our releases as per [Semantic Versioning](https://semver.org) a
 
 ## Alternatives Considered
 
-We considered an alternative were we have a indicator(like an prefix like `feature`) to start with that denotes whether the release is a Continuous Development/Feature release or Maintenance release. However since we also combine both feature development and maintenance fixes as one release we would need one version label that conveys both.
+We considered an alternative were we have a indicator (e.g. prefix like `feature`) to start with that denotes whether the release is a Continuous Development/Feature release or Maintenance release. However since we also combine both feature development and maintenance fixes as one release we would need one version label that conveys both.
 
 ## Status
 
