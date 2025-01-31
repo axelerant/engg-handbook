@@ -51,7 +51,7 @@ We will name all our releases as per [Semantic Versioning](https://semver.org) a
 
 - We considered an alternative were we have a indicator (e.g. prefix like `feature`) to start with that denotes whether the release is a Continuous Development/Feature release or Maintenance release. However since we also combine both feature development and maintenance fixes as one release we would need one version label that conveys both.
 
-- Another alternative can be using date as version indicator. e.g. v20250124 in vYYYYDDMM format with subsequent same day releases hyphenated as v20250124-2. Though this method is ideal for tagging in code it is difficult to verbally communicate the version number with clients during discussions as its a date.
+- Another alternative can be using date as version indicator. e.g. v20250124 in vYYYYDDMM format with subsequent same day releases hyphenated as v20250124-2. Though this method is ideal for tagging in code it is difficult to verbally communicate the version number with clients during discussions.
 
 ## Status
 
