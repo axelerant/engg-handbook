@@ -39,4 +39,4 @@ We considered an alternative were we have a indicator (e.g. prefix like `feature
 
 ## Status
 
-- **Accepted**
+- **Proposed**
