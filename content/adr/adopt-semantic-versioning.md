@@ -2,7 +2,7 @@
 title: "Adopt semantic versioning for releases"
 date: "2022-04-13"
 decision: "We will adopt semantic versioning for naming our releases"
-status: "accepted"
+status: "proposed"
 categories:
   - "Processes"
 ---
