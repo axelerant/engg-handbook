@@ -36,7 +36,7 @@ Documentation is one of the most underrated activities a developer can take up. 
 
 Keep in mind the audience for the documentation when writing. The audience could be you, 2 weeks later. It could be another developer on the team learning the system or being onboarded to the project. Keep the documentation readable and get to the point quickly.
 
-Technical documentation _must_ be located in the project repository where it is easy for the developer to refer to it without leaving the IDE. Integration with the [IDP](#idp-integration) allows us to render and read the documentation using a browser. Because the documentation is written in plain text files, markdown is the optimal format for this which is both easy to learn and easy to read.
+Technical documentation _must_ be located in the project repository where it is easy for the developer to refer to it without leaving the IDE. Integration with the [IDP](#idp-integration) allows us to render and read the documentation using a browser. The documentation is generated directly from the project repository and includes both hand-written guides and API documentation using phpDocumentor. By keeping documentation as plain-text Markdown files, we ensure it is easy to maintain, version-controlled, and always reflects the current state of the project
 
 ## Code Hosting
 
