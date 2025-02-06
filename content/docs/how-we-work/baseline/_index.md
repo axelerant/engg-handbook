@@ -11,6 +11,8 @@ Adopting the baseline on a project enhances operational efficiency. It ensures q
 
 At this time, this baseline is standardized for our projects in [CDM](https://www.axelerant.com/delivery-engagement-models/continuous-development-and-maintenance) but will eventually also apply to our [managed projects](https://www.axelerant.com/delivery-engagement-models/managed-projects).
 
+To support the adoption of the baseline, baseline templates are available in our private GitHub repository: [Baseline Templates Repository](https://github.com/axelerant/baseline-templates/tree/main). These templates provide essential configurations and starting points for projects, helping teams ensure that baseline requirements are met with minimal effort.
+
 ## Git Workflow and Health
 
 The exact [Git workflow]({{< relref "git-workflow" >}}) necessarily changes from one project to another. That said, it is possible and we must aim for certain elements of consistency based on our (industry) collective experience. Many of these are defined so because they are obvious to the developer community in general.
@@ -36,7 +38,7 @@ Documentation is one of the most underrated activities a developer can take up. 
 
 Keep in mind the audience for the documentation when writing. The audience could be you, 2 weeks later. It could be another developer on the team learning the system or being onboarded to the project. Keep the documentation readable and get to the point quickly.
 
-Technical documentation _must_ be located in the project repository where it is easy for the developer to refer to it without leaving the IDE. Integration with the [IDP](#idp-integration) allows us to render and read the documentation using a browser. The documentation is generated directly from the project repository and includes both hand-written guides and API documentation using [phpDocumentor](https://phpdoc.org/). By keeping documentation as plain-text Markdown files, we ensure it is easy to maintain, version-controlled, and always reflects the current state of the project.
+Technical documentation _must_ be located in the project repository where it is easy for the developer to refer to it without leaving the IDE. Integration with the [IDP](#idp-integration) allows us to render and read the documentation using a browser. The documentation is generated directly from the project repository and includes both hand-written guides and API documentation using phpDocumentor. By keeping documentation as plain-text Markdown files, we ensure it is easy to maintain, version-controlled, and always reflects the current state of the project.
 
 ## Code Hosting
 
