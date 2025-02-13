@@ -11,6 +11,8 @@ Adopting the baseline on a project enhances operational efficiency. It ensures q
 
 At this time, this baseline is standardized for our projects in [CDM](https://www.axelerant.com/delivery-engagement-models/continuous-development-and-maintenance) but will eventually also apply to our [managed projects](https://www.axelerant.com/delivery-engagement-models/managed-projects).
 
+To support the adoption of the baseline, baseline templates are available in our [IDP](https://idp.axelerant.com/create?filters%5Bkind%5D=template&filters%5Buser%5D=all&limit=20). These templates provide essential configurations and starting points for projects, helping teams ensure that baseline requirements are met with minimal effort.
+
 ## Git Workflow and Health
 
 The exact [Git workflow]({{< relref "git-workflow" >}}) necessarily changes from one project to another. That said, it is possible and we must aim for certain elements of consistency based on our (industry) collective experience. Many of these are defined so because they are obvious to the developer community in general.
