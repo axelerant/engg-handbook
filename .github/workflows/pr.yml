@@ -46,3 +46,8 @@ jobs:
         run: |
           hugo mod get -u
           hugo --debug
+
+      - name: Run lychee link checker
+        uses: lycheeverse/lychee-action@v1.4.0
+        with:
+          args: --verbose --exclude mailto --timeout 30000 'public/_/_'
