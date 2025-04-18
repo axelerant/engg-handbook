@@ -45,4 +45,4 @@ jobs:
       - name: Build with Hugo
         run: |
           hugo mod get -u
-          hugo --debug
+          hugo --logLevel debug
