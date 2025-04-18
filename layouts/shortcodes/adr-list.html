@@ -1,6 +1,6 @@
 {{/* Load and minify the adr.scss stylesheet */}}
-{{ $adrCSS := resources.Get "adr.scss" | resources.ToCSS | resources.Minify | fingerprint }}
-{{ $loaderCSS := resources.Get "loader.scss" | resources.ToCSS | resources.Minify | fingerprint }}
+{{ $adrCSS := resources.Get "adr.scss" | css.Sass | resources.Minify | fingerprint }}
+{{ $loaderCSS := resources.Get "loader.scss" | css.Sass | resources.Minify | fingerprint }}
 <link rel="stylesheet" href="{{ $adrCSS.Permalink }}" />
 <link rel="stylesheet" href="{{ $loaderCSS.Permalink }}" />
 

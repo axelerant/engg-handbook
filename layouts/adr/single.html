@@ -1,6 +1,6 @@
 {{ define "main" }}
   {{/* Load and minify the adr-single.scss stylesheet */}}
-  {{ $scss := resources.Get "adr-single.scss" | resources.ToCSS | resources.Minify | fingerprint }}
+  {{ $scss := resources.Get "adr-single.scss" | css.Sass | resources.Minify | fingerprint }}
   <link rel="stylesheet" href="{{ $scss.Permalink }}" />
 
   <article class="markdown">
