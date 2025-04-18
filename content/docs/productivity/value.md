@@ -16,7 +16,7 @@ Technical excellence is ambiguous. We may build the best thing possible and do i
 
 {{< blockquote author="David H. Maister, Managing the Professional Service Firm" quote="SATISFACTION = PERCEPTION minus EXPECTATION" >}}
 
-
+We must understand that customer satisfaction depends on what they perceive compared to what they expected. Notice that there is no mention of how good the thing itself is, but how it will be perceived. It is our job as engineers and professionals that we communicate the technical excellence so that they can perceive the benefits clearly.
 
 ## Getting lost in the weeds
 
