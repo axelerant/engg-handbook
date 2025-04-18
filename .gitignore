@@ -18,3 +18,10 @@ hugo.linux
 # Node
 /node_modules
 yarn-error.log
+
+# OS temporary files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
