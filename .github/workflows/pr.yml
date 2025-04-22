@@ -30,6 +30,9 @@ jobs:
         run: |
           yarn lint-fix:prettier
           git diff
+      - name: Check for non-breaking spaces
+        run: |
+          ./github/check_nbsp.sh content/ 5
 
   build:
     runs-on: ubuntu-latest
