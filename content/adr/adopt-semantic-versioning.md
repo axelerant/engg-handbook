@@ -5,7 +5,6 @@ decision: "We will adopt semantic versioning for naming our releases"
 status: "proposed"
 categories:
   - Processes
----
 
 # Adopt semantic versioning for releases
 
