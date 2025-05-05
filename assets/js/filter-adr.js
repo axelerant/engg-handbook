@@ -1,6 +1,6 @@
 let currentCategory = 'All'; // Initialize the current category to 'All'
 
-function filterADR(filter, isCategoryChange = false) {
+function filterADR(category, status, isCategoryChange = false) {
   var adrCards = document.querySelectorAll('.adr-card');
   var filterButtons = document.querySelectorAll('.filter-button');
   let hasVisibleCards = false;
@@ -9,9 +9,9 @@ function filterADR(filter, isCategoryChange = false) {
   adrLinks.style.display = 'none';
 
   if (isCategoryChange) {
-    currentCategory = filter; // Update the current category if a category change occurs
+    currentCategory = category; // Update the current category if a category change occurs
   } else {
-    filter = currentCategory; // Use the current category if no category change
+    category = currentCategory; // Use the current category if no category change
   }
 
   // Remove 'active' class from all status filter items
@@ -22,14 +22,17 @@ function filterADR(filter, isCategoryChange = false) {
 
   // Add 'active' class to the selected status filter item
   let selectedStatusItem = document.querySelector(
-    `.status-filter-item[data-status="${status}"]`
+    `.status-filter-item[data-status="${status}"]`,
   );
   selectedStatusItem.classList.add('active');
 
   adrCards.forEach(function (card) {
     var categories = card.getAttribute('data-categories').split(' ');
     var cardStatus = card.querySelectorAll('.adr-status')[0].outerText.trim();
-    if (filter === 'All' || categories.includes(filter)) {
+    if (
+      (category === 'All' || categories.includes(category)) &&
+      cardStatus === status
+    ) {
       card.style.display = 'block';
       hasVisibleCards = true;
     } else {
@@ -40,7 +43,7 @@ function filterADR(filter, isCategoryChange = false) {
   filterButtons.forEach(function (button) {
     var buttonText = button.textContent.trim(); // Trim whitespace
     button.classList.remove('active');
-    if (buttonText === filter) {
+    if (buttonText === category) {
       button.classList.add('active');
     }
   });
@@ -80,5 +83,5 @@ function filterADR(filter, isCategoryChange = false) {
 document.addEventListener('DOMContentLoaded', () => {
   //Show the dropdown on page load
   onToggle('status-filter-list');
-  filterADR('All');
+  filterADR('All', 'accepted');
 });
