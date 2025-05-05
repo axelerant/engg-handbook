@@ -9,6 +9,9 @@
     margin: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     > h2 {
       font-size: 1em;
@@ -19,6 +22,9 @@
     .adr-meta {
       font-size: 0.9em;
       color: $dark-gray;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
       span {
         margin-top: 2px;
@@ -32,8 +38,6 @@
       .adr-status {
         padding: 5px 10px;
         font-size: 0.9em;
-        margin-bottom: 10px;
-        float: right;
         border-radius: 30px;
         color: $white;
 
@@ -76,6 +80,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 
     .filter-section,
     .sort-section {
@@ -125,6 +130,7 @@
         transition: background-color 0.5s;
         outline: none;
         text-wrap: nowrap;
+        margin-right: 10px;
 
         &:hover {
           background-color: $silver;
