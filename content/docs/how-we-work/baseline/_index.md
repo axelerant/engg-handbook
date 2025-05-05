@@ -169,7 +169,7 @@ Since a CI pipeline is considerably more complex, an example describes the proce
 
 As we are on GitHub, we use Dependabot for tracking updates. We typically track updates for all the dependencies we use (typically PHP, JavaScript, and GitHub Actions itself). We schedule alerts on a weekly basis unless there is a specific need. We also [group](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#groups) related dependencies so that we are not flooded by pull requests and associated CI runs.
 
-As before, use the contrib tracker project as an example of [a Dependabot configuration file](https://github.com/contrib-tracker/backend/blob/main/.github/dependabot.yml) and change it to suit your needs. Make sure to also pull in configuration related checks done in [pipeline](https://github.com/contrib-tracker/backend/blob/main/.github/workflows/ci.yml) that validates if there are any configuration differences due to the update.
+As before, use the contrib tracker project as an example of [a Dependabot configuration file](https://github.com/contrib-tracker/backend/blob/main/.github/dependabot.yml) and change it to suit your needs. Make sure to also pull in configuration related checks done in [pipeline](https://github.com/contrib-tracker/backend/blob/79feee6b0e76a8450e07d2bd0e494ac67fd6c3a4/.github/workflows/ci.yml#L128-L160) that validates if there are any configuration differences due to the update.
 
 **NOTE:** The pipeline code uses DDEV's [provider](https://ddev.readthedocs.io/en/stable/users/providers/) for platform.sh to pull in DB and files. Use the corresponding provider code as per your hosting.
 
