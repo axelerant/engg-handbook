@@ -3,7 +3,7 @@ title: 'ADRs'
 weight: 11
 description: 'Document the decision to introduce Architecture Decision Records (ADR).'
 categories:
-    - Angular
+    - Processes
     - Drupal
 ---
 

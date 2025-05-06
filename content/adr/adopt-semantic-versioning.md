@@ -4,7 +4,7 @@ date: "2022-04-13"
 decision: "We will adopt semantic versioning for naming our releases"
 status: "proposed"
 categories:
-  - "Processes"
+  - Processes
 ---
 
 # Adopt semantic versioning for releases
