@@ -8,7 +8,7 @@
 {{ $adrPages := sort (where $.Site.RegularPages "Section" "adr") ".Params.date" "desc" }}
 <section id="adr-list" class="adr-list">
   <section class="adr-controls">
-    <!-- Filter section -->
+    <!-- Category Filter section -->
     <nav class="filter-section" aria-label="ADR Categories">
       <ul class="filter-list">
         <li class="filter-item">
@@ -31,76 +31,52 @@
         {{ end }}
       </ul>
     </nav>
-    <!-- Filter section -->
+    <!-- Status Filter section -->
+    <nav class="filter-section" aria-label="ADR Status">
+      <ul id="status-filter-list" class="filter-list">
+        <li class="filter-item" data-status="accepted">
+            <button class="filter-button active" onclick="filterADR(currentCategory, 'accepted')">
+              Accepted
+            </button>
+        </li>
+        <li class="filter-item" data-status="declined">
+          <button class="filter-button" onclick="filterADR(currentCategory, 'declined')">
+            Declined
+          </button>
+        </li>
+        <li class="filter-item" data-status="Proposed">
+          <button class="filter-button" onclick="filterADR(currentCategory, 'proposed')">
+            Proposed
+          </button>
+        </li>
+        <li class="filter-item" data-status="deprecated">
+          <button class="filter-button" onclick="filterADR(currentCategory, 'deprecated')">
+            Deprecated
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <!-- Sort section -->
     <nav class="sort-section" aria-label="Sort ADR list">
       <button class="sort-button" onclick="onToggle('sort-list')">
         Sort By
       </button>
       <ul id="sort-list" class="sort-list dropdown-menu hidden">
-        <li
-          class="sort-item"
-          data-sort="title-asc"
-          onclick="sortBy('title-asc')"
-        >
+        <li class="sort-item" data-sort="title-asc" onclick="sortBy('title-asc')">
           Title A -> Z
         </li>
-        <li
-          class="sort-item"
-          data-sort="title-desc"
-          onclick="sortBy('title-desc')"
-        >
+        <li class="sort-item" data-sort="title-desc" onclick="sortBy('title-desc')">
           Title Z -> A
         </li>
-        <li
-          class="sort-item active"
-          data-sort="date-desc"
-          onclick="sortBy('date-desc')"
-        >
+        <li class="sort-item active" data-sort="date-desc" onclick="sortBy('date-desc')">
           Date Latest -> Oldest
         </li>
         <li class="sort-item" data-sort="date-asc" onclick="sortBy('date-asc')">
           Date Oldest -> Latest
         </li>
       </ul>
-      <button class="filter-button" onclick="onToggle('status-filter-list')">
-        Filter By
-      </button>
-      <ul
-        id="status-filter-list"
-        class="status-filter-list dropdown-menu hidden"
-      >
-        <li
-          class="status-filter-item active"
-          data-status="accepted"
-          onclick="filterADR(currentCategory, 'accepted')"
-        >
-          Accepted
-        </li>
-        <li
-          class="status-filter-item"
-          data-status="declined"
-          onclick="filterADR(currentCategory, 'declined')"
-        >
-          Declined
-        </li>
-        <li
-          class="status-filter-item"
-          data-status="proposed"
-          onclick="filterADR(currentCategory, 'proposed')"
-        >
-          Proposed
-        </li>
-        <li
-          class="status-filter-item"
-          data-status="deprecated"
-          onclick="filterADR(currentCategory, 'deprecated')"
-        >
-          Deprecated
-        </li>
-      </ul>
     </nav>
   </section>
-
   <div id="loader" class="loader"></div>
   {{/* Loop through each ADR page */}}
   <section id="adr-links" style="display: none;">

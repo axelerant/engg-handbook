@@ -15,14 +15,14 @@ function filterADR(category, status, isCategoryChange = false) {
   }
 
   // Remove 'active' class from all status filter items
-  let statusFilterItems = document.querySelectorAll('.status-filter-item');
+  let statusFilterItems = document.querySelectorAll('.filter-item');
   statusFilterItems.forEach(function (item) {
     item.classList.remove('active');
   });
 
   // Add 'active' class to the selected status filter item
   let selectedStatusItem = document.querySelector(
-    `.status-filter-item[data-status="${status}"]`,
+    `.filter-item[data-status="${status}"]`,
   );
   selectedStatusItem.classList.add('active');
 
