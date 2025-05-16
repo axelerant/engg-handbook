@@ -17,7 +17,7 @@ function sortBy(sortType) {
   adrLinks.style.display = 'none';
   // Select all visible <a> elements within adr-links
   let visibleCards = Array.from(adrLinks.querySelectorAll('a')).filter(
-    (card) => card.style.display !== 'none',
+    (card) => card.style.display !== 'none'
   );
   // If sort functionality is disabled, return early
   let sortList = document.getElementById('sort-list');
@@ -33,7 +33,7 @@ function sortBy(sortType) {
   });
   // Add 'active' class to the selected sort item
   let selectedSortItem = document.querySelector(
-    `.sort-item[data-sort="${sortType}"]`,
+    `.sort-item[data-sort="${sortType}"]`
   );
   selectedSortItem.classList.add('active');
 
