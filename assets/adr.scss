@@ -91,51 +91,34 @@
         }
       }
 
-      .dropdown-menu {
-        list-style: none;
-        border: 1px solid $white-smoke;
-        position: absolute;
-        background-color: $white;
-        border-radius: 4px;
-        margin-top: 8px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        padding: 10px;
-        width: 40%;
-        z-index: 1;
 
-        .sort-item,
-        .status-filter-item {
-          cursor: pointer;
+  .filter-button,
+  .sort-button {
+    background-color: $white;
+    border: 1px solid $silver;
+    color: $black;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 6px 12px;
+    font-size: 14px;
+    transition: background-color 0.5s;
+    outline: none;
+    text-wrap: nowrap;
 
-          &.active {
-            font-weight: bold;
-          }
-        }
-      }
+    &:hover {
+      background-color: $silver;
+    }
 
-      .filter-button,
-      .sort-button {
-        background-color: $white;
-        border: 1px solid $silver;
-        color: $black;
-        border-radius: 4px;
-        cursor: pointer;
-        padding: 6px 12px;
-        font-size: 14px;
-        transition: background-color 0.5s;
-        outline: none;
-        text-wrap: nowrap;
+    &.active {
+      background-color: $orange;
+      border: 1px solid $orange;
+      color: #fff;
+    }
+  }
 
-        &:hover {
-          background-color: $silver;
-        }
-
-        &.active {
-          background-color: $orange;
-          border: 1px solid $orange;
-          color: #fff;
-        }
-      }
+  .status-filter-item {
+    margin: 0;
+  }
     }
 
     .hidden {
