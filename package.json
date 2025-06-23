@@ -12,7 +12,7 @@
     "lint-fix": "concurrently npm:lint-fix:*"
   },
   "devDependencies": {
-    "concurrently": "^9.1.2",
+    "concurrently": "^9.2.0",
     "markdownlint-cli": "^0.44",
     "prettier": "^3.5.3",
     "prettier-plugin-go-template": "^0.0.15"
