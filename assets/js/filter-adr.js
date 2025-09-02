@@ -15,14 +15,14 @@ function filterADR(category, status, isCategoryChange = false) {
   }
 
   // Remove 'active' class from all status filter items
-  let statusFilterItems = document.querySelectorAll('.status-filter-item');
+  let statusFilterItems = document.querySelectorAll('.filter-item');
   statusFilterItems.forEach(function (item) {
     item.classList.remove('active');
   });
 
   // Add 'active' class to the selected status filter item
   let selectedStatusItem = document.querySelector(
-    `.status-filter-item[data-status="${status}"]`,
+    `.filter-item[data-status="${status}"]`
   );
   selectedStatusItem.classList.add('active');
 
@@ -31,7 +31,7 @@ function filterADR(category, status, isCategoryChange = false) {
     var cardStatus = card.querySelectorAll('.adr-status')[0].outerText.trim();
     if (
       (category === 'All' || categories.includes(category)) &&
-      cardStatus === status
+      (status === 'All' || cardStatus === status)
     ) {
       card.style.display = 'block';
       hasVisibleCards = true;
@@ -69,10 +69,6 @@ function filterADR(category, status, isCategoryChange = false) {
     if (noAdrMessage) {
       noAdrMessage.remove();
     }
-  }
-  //Hide dropdown on click of an option
-  if (!isCategoryChange) {
-    onToggle('status-filter-list');
   }
   // Show the ADR links and hide the loader
   hideLoading();
