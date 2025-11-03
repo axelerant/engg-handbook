@@ -64,6 +64,43 @@ Once DDEV is installed, follow these steps:
 
 {{< /details >}}
 
+## Asset Management
+
+We use resticprofile to have our database and files synced to one source of truth which is our Production version. This allows you to keep your DB and files updated with Production, stored in S3 which can then be used by your team for local development and also in your CI/CD to make automatic pulling of Production database to lower environments possible.
+
+Below are the steps to setup resticprofile on your project.
+
+1. You would need to setup a bucket in our AWS S3 for the project to be have a space to store its assets. You can find the instructions for same [here](https://github.com/axelerant-infra/misc-utils/blob/main/create-project-assets-bucket/README.md). Note that you would need to have necessary access in AWS and have your access keys setup.
+2. For usage in DDEV/Local environment you would need to setup as per [this video](https://www.loom.com/share/216709f49d6b4929a5b08c2355c90ff6). As mentioned in the video, you would need to install below to use resticprofile for your local development.
+
+    a. [1Password CLI](https://developer.1password.com/docs/cli/get-started/)
+
+    b. [restic](https://restic.readthedocs.io/en/latest/020_installation.html)
+
+    c. [resticprofile](https://creativeprojects.github.io/resticprofile/installation/index.html)
+
+    (or)
+
+    a. Install using below homebrew commands.
+
+    ```text
+    brew install 1password-cli
+    brew install restic
+    brew install creativeprojects/tap/resticprofile
+    ```
+
+3. Setup a `profiles.yml` file in your project repository similar to [this](https://github.com/axelerant-esc/esc/blob/main/profiles.yaml) and update the `repository` key with the bucket name for your project.
+4. Make sure you update  and store the credentials generated in step 1 for your project as `ASSETS_AWS_ACCESS_KEY_ID` and `ASSETS_AWS_SECRET_ACCESS_KEY` in the 1Password vault as explained in above video.
+5. Implement [this action](https://github.com/marketplace/actions/setup-restic-and-resticprofile) to use resticprofile in CI/CD.
+
+### Usage
+
+* `resticprofile ddev.snapshots` - List all snapshots
+* `resticprofile ddev.backup` - Backup current DB and files as the latest snapshot
+* `resticprofile ddev.restore latest` - Restore the latest snapshot for DB and files
+
+For each of the above, replace `ddev` with `ddev-db` or `ddev-files` to backup or restore only that specific asset type.
+
 ## Application Cache
 
 With CMSes like Drupal, we always use an application cache like [Redis](https://redis.io/) or [Memcached](https://memcached.org/). With Drupal's built-in dynamic caching abilities, there is no reason to not use an external cache. Given the size of our typical project, the slight increase in complexity is worth it.
@@ -112,7 +149,7 @@ On some hosts, you also have to set the transaction isolation level. Follow the 
 
 Drupal supports public and private file schemes to store user-uploaded content. The public file scheme is the default mechanism and is suitable unless there is a specific requirement. Both of these schemes are stored in the local filesystem (e.g., public files are saved in `sites/default/files`). Hosts that support Drupal provide a mechanism to make these locations writable.
 
-In the future, we will provide infrastructure support to keep these files on an object store such as S3 by default. For now, use modules like [`stage_file_proxy`](https://www.drupal.org/project/stage_file_proxy) to access these files in development environments.
+Even though modules like [`stage_file_proxy`](https://www.drupal.org/project/stage_file_proxy) are available to access your files in development environments, we recommend [setting up resticprofile](#asset-management) to manage your assets (both DB and files) in one place.
 
 ## Local checks
 
