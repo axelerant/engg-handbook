@@ -35,4 +35,4 @@ Join WordPress slack on [WordPress Chat](https://make.wordpress.org/chat/) and s
 
 Also Check [Support Handbook](https://make.wordpress.org/support/handbook/) for getting involved with the support related activities.
 
-Events and Meetups: Meetups for WordPress can be checked [here](https://www.meetup.com/pro/wordpress/). For events check [this page](https://central.wordcamp.org/).
+Events and Meetups: Meetups for WordPress can be found on the [WordPress Meetup page](https://www.meetup.com/pro/wordpress/). For events check [this page](https://central.wordcamp.org/).
