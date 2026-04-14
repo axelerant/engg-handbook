@@ -70,7 +70,7 @@ We use resticprofile to have our database and files synced to one source of trut
 
 Below are the steps to setup resticprofile on your project.
 
-1. You would need to setup a bucket in our AWS S3 for the project to be have a space to store its assets. You can find the instructions for same [here](https://github.com/axelerant-infra/misc-utils/blob/main/create-project-assets-bucket/README.md). Note that you would need to have necessary access in AWS and have your access keys setup.
+1. You would need to setup a bucket in our AWS S3 for the project to be have a space to store its assets. You can find the instructions in the [project assets bucket README](https://github.com/axelerant-infra/misc-utils/blob/main/create-project-assets-bucket/README.md). Note that you would need to have necessary access in AWS and have your access keys setup.
 2. For usage in DDEV/Local environment you would need to setup as per [this video](https://www.loom.com/share/216709f49d6b4929a5b08c2355c90ff6). As mentioned in the video, you would need to install below to use resticprofile for your local development.
 
     a. [1Password CLI](https://developer.1password.com/docs/cli/get-started/)
@@ -122,7 +122,7 @@ Once DDEV is configured for a project, follow these steps:
 Once DDEV is set up for a project, follow these steps:
 
 1. Run `ddev get ddev/ddev-memcached` to install Memcached support.
-2. Apply the steps [here](https://git.drupalcode.org/project/memcache/-/blob/8.x-2.x/README.txt) to create the settings.
+2. Apply the steps in the [Memcache module README](https://git.drupalcode.org/project/memcache/-/blob/8.x-2.x/README.txt) to create the settings.
 3. Add the [Memcache API and Integration](https://www.drupal.org/project/memcache) module to your project.
 4. Commit the changes in the `.ddev` directory and the updated settings files.
 {{< /tab >}}

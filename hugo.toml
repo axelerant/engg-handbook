@@ -1,4 +1,4 @@
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'Axelerant Engineering Handbook'
 theme = 'github.com/alex-shpak/hugo-book'
 enableGitInfo = true
