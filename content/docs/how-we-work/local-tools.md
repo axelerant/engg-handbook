@@ -42,6 +42,10 @@ We use JIRA for updating the ticket status and progress.
 
 Using extensions to do the above right from the IDE allows for better collaboration, less turn around times for PR reviews and more accurate time logging and ticket updates.
 
+### AI Coding Tools
+
+[Claude Code](https://docs.anthropic.com/en/docs/claude-code) is our standard AI coding tool for development work. It runs in the terminal, integrates with our project tooling, and supports project-level configuration that the whole team shares. See our [AI-Assisted Development]({{< relref "ai-practices" >}}) section for how we set up projects, build skills, and work with AI at Axelerant.
+
 ### Development environments
 
 Development environments are trickier to maintain as per individual preferences and that is why the team usually opts for a single development environment (configured in the project repository). Our choice of development environments is [DDEV](https://ddev.readthedocs.io/en/stable/users/install/) and we have tooling to improve some of our processes.
