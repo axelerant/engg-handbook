@@ -33,7 +33,7 @@ If a solution from the AI isn't quickly helping or you feel you're losing contro
 Claude Code supports multiple models. Pick the right one for the task:
 
 | Task | Model |
-|------|-------|
+| ------ | ------- |
 | Complex architecture, root cause analysis | Opus |
 | Everyday tasks, most ticket work | Sonnet |
 | Simple lookups, single-file operations | Haiku |
