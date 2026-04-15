@@ -220,9 +220,15 @@ Read more details [here]({{< relref "logging-details.md" >}}).
 
 ## Functional Testing
 
-We automate our tests using [Cypress](https://www.cypress.io/). We focus more on functional testing rather than unit testing because this is more of a fit for a typical project at Axelerant. Unit testing has its place and we should write unit tests but we recognize that writing tests introduces a cognitive load. To limit the number of paradigms that people have to deal with, we are limiting ourselves to the most impactful kind of tests and that is a functional test run in a browser-like environment.
+We automate our tests using [Playwright](https://playwright.dev/) and [Cypress](https://www.cypress.io/) with increased preference to Playwright. We focus more on functional testing rather than unit testing because this is more of a fit for a typical project at Axelerant. Unit testing has its place and we should write unit tests but we recognize that writing tests introduces a cognitive load. To limit the number of paradigms that people have to deal with, we are limiting ourselves to the most impactful kind of tests and that is a functional test run in a browser-like environment.
 
 We maintain a set of [template test scripts](https://github.com/contrib-tracker/backend/tree/main/web/themes/custom/contribtracker/cypress/e2e) to accelerate the setup and implementation of functional tests across projects. These scripts are tagged based on various scenarios to select which tests to run depending on the scenario. Tagging ensures an efficient testing process by focusing on relevant scripts during development and continuous integration. These tests must run via CI but should also be run locally before pushing the changes. A CI run example may be found in [the contrib-tracker example pipeline](https://github.com/contrib-tracker/backend/blob/main/.github/workflows/ci.yml).
+
+## AI-Assisted Development
+
+Claude Code is our standard AI coding tool. As part of the project baseline, include AI configuration files in the repository so that the entire team works with shared context and permissions. At a minimum, this includes a `.claude/CLAUDE.md` with project-specific context, `.claude/settings.json` for shared permissions, and `.claude/.mcp.json` for relevant MCP server integrations.
+
+See our [AI-Assisted Development]({{< relref "../ai-practices" >}}) guide for detailed recommendations on project setup, skills, and development practices.
 
 ## Reverse Proxy
 

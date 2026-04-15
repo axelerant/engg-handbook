@@ -13,3 +13,5 @@ Automation solutions are often used to improve code quality, boost productivity,
 ## Generative AI
 
 With Generative AI, software development is being constantly redefined. As many people say, "AI will not replace you but software engineers who use AI will replace you." We must understand the benefits and limitations of the current generation of Generative AI if we are serious about providing value in the world of information technology.
+
+At Axelerant, AI-assisted development is not optional — it's a core part of how we deliver. We've standardized on [Claude Code](https://docs.anthropic.com/en/docs/claude-code) as our primary AI coding tool and have built practices around project configuration, reusable skills, and effective workflows. See our [AI-Assisted Development]({{< relref "../how-we-work/ai-practices" >}}) guide for our current practices and expectations.
