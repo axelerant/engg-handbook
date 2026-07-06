@@ -623,10 +623,10 @@ prettier-plugin-go-template@^0.0.15:
   dependencies:
     ulid "^2.3.0"
 
-prettier@^3.8.2:
-  version "3.8.2"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.8.2.tgz#4f52e502193c9aa5b384c3d00852003e551bbd9f"
-  integrity sha512-8c3mgTe0ASwWAJK+78dpviD+A8EqhndQPUBpNUIPt6+xWlIigCwfN01lWr9MAede4uqXGTEKeQWTvzb3vjia0Q==
+prettier@^3.9.4:
+  version "3.9.4"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.9.4.tgz#a9c477cf1614376bd1f6bbc593d8c0d414bcec87"
+  integrity sha512-yWG/o/4oJfo036EKAfK6ACAoDOfHeRHx4tuxkfBZiauURiaSmYwlpOr5LQqKtIkRD2z1PLteme2WoxEnj4tHTg==
 
 punycode.js@^2.3.1:
   version "2.3.1"
