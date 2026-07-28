@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "concurrently": "^10.0.4",
-    "markdownlint-cli": "^0.49.0",
+    "markdownlint-cli": "^0.49.1",
     "prettier": "^3.9.6",
     "prettier-plugin-go-template": "^0.0.15"
   }
