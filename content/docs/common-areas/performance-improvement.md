@@ -6,19 +6,19 @@ description: Performance improvement shouldn't be the last step of building a we
 
 # Performance of a Web Application
 
-Performance and its improvement is a complicated and nuanced topic. For a web application, there are many aspects of performance because web is a complex system. The performance of a web application involves issues concerning physical proximity, network, application delivery, runtime on the server and the client, and varying design styles of the application itself.
+Performance is a multifaceted and nuanced topic, particularly for web applications, where many factors come into play due to the complexity of the web ecosystem. The performance of a web application involves considerations like physical proximity, network efficiency, application delivery, server and client runtime, and the design styles of the application itself.
 
-Performance improvement shouldn't be the last step of building a website. It is an ongoing process and it should be measured and improved at almost every milestone of development. Whether the user who has visited the website will come back to the website or not, depends upon the following factors:
+Performance improvement should not be an afterthought but an ongoing process, evaluated and enhanced at every development milestone. Whether a user returns to a website depends on several key factors:
 
-- Appearance of the website (the look and feel)
-- The user experience (user interaction with the website, it could be using a registration form or any other form that involves some user interation)
-- Performance of the website (ex. page load speed, time taken by the website to fetch & display the content, generate the page with the listing of the content based upon certain filters, etc...)
+- **Appearance**: The overall look and feel of the website.
+- **User Experience**: How users interact with the website, such as through forms or other interactive elements.
+- **Performance**: Metrics like page load speed, content fetch and display times, and how quickly pages generate based on user inputs.
 
-The factors are not limited to the ones mentioned above but these are some of the major concern areas when it comes to dealing with the performance of a website. Let's first understand the ways that could be used to measure the performance of the application and then we will focus on the ways to improve it.
+These are major areas of concern, though not the only factors influencing website performance. Let’s explore how to measure and improve performance effectively.
 
-## Ways to measure the performance of the application
+## Measuring Application Performance
 
-The performance of the application cab be measured using various open source tools available that can help measure the performance based upon the following common metrics:
+Performance can be gauged using various open-source tools, which assess common metrics like:
 
 - Page Load Speed
 - Time to Title
@@ -28,7 +28,7 @@ The performance of the application cab be measured using various open source too
 - Time to start render
 - DNS lookup speed
 
-Some of the top open source tools to measure the performance are as follows:
+Some top tools for measuring performance include:
 
 - [Google PageSpeed Insights](https://pagespeed.web.dev/)
 - [GTmetrix](https://gtmetrix.com/)
@@ -36,20 +36,18 @@ Some of the top open source tools to measure the performance are as follows:
 - [Solarwinds Pingdom Speed Test](https://tools.pingdom.com/)
 - [Uptrends](https://www.uptrends.com/)
 
-## Debug performance issues
+## Debugging Performance Issues
 
-As discussed above, the ideal way of dealing with the performance of the application is to keep a check on the performance metrics at every stage of development or deployment. But most of the times we think about improving the performance of the application when we notice that the response time of returning the page output is higher than the ideal time.
+Ideally, performance metrics should be monitored throughout development. However, performance often becomes a focus only when the application’s response time exceeds acceptable limits. At this stage, tools like those mentioned above can provide initial insights, but deeper analysis may be required to identify the root cause of “slowness.”
 
-At this point, we start examining our application using various tools. The tools mentioned above can help in doing the first level analysis of the performance of the application. But to get to the root cause of the "slowness", you may have to take into consideration some advanced tools or get into the database queries to find out what needs to be worked upon in order to improve the performance.
+For example, you might need to analyze:
 
-For example -
+- Function calls on the page
+- Custom queries for data retrieval
+- Data processing or sanitization
+- Embedded codes
 
-- Analysing function calls on the page.
-- Custom queries written to fetch & display data.
-- Data processing or sanitizing.
-- Embed codes used.
-
-Some of the extensively used tools for analysing the performance are as follows -
+Widely adopted tools for performance analysis include:
 
 - [Web profiler](https://www.drupal.org/project/webprofiler)
 - [XHprof](https://www.drupal.org/project/xhprof)
@@ -59,6 +57,6 @@ Some of the extensively used tools for analysing the performance are as follows 
 
 ## Compressed CSS/JS
 
-Compressed CSS/JS refers to the technique of reducing the size and optimizing the performance of CSS/JavaScript files. A website can load more quickly, use less bandwidth, and put less strain on the server by compressing its CSS and JS. By minimizing the size of the CSS/JS files and the amount of HTTP requests, compressed CSS/JS helps make a website faster and more effective.
+Compressed CSS/JavaScript refer to techniques that reduce the size of CSS and JavaScript files, optimizing website performance. Compression leads to faster load times, reduced bandwidth usage, and less server strain by minimizing file size and HTTP requests.
 
-Furthermore, Compressed CSS/JS can make the CSS/JS code more challenging for others to interpret and edit, which can be helpful for defending intellectual property. It is advised to preserve a copy of the original CSS/JS files for development since compressed CSS/JS might also make debugging more difficult.
+Additionally, using source maps allows developers to retain original, uncompressed code during development, making debugging more manageable even when deploying compressed versions to production.
